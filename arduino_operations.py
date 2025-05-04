@@ -6,6 +6,7 @@ import subprocess
 from arduino_utils import clear_screen, find_arduino_ports
 from arduino_config import load_config, save_config, HEX_DIR, BLINK_HEX, UPDI_HEX
 from arduino_upload import upload_hex
+from serial_helper import open_serial_with_flush
 
 try:
     from address_changer import AddressChanger
@@ -13,7 +14,7 @@ except ImportError:
     print("Warning: address_changer module not found. Address change features will be disabled.")
 
 def setup_arduinos():
-    """Setup option: Scan for Arduinos, configure UPDI programmer, and run LE test."""
+    """Setup option: Scan for Arduinos, configure UPDI programmer and target Arduino."""
     clear_screen()
     print("=== Arduino Setup ===")
     
@@ -25,125 +26,198 @@ def setup_arduinos():
         input("Press Enter to continue...")
         return
     
-    print(f"Found {len(arduino_ports)} Arduino device(s):")
-    for i, port in enumerate(arduino_ports):
-        print(f"{i+1}. Arduino at {port['port']} - {port['description']}")
-    
     # Load existing configuration
     config = load_config()
     
-    # Configure UPDI programmer
-    print("\n=== UPDI Programmer Setup ===")
-    print("The UPDI programmer is an Arduino running the jtag2updi sketch.")
-    print("It is used to program the ATtiny1616 controller.")
+    # Check if saved ports are still available
+    available_ports = [port["port"] for port in arduino_ports]
     
-    # Check if UPDI programmer is already configured
-    if config["updi_programmer"]:
-        print(f"\nCurrent UPDI programmer: {config['updi_programmer']['port']} - {config['updi_programmer']['description']}")
-        change = input("Do you want to change the UPDI programmer? (y/n): ").lower().strip()
+    if config["updi_programmer"] and config["updi_programmer"]["port"] not in available_ports:
+        print(f"Warning: Previously configured UPDI programmer port {config['updi_programmer']['port']} is not available.")
+        config["updi_programmer"] = None
+    
+    if config["target_arduino"] and config["target_arduino"]["port"] not in available_ports:
+        print(f"Warning: Previously configured target Arduino port {config['target_arduino']['port']} is not available.")
+        config["target_arduino"] = None
+    
+    print(f"\nFound {len(arduino_ports)} Arduino device(s):")
+    for i, port in enumerate(arduino_ports):
+        print(f"{i+1}. Arduino at {port['port']} - {port['description']}")
+    
+    # Upload LED_Blink.ino.hex to one of the Arduinos to identify it
+    print("\n=== Arduino Identification ===")
+    print("We'll upload a blinking sketch to help identify one of the Arduinos.")
+    
+    try:
+        choice = int(input("\nSelect an Arduino to upload the blink sketch (enter number): "))
+        if choice < 1 or choice > len(arduino_ports):
+            print("Invalid choice.")
+            input("Press Enter to continue...")
+            return
         
-        if change != 'y':
-            print("Keeping current UPDI programmer configuration.")
-        else:
-            config["updi_programmer"] = None
-    
-    # If UPDI programmer is not configured, ask user to select one
-    if not config["updi_programmer"]:
-        try:
-            choice = int(input("\nSelect the Arduino to use as UPDI programmer (enter number): "))
-            if choice < 1 or choice > len(arduino_ports):
-                print("Invalid choice.")
+        selected_port = arduino_ports[choice-1]
+        
+        # Upload the blink sketch
+        if os.path.exists(BLINK_HEX):
+            print(f"\nUploading {BLINK_HEX} to {selected_port['port']}...")
+            if upload_hex(selected_port['port'], BLINK_HEX):
+                print("Upload successful! The Arduino's LED should now be blinking.")
+                print("Please observe which Arduino is blinking.")
+            else:
+                print("Upload failed. Please try again.")
                 input("Press Enter to continue...")
                 return
-            
-            config["updi_programmer"] = arduino_ports[choice-1]
+        else:
+            print(f"Error: Blink hex file not found at {BLINK_HEX}")
+            print("Please make sure the file exists and try again.")
+            input("Press Enter to continue...")
+            return
+        
+        # Ask if this is the UPDI programmer
+        is_updi = input("\nIs the blinking Arduino the one you want to use as UPDI programmer? (y/n): ").lower().strip()
+        
+        if is_updi == 'y':
+            # Set this as the UPDI programmer
+            config["updi_programmer"] = selected_port
             print(f"UPDI programmer set to: {config['updi_programmer']['port']} - {config['updi_programmer']['description']}")
             
-            # Ask if user wants to upload the jtag2updi sketch
-            upload = input("\nDo you want to upload the jtag2updi sketch to the UPDI programmer? (y/n): ").lower().strip()
-            
-            if upload == 'y':
-                if os.path.exists(UPDI_HEX):
-                    print(f"\nUploading {UPDI_HEX} to {config['updi_programmer']['port']}...")
-                    if upload_hex(config['updi_programmer']['port'], UPDI_HEX):
-                        print("Upload successful! The Arduino is now configured as a UPDI programmer.")
-                    else:
-                        print("Upload failed. Please try again.")
-                        input("Press Enter to continue...")
-                        return
+            # Upload the jtag2updi sketch
+            if os.path.exists(UPDI_HEX):
+                print(f"\nUploading {UPDI_HEX} to {config['updi_programmer']['port']}...")
+                if upload_hex(config['updi_programmer']['port'], UPDI_HEX):
+                    print("Upload successful! The Arduino is now configured as a UPDI programmer.")
                 else:
-                    print(f"Error: UPDI programmer hex file not found at {UPDI_HEX}")
-                    print("Please make sure the file exists and try again.")
+                    print("Upload failed. Please try again.")
                     input("Press Enter to continue...")
                     return
-        except ValueError:
-            print("Invalid input. Please enter a number.")
-            input("Press Enter to continue...")
-            return
-    
-    # Configure target Arduino
-    print("\n=== Target Arduino Setup ===")
-    print("The target Arduino is the device you want to program or read from.")
-    
-    # Check if target Arduino is already configured
-    if config["target_arduino"]:
-        print(f"\nCurrent target Arduino: {config['target_arduino']['port']} - {config['target_arduino']['description']}")
-        change = input("Do you want to change the target Arduino? (y/n): ").lower().strip()
-        
-        if change != 'y':
-            print("Keeping current target Arduino configuration.")
-        else:
-            config["target_arduino"] = None
-    
-    # If target Arduino is not configured, ask user to select one
-    if not config["target_arduino"]:
-        # Filter out the UPDI programmer from the list
-        target_options = []
-        for port in arduino_ports:
-            if port["port"] != config["updi_programmer"]["port"]:
-                target_options.append(port)
-        
-        if not target_options:
-            print("\nNo additional Arduino found besides the UPDI programmer.")
-            print("Please connect another Arduino to use as the target device.")
-            input("Press Enter to continue...")
-            return
-        
-        print("\nSelect the target Arduino:")
-        for i, port in enumerate(target_options):
-            print(f"{i+1}. Arduino at {port['port']} - {port['description']}")
-        
-        try:
-            choice = int(input("\nSelect the target Arduino (enter number): "))
-            if choice < 1 or choice > len(target_options):
-                print("Invalid choice.")
+            else:
+                print(f"Error: UPDI programmer hex file not found at {UPDI_HEX}")
+                print("Please make sure the file exists and try again.")
                 input("Press Enter to continue...")
                 return
             
-            config["target_arduino"] = target_options[choice-1]
+            # Find other Arduinos for target
+            target_options = []
+            for port in arduino_ports:
+                if port["port"] != config["updi_programmer"]["port"]:
+                    target_options.append(port)
+            
+            if not target_options:
+                print("\nNo additional Arduino found besides the UPDI programmer.")
+                print("Please connect another Arduino to use as the target device.")
+                input("Press Enter to continue...")
+                return
+            
+            # If only one other Arduino, select it automatically
+            if len(target_options) == 1:
+                config["target_arduino"] = target_options[0]
+                print(f"\nAutomatically selected the only other Arduino as target: {config['target_arduino']['port']} - {config['target_arduino']['description']}")
+            else:
+                # Let user select from multiple options
+                print("\nSelect the target Arduino:")
+                for i, port in enumerate(target_options):
+                    print(f"{i+1}. Arduino at {port['port']} - {port['description']}")
+                
+                try:
+                    choice = int(input("\nSelect the target Arduino (enter number): "))
+                    if choice < 1 or choice > len(target_options):
+                        print("Invalid choice.")
+                        input("Press Enter to continue...")
+                        return
+                    
+                    config["target_arduino"] = target_options[choice-1]
+                    print(f"Target Arduino set to: {config['target_arduino']['port']} - {config['target_arduino']['description']}")
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+                    input("Press Enter to continue...")
+                    return
+        else:
+            # The blinking Arduino is the target, so we need to select the UPDI programmer
+            config["target_arduino"] = selected_port
             print(f"Target Arduino set to: {config['target_arduino']['port']} - {config['target_arduino']['description']}")
             
-            # Ask if user wants to upload a test sketch
-            upload = input("\nDo you want to upload a test sketch to the target Arduino? (y/n): ").lower().strip()
+            # Find other Arduinos for UPDI programmer
+            updi_options = []
+            for port in arduino_ports:
+                if port["port"] != config["target_arduino"]["port"]:
+                    updi_options.append(port)
             
-            if upload == 'y':
-                if os.path.exists(BLINK_HEX):
-                    print(f"\nUploading {BLINK_HEX} to {config['target_arduino']['port']}...")
-                    if upload_hex(config['target_arduino']['port'], BLINK_HEX):
-                        print("Upload successful! The Arduino should now be blinking its LED.")
-                    else:
-                        print("Upload failed. Please try again.")
+            if not updi_options:
+                print("\nNo additional Arduino found besides the target.")
+                print("Please connect another Arduino to use as the UPDI programmer.")
+                input("Press Enter to continue...")
+                return
+            
+            # If only one other Arduino, select it automatically
+            if len(updi_options) == 1:
+                config["updi_programmer"] = updi_options[0]
+                print(f"\nAutomatically selected the only other Arduino as UPDI programmer: {config['updi_programmer']['port']} - {config['updi_programmer']['description']}")
+            else:
+                # Let user select from multiple options
+                print("\nSelect the UPDI programmer:")
+                for i, port in enumerate(updi_options):
+                    print(f"{i+1}. Arduino at {port['port']} - {port['description']}")
+                
+                try:
+                    choice = int(input("\nSelect the UPDI programmer (enter number): "))
+                    if choice < 1 or choice > len(updi_options):
+                        print("Invalid choice.")
+                        input("Press Enter to continue...")
+                        return
+                    
+                    config["updi_programmer"] = updi_options[choice-1]
+                    print(f"UPDI programmer set to: {config['updi_programmer']['port']} - {config['updi_programmer']['description']}")
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+                    input("Press Enter to continue...")
+                    return
+            
+            # Upload the jtag2updi sketch to the UPDI programmer
+            if os.path.exists(UPDI_HEX):
+                print(f"\nUploading {UPDI_HEX} to {config['updi_programmer']['port']}...")
+                if upload_hex(config['updi_programmer']['port'], UPDI_HEX):
+                    print("Upload successful! The Arduino is now configured as a UPDI programmer.")
                 else:
-                    print(f"Error: Test hex file not found at {BLINK_HEX}")
-                    print("Please make sure the file exists and try again.")
-        except ValueError:
-            print("Invalid input. Please enter a number.")
+                    print("Upload failed. Please try again.")
+                    input("Press Enter to continue...")
+                    return
+            else:
+                print(f"Error: UPDI programmer hex file not found at {UPDI_HEX}")
+                print("Please make sure the file exists and try again.")
+                input("Press Enter to continue...")
+                return
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+        input("Press Enter to continue...")
+        return
+    
+    # Upload LE_Reader.ino.hex to the target Arduino
+    print("\n=== Uploading LE_Reader to Target Arduino ===")
+    print("Now we'll upload the LE_Reader sketch to the target Arduino.")
+    
+    le_reader_hex = os.path.join(HEX_DIR, "LE_Reader.ino.hex")
+    if os.path.exists(le_reader_hex):
+        print(f"\nUploading LE_Reader.ino.hex to {config['target_arduino']['port']}...")
+        if upload_hex(config['target_arduino']['port'], le_reader_hex):
+            print("Upload successful! The Arduino is now ready to read values from the Linear Encoder.")
+            config["le_reader_uploaded"] = True
+        else:
+            print("Upload failed. Please try again.")
             input("Press Enter to continue...")
             return
+    else:
+        print(f"Error: LE_Reader.ino.hex file not found at {le_reader_hex}")
+        print("Please make sure the file exists and try again.")
+        input("Press Enter to continue...")
+        return
     
     # Save configuration
     save_config(config)
-    print("\nConfiguration saved successfully.")
+    print("\nSetup completed successfully!")
+    print("\nSummary:")
+    print(f"- UPDI Programmer: {config['updi_programmer']['port']} - {config['updi_programmer']['description']}")
+    print(f"- Target Arduino: {config['target_arduino']['port']} - {config['target_arduino']['description']}")
+    print("\nYou can now use Option 2 (Program) to calibrate your Linear Encoder.")
     
     input("Press Enter to continue...")
 
@@ -272,12 +346,17 @@ def program_arduino():
         input("Press Enter to continue...")
         return
     
-    # Step 2: Upload LE_Reader.ino.hex to Arduino Uno
-    print(f"\n2. Uploading LE_Reader.ino.hex to Arduino Uno on {arduino_port}...")
-    if not upload_hex(arduino_port, le_reader_hex):
-        print("\nFailed to upload LE_Reader.ino.hex to Arduino Uno.")
-        input("Press Enter to continue...")
-        return
+    # Step 2: Upload LE_Reader.ino.hex to Arduino Uno (if not already uploaded)
+    if config.get("le_reader_uploaded", False):
+        print(f"\n2. LE_Reader.ino.hex already uploaded to Arduino Uno on {arduino_port}. Skipping...")
+    else:
+        print(f"\n2. Uploading LE_Reader.ino.hex to Arduino Uno on {arduino_port}...")
+        if not upload_hex(arduino_port, le_reader_hex):
+            print("\nFailed to upload LE_Reader.ino.hex to Arduino Uno.")
+            input("Press Enter to continue...")
+            return
+        config["le_reader_uploaded"] = True
+        save_config(config)
     
     # Step 3: Read and analyze serial output from Arduino Uno
     print(f"\n3. Reading serial data from Arduino Uno on {arduino_port}...")
@@ -285,9 +364,8 @@ def program_arduino():
     print("\nWaiting for data...")
     
     try:
-        # Open serial connection
-        ser = serial.Serial(arduino_port, 115200, timeout=1)
-        time.sleep(2)  # Allow time for serial connection to establish
+        # Open serial connection with proper buffer flushing
+        ser = open_serial_with_flush(arduino_port, 115200, 1)
         
         # Initialize data collection
         cosine_values = []
@@ -462,9 +540,8 @@ def read_arduino():
     print("\nWaiting for data...")
     
     try:
-        # Open serial connection
-        ser = serial.Serial(arduino_port, 115200, timeout=1)
-        time.sleep(2)  # Allow time for serial connection to establish
+        # Open serial connection with proper buffer flushing
+        ser = open_serial_with_flush(arduino_port, 115200, 1)
         
         # Initialize data collection
         cosine_values = []

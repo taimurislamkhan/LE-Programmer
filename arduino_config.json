@@ -1,24 +1,12 @@
 {
-    "arduino_ports": [
-        {
-            "port": "COM15",
-            "description": "Arduino Uno (COM15)",
-            "hwid": "USB VID:PID=2341:0043 SER=95530343934351C02192 LOCATION=1-3"
-        },
-        {
-            "port": "COM13",
-            "description": "Arduino Uno (COM13)",
-            "hwid": "USB VID:PID=2341:0043 SER=14235333431351B021B0 LOCATION=1-2"
-        }
-    ],
+    "arduino_ports": [],
     "updi_programmer": {
         "port": "COM13",
-        "description": "Arduino Uno (COM13)",
-        "hwid": "USB VID:PID=2341:0043 SER=14235333431351B021B0 LOCATION=1-2"
+        "description": "Arduino Uno (COM13)"
     },
     "target_arduino": {
         "port": "COM15",
-        "description": "Arduino Uno (COM15)",
-        "hwid": "USB VID:PID=2341:0043 SER=95530343934351C02192 LOCATION=1-3"
-    }
+        "description": "Arduino Uno (COM15)"
+    },
+    "le_reader_uploaded": true
 }

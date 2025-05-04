@@ -15,7 +15,7 @@ def main_menu():
     """Display the main menu and handle user input."""
     while True:
         clear_screen()
-        print("=== Arduino Programmer ===")
+        print("=== US HeatStake Linear Encoder Programmer ===")
         print("1. Setup")
         print("2. Program")
         print("3. Read")
