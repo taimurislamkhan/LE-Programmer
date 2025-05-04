@@ -1,0 +1,37 @@
+[
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Users\\taimu\\AppData\\Local\\Arduino15\\packages\\megaTinyCore\\hardware\\megaavr\\2.6.10\\cores\\megatinycore"
+  },
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Users\\taimu\\AppData\\Local\\Arduino15\\packages\\megaTinyCore\\hardware\\megaavr\\2.6.10\\variants\\txy6"
+  },
+  {
+    "Sourcefile": "C:\\Users\\taimu\\OneDrive\\Desktop\\LE Programmer\\LE_Final\\build\\sketch\\LE_Final.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "C:\\Users\\taimu\\AppData\\Local\\Arduino15\\packages\\megaTinyCore\\hardware\\megaavr\\2.6.10\\libraries\\Wire\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\taimu\\OneDrive\\Desktop\\LE Programmer\\LE_Final\\build\\sketch\\LE_Final.ino.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\taimu\\AppData\\Local\\Arduino15\\packages\\megaTinyCore\\hardware\\megaavr\\2.6.10\\libraries\\Wire\\src\\Wire.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\taimu\\AppData\\Local\\Arduino15\\packages\\megaTinyCore\\hardware\\megaavr\\2.6.10\\libraries\\Wire\\src\\twi.c",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\taimu\\AppData\\Local\\Arduino15\\packages\\megaTinyCore\\hardware\\megaavr\\2.6.10\\libraries\\Wire\\src\\twi_pins.c",
+    "Include": "",
+    "Includepath": ""
+  }
+]

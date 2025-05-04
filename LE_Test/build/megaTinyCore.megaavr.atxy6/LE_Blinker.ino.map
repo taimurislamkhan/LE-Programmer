@@ -1,0 +1,147 @@
+
+
+Symbols from C:\Users\taimu\AppData\Local\Temp\arduino\sketches\FF22E225E5511C12F93A6C6814DF6253/LE_Blinker.ino.elf:
+
+Name                  Value   Class        Type         Size     Line  Section
+
+__heap_end          |00000000|   W  |            NOTYPE|        |     |*ABS*
+__TEXT_REGION_ORIGIN__|00000000|   W  |            NOTYPE|        |     |*ABS*
+__tmp_reg__         |00000000|   a  |            NOTYPE|        |     |*ABS*
+__vector_default    |00000000|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:61
+__vectors           |00000000|   T  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:61
+__zero_reg__        |00000001|   a  |            NOTYPE|        |     |*ABS*
+__FUSE_REGION_LENGTH__|0000000a|   A  |            NOTYPE|        |     |*ABS*
+__CCP__             |00000034|   a  |            NOTYPE|        |     |*ABS*
+__SP_L__            |0000003d|   a  |            NOTYPE|        |     |*ABS*
+__SP_H__            |0000003e|   a  |            NOTYPE|        |     |*ABS*
+__SREG__            |0000003f|   a  |            NOTYPE|        |     |*ABS*
+__ctors_start       |000000aa|   T  |            NOTYPE|        |     |.text
+__trampolines_end   |000000aa|   T  |            NOTYPE|        |     |.text
+__trampolines_start |000000aa|   T  |            NOTYPE|        |     |.text
+__ctors_end         |000000ac|   T  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:230
+__dtors_end         |000000ac|   T  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:230
+__dtors_start       |000000ac|   T  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:230
+__init              |000000ac|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:230
+_initThreeStuff()   |000000b8|   T  |              FUNC|00000018|     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/main.cpp:149
+__do_copy_data      |000000d0|   T  |            NOTYPE|00000016|     |.text	/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+__do_clear_bss      |000000e6|   T  |            NOTYPE|00000010|     |.text	/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+.do_clear_bss_loop  |000000ee|   t  |            NOTYPE|        |     |.text	/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+.do_clear_bss_start |000000f0|   t  |            NOTYPE|        |     |.text	/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+__do_global_ctors   |000000f6|   T  |            NOTYPE|00000014|     |.text	/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2466
+__EEPROM_REGION_LENGTH__|00000100|   A  |            NOTYPE|        |     |*ABS*
+__bad_interrupt     |0000010e|   T  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_1          |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_10         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_11         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_12         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_13         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_14         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_16         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_17         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_18         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_19         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_2          |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_20         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_21         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_22         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_23         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_25         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_26         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_27         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_28         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_29         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_3          |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_30         |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_4          |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_5          |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_6          |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_7          |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_8          |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+__vector_9          |0000010e|   W  |            NOTYPE|        |     |.text	../../../../crt1/gcrt1.S:315
+sortArray(int*, int) [clone .constprop.5]|00000110|   t  |              FUNC|00000036|     |.text	C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:212
+TwoWire::flush()    |00000146|   t  |              FUNC|00000010|     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:139
+TwoWire::peek()     |00000156|   t  |              FUNC|00000028|     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:726
+TwoWire::read()     |0000017e|   t  |              FUNC|00000024|     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:635
+TwoWire::available()|000001a2|   t  |              FUNC|0000000c|     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:603
+TwoWire::write(unsigned char)|000001ae|   t  |              FUNC|00000024|     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:536
+TwoWire::write(unsigned char const*, unsigned int)|000001d2|   t  |              FUNC|00000046|     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:579
+Print::availableForWrite()|00000218|   t  |              FUNC|00000006|     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/api/Print.h:65
+transmitDataWire()  |0000021e|   t  |              FUNC|0000006e|     |.text	C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:123
+digitalWrite        |0000028c|   t  |              FUNC|00000118|     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:240
+set_RGB_off()       |000003a4|   t  |              FUNC|00000024|     |.text	C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:145
+receiveEvent(int)   |000003c8|   t  |              FUNC|0000006a|     |.text	C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:150
+__LOCK_REGION_LENGTH__|00000400|   A  |            NOTYPE|        |     |*ABS*
+__SIGNATURE_REGION_LENGTH__|00000400|   A  |            NOTYPE|        |     |*ABS*
+__USER_SIGNATURE_REGION_LENGTH__|00000400|   A  |            NOTYPE|        |     |*ABS*
+analogRead          |00000432|   t  |              FUNC|0000002c|     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_analog.c:698
+pinMode.constprop.11|0000045e|   t  |              FUNC|00000036|     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_analog.c:711
+__vector_15         |00000494|   T  |              FUNC|0000005e|     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:202
+ovf_end             |000004b0|   t  |            NOTYPE|        |     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:317
+sub4                |000004ca|   t  |            NOTYPE|        |     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:317
+sub_end             |000004e4|   t  |            NOTYPE|        |     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:317
+__vector_24         |000004f2|   T  |              FUNC|00000148|     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:977
+main                |0000063a|   T  |              FUNC|000002fa|     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/main.cpp:49
+__DATA_REGION_LENGTH__|00000800|   A  |            NOTYPE|        |     |*ABS*
+_GLOBAL__sub_I__ZN7TwoWireC2EP10TWI_struct|00000934|   t  |              FUNC|0000002a|     |.text
+__subsf3            |0000095e|   T  |              FUNC|0000000a|     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:53
+__addsf3            |00000960|   T  |            NOTYPE|        |     |.text	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:53
+__addsf3x           |00000982|   T  |              FUNC|000000cc|     |.text
+atan2               |00000a46|   T  |              FUNC|00000086|     |.text
+atan                |00000a9c|   T  |              FUNC|00000050|     |.text
+__divsf3            |00000aec|   T  |              FUNC|00000004|     |.text
+__divsf3x           |00000b06|   T  |              FUNC|000000dc|     |.text
+__divsf3_pse        |00000b0a|   T  |            NOTYPE|        |     |.text
+__fixsfsi           |00000bbc|   T  |              FUNC|0000000a|     |.text
+__fixunssfsi        |00000bc6|   T  |              FUNC|00000058|     |.text
+__floatunsisf       |00000c1e|   T  |              FUNC|0000007a|     |.text
+__floatsisf         |00000c22|   T  |            NOTYPE|        |     |.text
+__fp_inf            |00000c98|   T  |              FUNC|0000000c|     |.text
+__fp_nan            |00000ca4|   T  |              FUNC|00000006|     |.text
+__fp_powser         |00000caa|   T  |              FUNC|0000004a|     |.text
+__fp_pscA           |00000cf4|   T  |              FUNC|0000000e|     |.text
+__fp_pscB           |00000d02|   T  |              FUNC|0000000e|     |.text
+__fp_round          |00000d10|   T  |              FUNC|00000022|     |.text
+__fp_split3         |00000d32|   T  |              FUNC|00000044|     |.text
+__fp_splitA         |00000d42|   T  |            NOTYPE|        |     |.text
+__fp_zero           |00000d76|   T  |              FUNC|0000000e|     |.text
+__fp_szero          |00000d78|   T  |            NOTYPE|        |     |.text
+inverse             |00000d84|   T  |              FUNC|0000000e|     |.text
+__mulsf3            |00000d92|   T  |              FUNC|00000004|     |.text
+__mulsf3x           |00000daa|   T  |              FUNC|000000d2|     |.text
+__mulsf3_pse        |00000dae|   T  |            NOTYPE|        |     |.text
+square              |00000e58|   T  |              FUNC|00000006|     |.text
+__tablejump2__      |00000e5e|   T  |            NOTYPE|0000000c|     |.text	/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2296
+_exit               |00000e6a|   T  |            NOTYPE|        |     |.text	/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+exit                |00000e6a|   W  |            NOTYPE|        |     |.text	/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+__stop_program      |00000e6c|   t  |            NOTYPE|        |     |.text	/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+_etext              |00000e6e|   T  |            NOTYPE|        |     |.text
+__data_load_start   |00000ec8|   A  |            NOTYPE|        |     |*ABS*
+__data_load_end     |00000ece|   A  |            NOTYPE|        |     |*ABS*
+__stack             |00003fff|   W  |            NOTYPE|        |     |*ABS*
+__TEXT_REGION_LENGTH__|00004000|   A  |            NOTYPE|        |     |*ABS*
+__RODATA_PM_OFFSET__|00008000|   A  |            NOTYPE|        |     |*ABS*
+vtable for TwoWire  |00008e6e|   r  |            OBJECT|00000012|     |.rodata
+digital_pin_to_timer|00008e80|   r  |            OBJECT|00000012|     |.rodata	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\variants\txy6/pins_arduino.h:379
+digital_pin_to_bit_position|00008e92|   r  |            OBJECT|00000012|     |.rodata	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\variants\txy6/pins_arduino.h:330
+digital_pin_to_port |00008ea4|   r  |            OBJECT|00000012|     |.rodata	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\variants\txy6/pins_arduino.h:305
+digital_pin_to_bit_mask|00008eb6|   r  |            OBJECT|00000012|     |.rodata	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\variants\txy6/pins_arduino.h:354
+__DATA_REGION_ORIGIN__|00803800|   A  |            NOTYPE|        |     |*ABS*
+__data_start        |00803800|   D  |            NOTYPE|        |     |.data
+current_distance    |00803800|   d  |            OBJECT|00000002|     |.data	C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:32
+sine                |00803802|   d  |            OBJECT|00000002|     |.data	C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:30
+cosine              |00803804|   d  |            OBJECT|00000002|     |.data	C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:31
+__bss_start         |00803806|   B  |            NOTYPE|        |     |.bss
+__data_end          |00803806|   D  |            NOTYPE|        |     |.data
+_edata              |00803806|   D  |            NOTYPE|        |     |.data
+temp                |00803806|   b  |            OBJECT|0000000a|     |.bss	C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:26
+sleepStack          |00803810|   b  |            OBJECT|00000001|     |.bss	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:34
+Wire                |00803811|   b  |            OBJECT|00000055|     |.bss	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:998
+absolute_distance   |00803866|   b  |            OBJECT|00000002|     |.bss	C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:27
+Lower_Bound         |00803868|   b  |            OBJECT|00000002|     |.bss	C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:19
+previous_distance   |0080386a|   b  |            OBJECT|00000002|     |.bss	C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:28
+sineSamples         |0080386c|   b  |            OBJECT|00000014|     |.bss	C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:3
+cosineSamples       |00803880|   b  |            OBJECT|00000014|     |.bss	C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:2
+timingStruct        |00803894|   b  |            OBJECT|0000000a|     |.bss	C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:189
+__bss_end           |0080389e|   B  |            NOTYPE|        |     |.bss
+_end                |0080389e|   N  |            NOTYPE|        |     |.comment
+__eeprom_end        |00810000|   N  |            NOTYPE|        |     |.comment

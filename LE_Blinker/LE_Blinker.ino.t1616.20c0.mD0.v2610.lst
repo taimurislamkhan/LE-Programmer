@@ -1,0 +1,3199 @@
+
+C:\Users\taimu\AppData\Local\Temp\arduino\sketches\FF22E225E5511C12F93A6C6814DF6253/LE_Blinker.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+../../../../crt1/gcrt1.S:61
+   0:	55 c0       	rjmp	.+170    	; 0xac <__ctors_end>
+   2:	00 00       	nop
+../../../../crt1/gcrt1.S:67
+   4:	84 c0       	rjmp	.+264    	; 0x10e <__bad_interrupt>
+   6:	00 00       	nop
+../../../../crt1/gcrt1.S:68
+   8:	82 c0       	rjmp	.+260    	; 0x10e <__bad_interrupt>
+   a:	00 00       	nop
+../../../../crt1/gcrt1.S:69
+   c:	80 c0       	rjmp	.+256    	; 0x10e <__bad_interrupt>
+   e:	00 00       	nop
+../../../../crt1/gcrt1.S:70
+  10:	7e c0       	rjmp	.+252    	; 0x10e <__bad_interrupt>
+  12:	00 00       	nop
+../../../../crt1/gcrt1.S:71
+  14:	7c c0       	rjmp	.+248    	; 0x10e <__bad_interrupt>
+  16:	00 00       	nop
+../../../../crt1/gcrt1.S:72
+  18:	7a c0       	rjmp	.+244    	; 0x10e <__bad_interrupt>
+  1a:	00 00       	nop
+../../../../crt1/gcrt1.S:73
+  1c:	78 c0       	rjmp	.+240    	; 0x10e <__bad_interrupt>
+  1e:	00 00       	nop
+../../../../crt1/gcrt1.S:74
+  20:	76 c0       	rjmp	.+236    	; 0x10e <__bad_interrupt>
+  22:	00 00       	nop
+../../../../crt1/gcrt1.S:75
+  24:	74 c0       	rjmp	.+232    	; 0x10e <__bad_interrupt>
+  26:	00 00       	nop
+../../../../crt1/gcrt1.S:76
+  28:	72 c0       	rjmp	.+228    	; 0x10e <__bad_interrupt>
+  2a:	00 00       	nop
+../../../../crt1/gcrt1.S:77
+  2c:	70 c0       	rjmp	.+224    	; 0x10e <__bad_interrupt>
+  2e:	00 00       	nop
+../../../../crt1/gcrt1.S:78
+  30:	6e c0       	rjmp	.+220    	; 0x10e <__bad_interrupt>
+  32:	00 00       	nop
+../../../../crt1/gcrt1.S:79
+  34:	6c c0       	rjmp	.+216    	; 0x10e <__bad_interrupt>
+  36:	00 00       	nop
+../../../../crt1/gcrt1.S:80
+  38:	6a c0       	rjmp	.+212    	; 0x10e <__bad_interrupt>
+  3a:	00 00       	nop
+../../../../crt1/gcrt1.S:81
+  3c:	2b c2       	rjmp	.+1110   	; 0x494 <__vector_15>
+  3e:	00 00       	nop
+../../../../crt1/gcrt1.S:82
+  40:	66 c0       	rjmp	.+204    	; 0x10e <__bad_interrupt>
+  42:	00 00       	nop
+../../../../crt1/gcrt1.S:83
+  44:	64 c0       	rjmp	.+200    	; 0x10e <__bad_interrupt>
+  46:	00 00       	nop
+../../../../crt1/gcrt1.S:84
+  48:	62 c0       	rjmp	.+196    	; 0x10e <__bad_interrupt>
+  4a:	00 00       	nop
+../../../../crt1/gcrt1.S:85
+  4c:	60 c0       	rjmp	.+192    	; 0x10e <__bad_interrupt>
+  4e:	00 00       	nop
+../../../../crt1/gcrt1.S:86
+  50:	5e c0       	rjmp	.+188    	; 0x10e <__bad_interrupt>
+  52:	00 00       	nop
+../../../../crt1/gcrt1.S:87
+  54:	5c c0       	rjmp	.+184    	; 0x10e <__bad_interrupt>
+  56:	00 00       	nop
+../../../../crt1/gcrt1.S:88
+  58:	5a c0       	rjmp	.+180    	; 0x10e <__bad_interrupt>
+  5a:	00 00       	nop
+../../../../crt1/gcrt1.S:89
+  5c:	58 c0       	rjmp	.+176    	; 0x10e <__bad_interrupt>
+  5e:	00 00       	nop
+../../../../crt1/gcrt1.S:90
+  60:	48 c2       	rjmp	.+1168   	; 0x4f2 <__vector_24>
+  62:	00 00       	nop
+../../../../crt1/gcrt1.S:91
+  64:	54 c0       	rjmp	.+168    	; 0x10e <__bad_interrupt>
+  66:	00 00       	nop
+../../../../crt1/gcrt1.S:92
+  68:	52 c0       	rjmp	.+164    	; 0x10e <__bad_interrupt>
+  6a:	00 00       	nop
+../../../../crt1/gcrt1.S:93
+  6c:	50 c0       	rjmp	.+160    	; 0x10e <__bad_interrupt>
+  6e:	00 00       	nop
+../../../../crt1/gcrt1.S:94
+  70:	4e c0       	rjmp	.+156    	; 0x10e <__bad_interrupt>
+  72:	00 00       	nop
+../../../../crt1/gcrt1.S:95
+  74:	4c c0       	rjmp	.+152    	; 0x10e <__bad_interrupt>
+  76:	00 00       	nop
+../../../../crt1/gcrt1.S:96
+  78:	4a c0       	rjmp	.+148    	; 0x10e <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	08 4a       	sbci	r16, 0xA8	; 168
+  7e:	d7 3b       	cpi	r29, 0xB7	; 183
+  80:	3b ce       	rjmp	.-906    	; 0xfffffcf8 <__eeprom_end+0xff7efcf8>
+  82:	01 6e       	ori	r16, 0xE1	; 225
+  84:	84 bc       	out	0x24, r8	; 36
+  86:	bf fd       	.word	0xfdbf	; ????
+  88:	c1 2f       	mov	r28, r17
+  8a:	3d 6c       	ori	r19, 0xCD	; 205
+  8c:	74 31       	cpi	r23, 0x14	; 20
+  8e:	9a bd       	out	0x2a, r25	; 42
+  90:	56 83       	std	Z+6, r21	; 0x06
+  92:	3d da       	rcall	.-2950   	; 0xfffff50e <__eeprom_end+0xff7ef50e>
+  94:	3d 00       	.word	0x003d	; ????
+  96:	c7 7f       	andi	r28, 0xF7	; 247
+  98:	11 be       	out	0x31, r1	; 49
+  9a:	d9 e4       	ldi	r29, 0x49	; 73
+  9c:	bb 4c       	sbci	r27, 0xCB	; 203
+  9e:	3e 91       	ld	r19, -X
+  a0:	6b aa       	std	Y+51, r6	; 0x33
+  a2:	aa be       	out	0x3a, r10	; 58
+  a4:	00 00       	nop
+  a6:	00 80       	ld	r0, Z
+  a8:	3f 00       	.word	0x003f	; ????
+
+000000aa <__ctors_start>:
+__trampolines_start():
+  aa:	9a 04       	cpc	r9, r10
+
+000000ac <__ctors_end>:
+__dtors_end():
+../../../../crt1/gcrt1.S:230
+  ac:	11 24       	eor	r1, r1
+../../../../crt1/gcrt1.S:231
+  ae:	1f be       	out	0x3f, r1	; 63
+../../../../crt1/gcrt1.S:232
+  b0:	cf ef       	ldi	r28, 0xFF	; 255
+../../../../crt1/gcrt1.S:234
+  b2:	cd bf       	out	0x3d, r28	; 61
+../../../../crt1/gcrt1.S:236
+  b4:	df e3       	ldi	r29, 0x3F	; 63
+../../../../crt1/gcrt1.S:237
+  b6:	de bf       	out	0x3e, r29	; 62
+
+000000b8 <_initThreeStuff()>:
+_Z15_initThreeStuffv():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/main.cpp:104
+
+  /* Minimum: Reset if we wound up here through malfunction - this relies on user clearing the  *
+   * register on startup, which is rarely done in Arduino land.                                 */
+  void __attribute__((weak)) init_reset_flags() ;
+  void __attribute__((weak)) init_reset_flags() {
+    uint8_t flags = RSTCTRL.RSTFR;
+  b8:	80 91 40 00 	lds	r24, 0x0040	; 0x800040 <digital_pin_to_bit_mask+0x7f718a>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/main.cpp:105
+    RSTCTRL.RSTFR = flags;
+  bc:	80 93 40 00 	sts	0x0040, r24	; 0x800040 <digital_pin_to_bit_mask+0x7f718a>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/main.cpp:106
+    if (flags == 0) {
+  c0:	81 11       	cpse	r24, r1
+  c2:	05 c0       	rjmp	.+10     	; 0xce <_initThreeStuff()+0x16>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/main.cpp:107
+      _PROTECTED_WRITE(RSTCTRL.SWRR, 1);
+  c4:	98 ed       	ldi	r25, 0xD8	; 216
+  c6:	21 e0       	ldi	r18, 0x01	; 1
+  c8:	94 bf       	out	0x34, r25	; 52
+  ca:	20 93 41 00 	sts	0x0041, r18	; 0x800041 <digital_pin_to_bit_mask+0x7f718b>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/main.cpp:109
+    }
+    GPIOR0 = flags;
+  ce:	8c bb       	out	0x1c, r24	; 28
+
+000000d0 <__do_copy_data>:
+__do_copy_data():
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  d0:	18 e3       	ldi	r17, 0x38	; 56
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  d2:	a0 e0       	ldi	r26, 0x00	; 0
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  d4:	b8 e3       	ldi	r27, 0x38	; 56
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  d6:	e8 ec       	ldi	r30, 0xC8	; 200
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  d8:	fe e0       	ldi	r31, 0x0E	; 14
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  da:	02 c0       	rjmp	.+4      	; 0xe0 <__do_copy_data+0x10>
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  dc:	05 90       	lpm	r0, Z+
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  de:	0d 92       	st	X+, r0
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  e0:	a6 30       	cpi	r26, 0x06	; 6
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  e2:	b1 07       	cpc	r27, r17
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  e4:	d9 f7       	brne	.-10     	; 0xdc <__do_copy_data+0xc>
+
+000000e6 <__do_clear_bss>:
+__do_clear_bss():
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  e6:	28 e3       	ldi	r18, 0x38	; 56
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  e8:	a6 e0       	ldi	r26, 0x06	; 6
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  ea:	b8 e3       	ldi	r27, 0x38	; 56
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  ec:	01 c0       	rjmp	.+2      	; 0xf0 <.do_clear_bss_start>
+
+000000ee <.do_clear_bss_loop>:
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  ee:	1d 92       	st	X+, r1
+
+000000f0 <.do_clear_bss_start>:
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  f0:	ae 39       	cpi	r26, 0x9E	; 158
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  f2:	b2 07       	cpc	r27, r18
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  f4:	e1 f7       	brne	.-8      	; 0xee <.do_clear_bss_loop>
+
+000000f6 <__do_global_ctors>:
+__do_global_ctors():
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2466
+  f6:	10 e0       	ldi	r17, 0x00	; 0
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2467
+  f8:	c6 e5       	ldi	r28, 0x56	; 86
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2468
+  fa:	d0 e0       	ldi	r29, 0x00	; 0
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2472
+  fc:	03 c0       	rjmp	.+6      	; 0x104 <__EEPROM_REGION_LENGTH__+0x4>
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2474
+  fe:	21 97       	sbiw	r28, 0x01	; 1
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2480
+ 100:	fe 01       	movw	r30, r28
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2481
+ 102:	ad d6       	rcall	.+3418   	; 0xe5e <__tablejump2__>
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2483
+ 104:	c5 35       	cpi	r28, 0x55	; 85
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2484
+ 106:	d1 07       	cpc	r29, r17
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2489
+ 108:	d1 f7       	brne	.-12     	; 0xfe <__do_global_ctors+0x8>
+../../../../crt1/gcrt1.S:314
+ 10a:	97 d2       	rcall	.+1326   	; 0x63a <main>
+../../../../crt1/gcrt1.S:315
+ 10c:	ae c6       	rjmp	.+3420   	; 0xe6a <_exit>
+
+0000010e <__bad_interrupt>:
+__vector_22():
+ 10e:	78 cf       	rjmp	.-272    	; 0x0 <__vectors>
+
+00000110 <sortArray(int*, int) [clone .constprop.5]>:
+_Z9sortArrayPii.constprop.5():
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:212
+      set_RGB(c);
+    }
+  }
+}
+
+void sortArray(int arr[], int size) {
+ 110:	29 e0       	ldi	r18, 0x09	; 9
+ 112:	30 e0       	ldi	r19, 0x00	; 0
+ 114:	fc 01       	movw	r30, r24
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:214
+  for (int i = 0; i < size - 1; i++) {
+    for (int j = 0; j < size - i - 1; j++) {
+ 116:	50 e0       	ldi	r21, 0x00	; 0
+ 118:	40 e0       	ldi	r20, 0x00	; 0
+ 11a:	42 17       	cp	r20, r18
+ 11c:	53 07       	cpc	r21, r19
+ 11e:	7c f4       	brge	.+30     	; 0x13e <sortArray(int*, int) [clone .constprop.5]+0x2e>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:215
+      if (arr[j] > arr[j + 1]) {
+ 120:	60 81       	ld	r22, Z
+ 122:	71 81       	ldd	r23, Z+1	; 0x01
+ 124:	a2 81       	ldd	r26, Z+2	; 0x02
+ 126:	b3 81       	ldd	r27, Z+3	; 0x03
+ 128:	a6 17       	cp	r26, r22
+ 12a:	b7 07       	cpc	r27, r23
+ 12c:	24 f4       	brge	.+8      	; 0x136 <sortArray(int*, int) [clone .constprop.5]+0x26>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:217
+        int temp = arr[j];
+        arr[j] = arr[j + 1];
+ 12e:	a0 83       	st	Z, r26
+ 130:	b1 83       	std	Z+1, r27	; 0x01
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:218
+        arr[j + 1] = temp;
+ 132:	62 83       	std	Z+2, r22	; 0x02
+ 134:	73 83       	std	Z+3, r23	; 0x03
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:214
+  }
+}
+
+void sortArray(int arr[], int size) {
+  for (int i = 0; i < size - 1; i++) {
+    for (int j = 0; j < size - i - 1; j++) {
+ 136:	4f 5f       	subi	r20, 0xFF	; 255
+ 138:	5f 4f       	sbci	r21, 0xFF	; 255
+ 13a:	32 96       	adiw	r30, 0x02	; 2
+ 13c:	ee cf       	rjmp	.-36     	; 0x11a <sortArray(int*, int) [clone .constprop.5]+0xa>
+ 13e:	21 50       	subi	r18, 0x01	; 1
+ 140:	31 09       	sbc	r19, r1
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:213
+    }
+  }
+}
+
+void sortArray(int arr[], int size) {
+  for (int i = 0; i < size - 1; i++) {
+ 142:	41 f7       	brne	.-48     	; 0x114 <sortArray(int*, int) [clone .constprop.5]+0x4>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:222
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+}
+ 144:	08 95       	ret
+
+00000146 <TwoWire::flush()>:
+_ZN7TwoWire5flushEv():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:139
+    _data->_module->SCTRLA  = 0x00;
+    _data->_module->MCTRLA  = temp_MCTRLA;
+    _data->_module->MSTATUS = 0x01;  // force TWI state machine into idle state
+    _data->_module->SCTRLA  = temp_SCTRLA;
+  #else
+  _data->_module->MCTRLB |= TWI_FLUSH_bm;
+ 146:	dc 01       	movw	r26, r24
+ 148:	18 96       	adiw	r26, 0x08	; 8
+ 14a:	ed 91       	ld	r30, X+
+ 14c:	fc 91       	ld	r31, X
+ 14e:	84 81       	ldd	r24, Z+4	; 0x04
+ 150:	88 60       	ori	r24, 0x08	; 8
+ 152:	84 83       	std	Z+4, r24	; 0x04
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:748
+ *@return     void
+ */
+void TwoWire::flush(void) {
+  /* Turn off and on TWI module */
+  TWI_Flush(&vars);
+}
+ 154:	08 95       	ret
+
+00000156 <TwoWire::peek()>:
+_ZN7TwoWire4peekEv():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:726
+      rxTail   = &(vars._bytesReadWritten);
+      rxBuffer =   vars._trBuffer;
+    #else                                        // Separate tx/rx Buffers
+      rxHead   = &(vars._bytesToRead);
+      rxTail   = &(vars._bytesRead);
+      rxBuffer =   vars._rxBuffer;
+ 156:	9c 01       	movw	r18, r24
+ 158:	2b 5c       	subi	r18, 0xCB	; 203
+ 15a:	3f 4f       	sbci	r19, 0xFF	; 255
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:730
+    #endif
+  }
+
+  if ((*rxTail) < (*rxHead)) {   // if there are bytes to read
+ 15c:	dc 01       	movw	r26, r24
+ 15e:	1f 96       	adiw	r26, 0x0f	; 15
+ 160:	ec 91       	ld	r30, X
+ 162:	1f 97       	sbiw	r26, 0x0f	; 15
+ 164:	1e 96       	adiw	r26, 0x0e	; 14
+ 166:	8c 91       	ld	r24, X
+ 168:	e8 17       	cp	r30, r24
+ 16a:	30 f4       	brcc	.+12     	; 0x178 <TwoWire::peek()+0x22>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:731
+    return rxBuffer[(*rxTail)];
+ 16c:	e2 0f       	add	r30, r18
+ 16e:	f3 2f       	mov	r31, r19
+ 170:	f1 1d       	adc	r31, r1
+ 172:	80 81       	ld	r24, Z
+ 174:	90 e0       	ldi	r25, 0x00	; 0
+ 176:	08 95       	ret
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:733
+  } else {      // No bytes to read
+    return -1;
+ 178:	8f ef       	ldi	r24, 0xFF	; 255
+ 17a:	9f ef       	ldi	r25, 0xFF	; 255
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:735
+  }
+}
+ 17c:	08 95       	ret
+
+0000017e <TwoWire::read()>:
+_ZN7TwoWire4readEv():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:635
+ *@param      void
+ *
+ *@return     int
+ *@retval     byte in the buffer or -1 if buffer is empty
+ */
+int TwoWire::read(void) {
+ 17e:	fc 01       	movw	r30, r24
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:653
+      rxTail   = &(vars._bytesReadWritten);
+      rxBuffer =   vars._trBuffer;
+    #else                                        // Separate tx/rx Buffers
+      rxHead   = &(vars._bytesToRead);
+      rxTail   = &(vars._bytesRead);
+      rxBuffer =   vars._rxBuffer;
+ 180:	dc 01       	movw	r26, r24
+ 182:	d5 96       	adiw	r26, 0x35	; 53
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:658
+    #endif
+  }
+
+
+  if ((*rxTail) < (*rxHead)) {   // if there are bytes to read
+ 184:	97 85       	ldd	r25, Z+15	; 0x0f
+ 186:	86 85       	ldd	r24, Z+14	; 0x0e
+ 188:	98 17       	cp	r25, r24
+ 18a:	40 f4       	brcc	.+16     	; 0x19c <TwoWire::read()+0x1e>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:659
+    uint8_t c = rxBuffer[(*rxTail)];
+ 18c:	a9 0f       	add	r26, r25
+ 18e:	b1 1d       	adc	r27, r1
+ 190:	2c 91       	ld	r18, X
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:660
+    (*rxTail)++;
+ 192:	9f 5f       	subi	r25, 0xFF	; 255
+ 194:	97 87       	std	Z+15, r25	; 0x0f
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:661
+    return c;
+ 196:	82 2f       	mov	r24, r18
+ 198:	90 e0       	ldi	r25, 0x00	; 0
+ 19a:	08 95       	ret
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:663
+  } else {                      // No bytes to read. At this point, rxTail moved up to
+    return -1;                  // rxHead. To reset both to 0, a MasterRead or AddrWrite has to be called
+ 19c:	8f ef       	ldi	r24, 0xFF	; 255
+ 19e:	9f ef       	ldi	r25, 0xFF	; 255
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:665
+  }
+}
+ 1a0:	08 95       	ret
+
+000001a2 <TwoWire::available()>:
+_ZN7TwoWire9availableEv():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:603
+ *@param      void
+ *
+ *@return     int
+ *@retval     amount of bytes available to read from the host buffer
+ */
+int TwoWire::available(void) {
+ 1a2:	fc 01       	movw	r30, r24
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:614
+  #endif
+  {
+    #if defined(TWI_MERGE_BUFFERS)                // Same Buffers for tx/rx
+      rxHead  = vars._bytesToReadWrite - vars._bytesReadWritten;
+    #else                                         // Separate tx/rx Buffers
+      rxHead  = vars._bytesToRead - vars._bytesRead;
+ 1a4:	86 85       	ldd	r24, Z+14	; 0x0e
+ 1a6:	97 85       	ldd	r25, Z+15	; 0x0f
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:618
+    #endif
+  }
+  return rxHead;
+}
+ 1a8:	89 1b       	sub	r24, r25
+ 1aa:	99 0b       	sbc	r25, r25
+ 1ac:	08 95       	ret
+
+000001ae <TwoWire::write(unsigned char)>:
+_ZN7TwoWire5writeEh():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:536
+ *
+ *
+ *@return     uint8_t
+ *@retval     1 if successful, 0 if the buffer is full
+ */
+size_t TwoWire::write(uint8_t data) {
+ 1ae:	fc 01       	movw	r30, r24
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:557
+    #endif
+  }
+
+  /* Put byte in txBuffer */
+
+  if ((*txHead) < BUFFER_LENGTH) {      // while buffer not full, write to it
+ 1b0:	a5 85       	ldd	r26, Z+13	; 0x0d
+ 1b2:	a0 32       	cpi	r26, 0x20	; 32
+ 1b4:	58 f4       	brcc	.+22     	; 0x1cc <TwoWire::write(unsigned char)+0x1e>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:558
+    txBuffer[(*txHead)] = data;             // Load data into the buffer
+ 1b6:	a8 0f       	add	r26, r24
+ 1b8:	b9 2f       	mov	r27, r25
+ 1ba:	b1 1d       	adc	r27, r1
+ 1bc:	55 96       	adiw	r26, 0x15	; 21
+ 1be:	6c 93       	st	X, r22
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:559
+    (*txHead)++;                            // advancing the head
+ 1c0:	85 85       	ldd	r24, Z+13	; 0x0d
+ 1c2:	8f 5f       	subi	r24, 0xFF	; 255
+ 1c4:	85 87       	std	Z+13, r24	; 0x0d
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:560
+    return 1;
+ 1c6:	81 e0       	ldi	r24, 0x01	; 1
+ 1c8:	90 e0       	ldi	r25, 0x00	; 0
+ 1ca:	08 95       	ret
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:562
+  } else {
+    return 0;
+ 1cc:	90 e0       	ldi	r25, 0x00	; 0
+ 1ce:	80 e0       	ldi	r24, 0x00	; 0
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:564
+  }
+}
+ 1d0:	08 95       	ret
+
+000001d2 <TwoWire::write(unsigned char const*, unsigned int)>:
+_ZN7TwoWire5writeEPKhj():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:579
+ *
+ *
+ *@return     uint8_t
+ *@retval     amount of bytes copied
+ */
+size_t TwoWire::write(const uint8_t *data, size_t quantity) {
+ 1d2:	bf 92       	push	r11
+ 1d4:	cf 92       	push	r12
+ 1d6:	df 92       	push	r13
+ 1d8:	ef 92       	push	r14
+ 1da:	ff 92       	push	r15
+ 1dc:	0f 93       	push	r16
+ 1de:	1f 93       	push	r17
+ 1e0:	cf 93       	push	r28
+ 1e2:	df 93       	push	r29
+ 1e4:	7c 01       	movw	r14, r24
+ 1e6:	6a 01       	movw	r12, r20
+ 1e8:	b6 2e       	mov	r11, r22
+ 1ea:	eb 01       	movw	r28, r22
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:581
+  twi_buffer_index_t i = 0;
+  for (; i < quantity; i++) {
+ 1ec:	0c 2f       	mov	r16, r28
+ 1ee:	0b 19       	sub	r16, r11
+ 1f0:	10 e0       	ldi	r17, 0x00	; 0
+ 1f2:	0c 15       	cp	r16, r12
+ 1f4:	1d 05       	cpc	r17, r13
+ 1f6:	28 f4       	brcc	.+10     	; 0x202 <TwoWire::write(unsigned char const*, unsigned int)+0x30>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:582
+    if (TwoWire::write(*(data++)) == 0)
+ 1f8:	69 91       	ld	r22, Y+
+ 1fa:	c7 01       	movw	r24, r14
+ 1fc:	d8 df       	rcall	.-80     	; 0x1ae <TwoWire::write(unsigned char)>
+ 1fe:	89 2b       	or	r24, r25
+ 200:	a9 f7       	brne	.-22     	; 0x1ec <TwoWire::write(unsigned char const*, unsigned int)+0x1a>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:587
+      break;   // break if buffer full
+  }
+
+  return i;
+}
+ 202:	c8 01       	movw	r24, r16
+ 204:	df 91       	pop	r29
+ 206:	cf 91       	pop	r28
+ 208:	1f 91       	pop	r17
+ 20a:	0f 91       	pop	r16
+ 20c:	ff 90       	pop	r15
+ 20e:	ef 90       	pop	r14
+ 210:	df 90       	pop	r13
+ 212:	cf 90       	pop	r12
+ 214:	bf 90       	pop	r11
+ 216:	08 95       	ret
+
+00000218 <Print::availableForWrite()>:
+_ZN5Print17availableForWriteEv():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/api/Print.h:65
+      return write((const uint8_t *)buffer, size);
+    }
+
+    // default to zero, meaning "a single write may block"
+    // should be overridden by subclasses with buffering
+    virtual int availableForWrite() { return 0; }
+ 218:	90 e0       	ldi	r25, 0x00	; 0
+ 21a:	80 e0       	ldi	r24, 0x00	; 0
+ 21c:	08 95       	ret
+
+0000021e <transmitDataWire()>:
+_Z16transmitDataWirev():
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:123
+  previous_distance = current_distance;
+
+  delayMicroseconds(100);
+}
+
+void transmitDataWire() {
+ 21e:	cf 93       	push	r28
+ 220:	df 93       	push	r29
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:125
+ 
+ temp[0] = (cosine >> 8) & 0xFF;
+ 222:	80 91 04 38 	lds	r24, 0x3804	; 0x803804 <cosine>
+ 226:	90 91 05 38 	lds	r25, 0x3805	; 0x803805 <cosine+0x1>
+ 22a:	90 93 06 38 	sts	0x3806, r25	; 0x803806 <__data_end>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:126
+ temp[1] = cosine & 0xFF;
+ 22e:	80 93 07 38 	sts	0x3807, r24	; 0x803807 <__data_end+0x1>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:127
+ temp[2] = (sine >> 8) & 0xFF;
+ 232:	80 91 02 38 	lds	r24, 0x3802	; 0x803802 <sine>
+ 236:	90 91 03 38 	lds	r25, 0x3803	; 0x803803 <sine+0x1>
+ 23a:	90 93 08 38 	sts	0x3808, r25	; 0x803808 <__data_end+0x2>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:128
+ temp[3] = sine & 0xFF;
+ 23e:	80 93 09 38 	sts	0x3809, r24	; 0x803809 <__data_end+0x3>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:129
+ temp[4] = (current_distance >> 8) & 0xFF;
+ 242:	80 91 00 38 	lds	r24, 0x3800	; 0x803800 <__DATA_REGION_ORIGIN__>
+ 246:	90 91 01 38 	lds	r25, 0x3801	; 0x803801 <__DATA_REGION_ORIGIN__+0x1>
+ 24a:	90 93 0a 38 	sts	0x380A, r25	; 0x80380a <__data_end+0x4>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:130
+ temp[5] = current_distance & 0xFF;
+ 24e:	80 93 0b 38 	sts	0x380B, r24	; 0x80380b <__data_end+0x5>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:131
+ temp[6] = (absolute_distance >> 8) & 0xFF;
+ 252:	80 91 66 38 	lds	r24, 0x3866	; 0x803866 <absolute_distance>
+ 256:	90 91 67 38 	lds	r25, 0x3867	; 0x803867 <absolute_distance+0x1>
+ 25a:	90 93 0c 38 	sts	0x380C, r25	; 0x80380c <__data_end+0x6>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:132
+ temp[7] = absolute_distance & 0xFF;
+ 25e:	80 93 0d 38 	sts	0x380D, r24	; 0x80380d <__data_end+0x7>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:133
+ temp[8] = (Lower_Bound >> 8) & 0xFF;
+ 262:	80 91 68 38 	lds	r24, 0x3868	; 0x803868 <Lower_Bound>
+ 266:	90 91 69 38 	lds	r25, 0x3869	; 0x803869 <Lower_Bound+0x1>
+ 26a:	90 93 0e 38 	sts	0x380E, r25	; 0x80380e <__data_end+0x8>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:134
+ temp[9] = Lower_Bound & 0xFF;
+ 26e:	80 93 0f 38 	sts	0x380F, r24	; 0x80380f <__data_end+0x9>
+ 272:	c6 e0       	ldi	r28, 0x06	; 6
+ 274:	d8 e3       	ldi	r29, 0x38	; 56
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:138
+ 
+ for(int i=0;i<10;i++)
+ {
+   Wire.write(temp[i]);
+ 276:	69 91       	ld	r22, Y+
+write():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.h:130
+    }
+    inline size_t write(unsigned int  n) {
+      return      write((uint8_t)     n);
+    }
+    inline size_t write(int           n) {
+      return      write((uint8_t)     n);
+ 278:	81 e1       	ldi	r24, 0x11	; 17
+ 27a:	98 e3       	ldi	r25, 0x38	; 56
+ 27c:	98 df       	rcall	.-208    	; 0x1ae <TwoWire::write(unsigned char)>
+_Z16transmitDataWirev():
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:136
+ temp[6] = (absolute_distance >> 8) & 0xFF;
+ temp[7] = absolute_distance & 0xFF;
+ temp[8] = (Lower_Bound >> 8) & 0xFF;
+ temp[9] = Lower_Bound & 0xFF;
+ 
+ for(int i=0;i<10;i++)
+ 27e:	88 e3       	ldi	r24, 0x38	; 56
+ 280:	c0 31       	cpi	r28, 0x10	; 16
+ 282:	d8 07       	cpc	r29, r24
+ 284:	c1 f7       	brne	.-16     	; 0x276 <transmitDataWire()+0x58>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:140
+ {
+   Wire.write(temp[i]);
+ }
+}
+ 286:	df 91       	pop	r29
+ 288:	cf 91       	pop	r28
+ 28a:	08 95       	ret
+
+0000028c <digitalWrite>:
+digitalWrite():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:240
+    default:
+      break;
+  }
+}
+
+void digitalWrite(uint8_t pin, uint8_t val) {
+ 28c:	cf 93       	push	r28
+ 28e:	df 93       	push	r29
+check_valid_digital_pin():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/Arduino.h:873
+#if !defined(NUM_TOTAL_PINS)
+  #define NUM_TOTAL_PINS                (NUM_DIGITAL_PINS) /* Used the same way as NUM_DIGITAL_PINS. so it doesn't mean what it's named  - I didn't make the convention*/
+#endif
+
+inline __attribute__((always_inline)) void check_valid_digital_pin(pin_size_t pin) {
+  if (__builtin_constant_p(pin)) {
+ 290:	28 2f       	mov	r18, r24
+ 292:	30 e0       	ldi	r19, 0x00	; 0
+digitalWrite():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:243
+  check_valid_digital_pin(pin);
+  /* Get bit mask for pin */
+  uint8_t bit_mask = digitalPinToBitMask(pin);
+ 294:	e9 01       	movw	r28, r18
+ 296:	ca 54       	subi	r28, 0x4A	; 74
+ 298:	d1 47       	sbci	r29, 0x71	; 113
+ 29a:	88 81       	ld	r24, Y
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:244
+  if (bit_mask == NOT_A_PIN) {
+ 29c:	8f 3f       	cpi	r24, 0xFF	; 255
+ 29e:	09 f4       	brne	.+2      	; 0x2a2 <digitalWrite+0x16>
+ 2a0:	3f c0       	rjmp	.+126    	; 0x320 <digitalWrite+0x94>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:249
+    return;
+  }
+
+  /* Get port */
+  PORT_t *port = digitalPinToPortStruct(pin);
+ 2a2:	a9 01       	movw	r20, r18
+ 2a4:	4c 55       	subi	r20, 0x5C	; 92
+ 2a6:	51 47       	sbci	r21, 0x71	; 113
+ 2a8:	da 01       	movw	r26, r20
+ 2aa:	ec 91       	ld	r30, X
+ 2ac:	b0 e2       	ldi	r27, 0x20	; 32
+ 2ae:	eb 9f       	mul	r30, r27
+ 2b0:	f0 01       	movw	r30, r0
+ 2b2:	11 24       	eor	r1, r1
+ 2b4:	fc 5f       	subi	r31, 0xFC	; 252
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:257
+  the behavior of digitalWrite() on classic AVR devices, where
+  you could digitalWrite() a pin while it's an input, to ensure
+  that the value of the port was set correctly when it was
+  changed to an output. Code in the wild relies on this behavior. */
+
+  if (val == LOW) { /* If LOW */
+ 2b6:	61 11       	cpse	r22, r1
+ 2b8:	36 c0       	rjmp	.+108    	; 0x326 <digitalWrite+0x9a>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:258
+    port->OUTCLR = bit_mask;
+ 2ba:	86 83       	std	Z+6, r24	; 0x06
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:282
+  } else {
+    port->OUTSET = bit_mask;
+  }
+
+  /* Input direction */
+  if (!(port->DIR & bit_mask)) {
+ 2bc:	90 81       	ld	r25, Z
+ 2be:	89 23       	and	r24, r25
+ 2c0:	a1 f4       	brne	.+40     	; 0x2ea <digitalWrite+0x5e>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:289
+      pull up is enabled if this function is called.
+      Should we purposely implement this side effect?
+    */
+
+    /* Get bit position for getting pin ctrl reg */
+    uint8_t bit_pos = digitalPinToBitPosition(pin);
+ 2c2:	c9 01       	movw	r24, r18
+ 2c4:	8e 56       	subi	r24, 0x6E	; 110
+ 2c6:	91 47       	sbci	r25, 0x71	; 113
+ 2c8:	dc 01       	movw	r26, r24
+ 2ca:	9c 91       	ld	r25, X
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:292
+
+    /* Calculate where pin control register is */
+    volatile uint8_t *pin_ctrl_reg = getPINnCTRLregister(port, bit_pos);
+ 2cc:	30 97       	sbiw	r30, 0x00	; 0
+ 2ce:	69 f1       	breq	.+90     	; 0x32a <digitalWrite+0x9e>
+ 2d0:	98 30       	cpi	r25, 0x08	; 8
+ 2d2:	58 f5       	brcc	.+86     	; 0x32a <digitalWrite+0x9e>
+ 2d4:	70 96       	adiw	r30, 0x10	; 16
+ 2d6:	e9 0f       	add	r30, r25
+ 2d8:	f1 1d       	adc	r31, r1
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:295
+
+    /* Save system status and disable interrupts */
+    uint8_t status = SREG;
+ 2da:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:296
+    cli();
+ 2dc:	f8 94       	cli
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:300
+
+    if (val == LOW) {
+      /* Disable pullup */
+      *pin_ctrl_reg &= ~PORT_PULLUPEN_bm;
+ 2de:	80 81       	ld	r24, Z
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:298
+
+    /* Save system status and disable interrupts */
+    uint8_t status = SREG;
+    cli();
+
+    if (val == LOW) {
+ 2e0:	61 11       	cpse	r22, r1
+ 2e2:	26 c0       	rjmp	.+76     	; 0x330 <digitalWrite+0xa4>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:300
+      /* Disable pullup */
+      *pin_ctrl_reg &= ~PORT_PULLUPEN_bm;
+ 2e4:	87 7f       	andi	r24, 0xF7	; 247
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:303
+    } else {
+      /* Enable pull-up */
+      *pin_ctrl_reg |= PORT_PULLUPEN_bm;
+ 2e6:	80 83       	st	Z, r24
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:307
+    }
+
+    /* Restore system status */
+    SREG = status;
+ 2e8:	9f bf       	out	0x3f, r25	; 63
+turnOffPWM():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:107
+   * any timers with minimum overhead - critical on these parts
+   * Since nothing that will show up here can have more than one
+   * one bit set, binary and will give 0x00 if that bit is cleared
+   * which is NOT_ON_TIMER.
+   */
+  uint8_t digital_pin_timer =  digitalPinToTimer(pin) & __PeripheralControl;
+ 2ea:	20 58       	subi	r18, 0x80	; 128
+ 2ec:	31 47       	sbci	r19, 0x71	; 113
+ 2ee:	f9 01       	movw	r30, r18
+ 2f0:	90 81       	ld	r25, Z
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:109
+  /* end megaTinyCore-specific section */
+  if (digital_pin_timer== NOT_ON_TIMER) {
+ 2f2:	99 23       	and	r25, r25
+ 2f4:	a9 f0       	breq	.+42     	; 0x320 <digitalWrite+0x94>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:113
+    return;
+  }
+
+  uint8_t bit_mask = digitalPinToBitMask(pin);
+ 2f6:	88 81       	ld	r24, Y
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:116
+  // TCB_t *timerB;
+
+  switch (digital_pin_timer) {
+ 2f8:	90 34       	cpi	r25, 0x40	; 64
+ 2fa:	09 f1       	breq	.+66     	; 0x33e <digitalWrite+0xb2>
+ 2fc:	90 38       	cpi	r25, 0x80	; 128
+ 2fe:	e1 f0       	breq	.+56     	; 0x338 <digitalWrite+0xac>
+ 300:	90 31       	cpi	r25, 0x10	; 16
+ 302:	71 f4       	brne	.+28     	; 0x320 <digitalWrite+0x94>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:132
+          }
+          if (bit_mask > 0x04) {  // -> bit_pos > 2 -> output channel controlled by HCMP
+            bit_mask <<= 1;       // mind the gap (between LCMP and HCMP)
+          }
+        #else
+          if (digitalPinToPort(pin) == PB) {        // WO0-WO2, Bitmask has one of these bits 1: 0b00hhhlll.
+ 304:	da 01       	movw	r26, r20
+ 306:	9c 91       	ld	r25, X
+ 308:	91 30       	cpi	r25, 0x01	; 1
+ 30a:	a1 f4       	brne	.+40     	; 0x334 <digitalWrite+0xa8>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:133
+            if (bit_mask > 0x04) { // Is it one of the three high ones? If so
+ 30c:	85 30       	cpi	r24, 0x05	; 5
+ 30e:	10 f0       	brcs	.+4      	; 0x314 <digitalWrite+0x88>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:134
+              bit_mask <<= 1;      // nudge it 1 place left swap nybbles since that's 1 clock faster than 3 rightshifts.
+ 310:	88 0f       	add	r24, r24
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:135
+              _SWAP(bit_mask);     // swap nybbles since that's 1 clock faster than 3 rightshifts.
+ 312:	82 95       	swap	r24
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:142
+          } else {
+            // Otherwise, it's WO3-5. These will always be on 0b00hhh000,. Here since we ARE working with a high half timer, we need to just leftshift it once.
+            bit_mask <<= 1;
+          }
+        #endif
+        TCA0.SPLIT.CTRLB &= ~bit_mask;
+ 314:	90 91 01 0a 	lds	r25, 0x0A01	; 0x800a01 <digital_pin_to_bit_mask+0x7f7b4b>
+ 318:	80 95       	com	r24
+ 31a:	89 23       	and	r24, r25
+ 31c:	80 93 01 0a 	sts	0x0A01, r24	; 0x800a01 <digital_pin_to_bit_mask+0x7f7b4b>
+digitalWrite():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:320
+   * analogWritten() 255, then digitallyWritten() to HIGH, which
+   * would turn it off for the time between turnOffPWM() and
+   * PORT->OUTCLR)
+   * Since there's no penalty, why make a glitch we don't have to? */
+  turnOffPWM(pin);
+}
+ 320:	df 91       	pop	r29
+ 322:	cf 91       	pop	r28
+ 324:	08 95       	ret
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:278
+    // val will now be 0 (LOW) if the toggling made it LOW
+    // or bit_mask if not. And further down, we only need to
+    // know if it's
+  /* If HIGH OR  > TOGGLE  */
+  } else {
+    port->OUTSET = bit_mask;
+ 326:	85 83       	std	Z+5, r24	; 0x05
+ 328:	c9 cf       	rjmp	.-110    	; 0x2bc <digitalWrite+0x30>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:292
+
+    /* Get bit position for getting pin ctrl reg */
+    uint8_t bit_pos = digitalPinToBitPosition(pin);
+
+    /* Calculate where pin control register is */
+    volatile uint8_t *pin_ctrl_reg = getPINnCTRLregister(port, bit_pos);
+ 32a:	f0 e0       	ldi	r31, 0x00	; 0
+ 32c:	e0 e0       	ldi	r30, 0x00	; 0
+ 32e:	d5 cf       	rjmp	.-86     	; 0x2da <digitalWrite+0x4e>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:303
+    if (val == LOW) {
+      /* Disable pullup */
+      *pin_ctrl_reg &= ~PORT_PULLUPEN_bm;
+    } else {
+      /* Enable pull-up */
+      *pin_ctrl_reg |= PORT_PULLUPEN_bm;
+ 330:	88 60       	ori	r24, 0x08	; 8
+ 332:	d9 cf       	rjmp	.-78     	; 0x2e6 <digitalWrite+0x5a>
+turnOffPWM():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:139
+              bit_mask <<= 1;      // nudge it 1 place left swap nybbles since that's 1 clock faster than 3 rightshifts.
+              _SWAP(bit_mask);     // swap nybbles since that's 1 clock faster than 3 rightshifts.
+            }
+          } else {
+            // Otherwise, it's WO3-5. These will always be on 0b00hhh000,. Here since we ARE working with a high half timer, we need to just leftshift it once.
+            bit_mask <<= 1;
+ 334:	88 0f       	add	r24, r24
+ 336:	ee cf       	rjmp	.-36     	; 0x314 <digitalWrite+0x88>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:157
+    /* We don't need the type b timers as this core does not use them for PWM      */
+
+    // 1-series parts have a DAC that we can use...
+    #if defined(DAC0)
+      case DACOUT:
+        DAC0.CTRLA = 0x00;
+ 338:	10 92 a0 06 	sts	0x06A0, r1	; 0x8006a0 <digital_pin_to_bit_mask+0x7f77ea>
+ 33c:	f1 cf       	rjmp	.-30     	; 0x320 <digitalWrite+0x94>
+digitalWrite():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:194
+            #endif
+
+            SREG = oldSREG;
+          }
+        #else
+          uint8_t fc_mask = (bit_mask == 0x02 ? 0x80 : 0x40);
+ 33e:	20 e4       	ldi	r18, 0x40	; 64
+turnOffPWM():
+ 340:	82 30       	cpi	r24, 0x02	; 2
+ 342:	09 f4       	brne	.+2      	; 0x346 <digitalWrite+0xba>
+digitalWrite():
+ 344:	20 e8       	ldi	r18, 0x80	; 128
+turnOffPWM():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:195
+          if (TCD0.FAULTCTRL & fc_mask) {
+ 346:	90 91 92 0a 	lds	r25, 0x0A92	; 0x800a92 <digital_pin_to_bit_mask+0x7f7bdc>
+ 34a:	92 23       	and	r25, r18
+ 34c:	49 f3       	breq	.-46     	; 0x320 <digitalWrite+0x94>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:196
+            uint8_t oldSREG = SREG;
+ 34e:	6f b7       	in	r22, 0x3f	; 63
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:197
+            cli();
+ 350:	f8 94       	cli
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:200
+            // uint8_t TCD0_prescaler=TCD0.CTRLA&(~TCD_ENABLE_bm);
+            //
+            TCD0.CTRLA &= ~TCD_ENABLE_bm;
+ 352:	90 91 80 0a 	lds	r25, 0x0A80	; 0x800a80 <digital_pin_to_bit_mask+0x7f7bca>
+ 356:	9e 7f       	andi	r25, 0xFE	; 254
+ 358:	90 93 80 0a 	sts	0x0A80, r25	; 0x800a80 <digital_pin_to_bit_mask+0x7f7bca>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:201
+            _PROTECTED_WRITE(TCD0.FAULTCTRL, TCD0.FAULTCTRL & (~fc_mask));
+ 35c:	40 91 92 0a 	lds	r20, 0x0A92	; 0x800a92 <digital_pin_to_bit_mask+0x7f7bdc>
+ 360:	30 e0       	ldi	r19, 0x00	; 0
+ 362:	20 95       	com	r18
+ 364:	30 95       	com	r19
+ 366:	50 e0       	ldi	r21, 0x00	; 0
+ 368:	24 23       	and	r18, r20
+ 36a:	35 23       	and	r19, r21
+ 36c:	98 ed       	ldi	r25, 0xD8	; 216
+ 36e:	94 bf       	out	0x34, r25	; 52
+ 370:	20 93 92 0a 	sts	0x0A92, r18	; 0x800a92 <digital_pin_to_bit_mask+0x7f7bdc>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:202
+            while (!(TCD0.STATUS & TCD_ENRDY_bm)); // wait until it can be re-enabled
+ 374:	90 91 8e 0a 	lds	r25, 0x0A8E	; 0x800a8e <digital_pin_to_bit_mask+0x7f7bd8>
+ 378:	90 ff       	sbrs	r25, 0
+ 37a:	fc cf       	rjmp	.-8      	; 0x374 <digitalWrite+0xe8>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:203
+            TCD0.CTRLA |= TCD_ENABLE_bm;           // re-enable it
+ 37c:	90 91 80 0a 	lds	r25, 0x0A80	; 0x800a80 <digital_pin_to_bit_mask+0x7f7bca>
+ 380:	91 60       	ori	r25, 0x01	; 1
+ 382:	90 93 80 0a 	sts	0x0A80, r25	; 0x800a80 <digital_pin_to_bit_mask+0x7f7bca>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:220
+                  PORTA.PIN6CTRL &= ~(PORT_INVEN_bm);
+                } else {
+                  PORTA.PIN7CTRL &= ~(PORT_INVEN_bm);
+                }
+              #else
+                if (bit_mask == 0x01) {
+ 386:	81 30       	cpi	r24, 0x01	; 1
+ 388:	39 f4       	brne	.+14     	; 0x398 <digitalWrite+0x10c>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:221
+                  PORTC.PIN0CTRL &= ~(PORT_INVEN_bm);
+ 38a:	80 91 50 04 	lds	r24, 0x0450	; 0x800450 <digital_pin_to_bit_mask+0x7f759a>
+ 38e:	8f 77       	andi	r24, 0x7F	; 127
+ 390:	80 93 50 04 	sts	0x0450, r24	; 0x800450 <digital_pin_to_bit_mask+0x7f759a>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:227
+                } else {
+                  PORTC.PIN1CTRL &= ~(PORT_INVEN_bm);
+                }
+              #endif
+            #endif
+            SREG = oldSREG;
+ 394:	6f bf       	out	0x3f, r22	; 63
+ 396:	c4 cf       	rjmp	.-120    	; 0x320 <digitalWrite+0x94>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:223
+                }
+              #else
+                if (bit_mask == 0x01) {
+                  PORTC.PIN0CTRL &= ~(PORT_INVEN_bm);
+                } else {
+                  PORTC.PIN1CTRL &= ~(PORT_INVEN_bm);
+ 398:	80 91 51 04 	lds	r24, 0x0451	; 0x800451 <digital_pin_to_bit_mask+0x7f759b>
+ 39c:	8f 77       	andi	r24, 0x7F	; 127
+ 39e:	80 93 51 04 	sts	0x0451, r24	; 0x800451 <digital_pin_to_bit_mask+0x7f759b>
+ 3a2:	f8 cf       	rjmp	.-16     	; 0x394 <digitalWrite+0x108>
+
+000003a4 <set_RGB_off()>:
+_Z11set_RGB_offv():
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:145
+
+
+void set_RGB_off()
+{
+  digitalWrite(LED_RED_1,HIGH); 
+ 3a4:	61 e0       	ldi	r22, 0x01	; 1
+ 3a6:	8a e0       	ldi	r24, 0x0A	; 10
+ 3a8:	71 df       	rcall	.-286    	; 0x28c <digitalWrite>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:146
+  digitalWrite(LED_GREEN_1,HIGH);
+ 3aa:	61 e0       	ldi	r22, 0x01	; 1
+ 3ac:	8b e0       	ldi	r24, 0x0B	; 11
+ 3ae:	6e df       	rcall	.-292    	; 0x28c <digitalWrite>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:147
+  digitalWrite(LED_BLUE_1,HIGH);
+ 3b0:	61 e0       	ldi	r22, 0x01	; 1
+ 3b2:	8c e0       	ldi	r24, 0x0C	; 12
+ 3b4:	6b df       	rcall	.-298    	; 0x28c <digitalWrite>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:148
+  digitalWrite(LED_RED_2,HIGH);
+ 3b6:	61 e0       	ldi	r22, 0x01	; 1
+ 3b8:	85 e0       	ldi	r24, 0x05	; 5
+ 3ba:	68 df       	rcall	.-304    	; 0x28c <digitalWrite>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:149
+  digitalWrite(LED_GREEN_2,HIGH);
+ 3bc:	61 e0       	ldi	r22, 0x01	; 1
+ 3be:	86 e0       	ldi	r24, 0x06	; 6
+ 3c0:	65 df       	rcall	.-310    	; 0x28c <digitalWrite>
+ 3c2:	61 e0       	ldi	r22, 0x01	; 1
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:150
+  digitalWrite(LED_BLUE_2,HIGH);
+ 3c4:	87 e0       	ldi	r24, 0x07	; 7
+ 3c6:	62 cf       	rjmp	.-316    	; 0x28c <digitalWrite>
+
+000003c8 <receiveEvent(int)>:
+_Z12receiveEventi():
+ 3c8:	cf 93       	push	r28
+ 3ca:	90 91 1f 38 	lds	r25, 0x381F	; 0x80381f <Wire+0xe>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:199
+//     Wire.write(temp[i]);
+//   }
+// }
+
+void receiveEvent(int howMany) {
+  while (Wire.available()) { // loop through all but the last
+ 3ce:	80 91 20 38 	lds	r24, 0x3820	; 0x803820 <Wire+0xf>
+ 3d2:	98 17       	cp	r25, r24
+ 3d4:	61 f1       	breq	.+88     	; 0x42e <__LOCK_REGION_LENGTH__+0x2e>
+ 3d6:	81 e1       	ldi	r24, 0x11	; 17
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:200
+    char c = Wire.read(); // receive byte as a character
+ 3d8:	98 e3       	ldi	r25, 0x38	; 56
+ 3da:	d1 de       	rcall	.-606    	; 0x17e <TwoWire::read()>
+ 3dc:	c8 2f       	mov	r28, r24
+ 3de:	82 35       	cpi	r24, 0x52	; 82
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:201
+    if (c == 'R')
+ 3e0:	29 f4       	brne	.+10     	; 0x3ec <receiveEvent(int)+0x24>
+ 3e2:	10 92 66 38 	sts	0x3866, r1	; 0x803866 <absolute_distance>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:203
+    {
+      absolute_distance=0;
+ 3e6:	10 92 67 38 	sts	0x3867, r1	; 0x803867 <absolute_distance+0x1>
+ 3ea:	ef cf       	rjmp	.-34     	; 0x3ca <receiveEvent(int)+0x2>
+set_RGB():
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:166
+}
+
+void set_RGB(char color)
+
+{
+  set_RGB_off();
+ 3ec:	db df       	rcall	.-74     	; 0x3a4 <set_RGB_off()>
+ 3ee:	c4 34       	cpi	r28, 0x44	; 68
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:167
+  switch(color)
+ 3f0:	59 f0       	breq	.+22     	; 0x408 <__LOCK_REGION_LENGTH__+0x8>
+ 3f2:	24 f4       	brge	.+8      	; 0x3fc <receiveEvent(int)+0x34>
+ 3f4:	c2 34       	cpi	r28, 0x42	; 66
+ 3f6:	a9 f0       	breq	.+42     	; 0x422 <__LOCK_REGION_LENGTH__+0x22>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:184
+      digitalWrite(LED_BLUE_2,LOW);
+      break;
+    case OFF:
+      set_RGB_off();
+    default:
+      set_RGB_off();      
+ 3f8:	d5 df       	rcall	.-86     	; 0x3a4 <set_RGB_off()>
+ 3fa:	e7 cf       	rjmp	.-50     	; 0x3ca <receiveEvent(int)+0x2>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:167
+
+void set_RGB(char color)
+
+{
+  set_RGB_off();
+  switch(color)
+ 3fc:	c7 34       	cpi	r28, 0x47	; 71
+ 3fe:	59 f0       	breq	.+22     	; 0x416 <__LOCK_REGION_LENGTH__+0x16>
+ 400:	cf 34       	cpi	r28, 0x4F	; 79
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:182
+    case BLUE:
+      digitalWrite(LED_BLUE_1,LOW);
+      digitalWrite(LED_BLUE_2,LOW);
+      break;
+    case OFF:
+      set_RGB_off();
+ 402:	d1 f7       	brne	.-12     	; 0x3f8 <receiveEvent(int)+0x30>
+ 404:	cf df       	rcall	.-98     	; 0x3a4 <set_RGB_off()>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:170
+{
+  set_RGB_off();
+  switch(color)
+  {
+    case RED:
+      digitalWrite(LED_RED_1,LOW); 
+ 406:	f8 cf       	rjmp	.-16     	; 0x3f8 <receiveEvent(int)+0x30>
+ 408:	60 e0       	ldi	r22, 0x00	; 0
+ 40a:	8a e0       	ldi	r24, 0x0A	; 10
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:171
+      digitalWrite(LED_RED_2,LOW);
+ 40c:	3f df       	rcall	.-386    	; 0x28c <digitalWrite>
+ 40e:	60 e0       	ldi	r22, 0x00	; 0
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:179
+      digitalWrite(LED_GREEN_1,LOW);
+      digitalWrite(LED_GREEN_2,LOW);
+      break;
+    case BLUE:
+      digitalWrite(LED_BLUE_1,LOW);
+      digitalWrite(LED_BLUE_2,LOW);
+ 410:	85 e0       	ldi	r24, 0x05	; 5
+ 412:	3c df       	rcall	.-392    	; 0x28c <digitalWrite>
+ 414:	da cf       	rjmp	.-76     	; 0x3ca <receiveEvent(int)+0x2>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:174
+    case RED:
+      digitalWrite(LED_RED_1,LOW); 
+      digitalWrite(LED_RED_2,LOW);
+      break;
+    case GREEN:
+      digitalWrite(LED_GREEN_1,LOW);
+ 416:	60 e0       	ldi	r22, 0x00	; 0
+ 418:	8b e0       	ldi	r24, 0x0B	; 11
+ 41a:	38 df       	rcall	.-400    	; 0x28c <digitalWrite>
+ 41c:	60 e0       	ldi	r22, 0x00	; 0
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:175
+      digitalWrite(LED_GREEN_2,LOW);
+ 41e:	86 e0       	ldi	r24, 0x06	; 6
+ 420:	f8 cf       	rjmp	.-16     	; 0x412 <__LOCK_REGION_LENGTH__+0x12>
+ 422:	60 e0       	ldi	r22, 0x00	; 0
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:178
+      break;
+    case BLUE:
+      digitalWrite(LED_BLUE_1,LOW);
+ 424:	8c e0       	ldi	r24, 0x0C	; 12
+ 426:	32 df       	rcall	.-412    	; 0x28c <digitalWrite>
+ 428:	60 e0       	ldi	r22, 0x00	; 0
+ 42a:	87 e0       	ldi	r24, 0x07	; 7
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:179
+      digitalWrite(LED_BLUE_2,LOW);
+ 42c:	f2 cf       	rjmp	.-28     	; 0x412 <__LOCK_REGION_LENGTH__+0x12>
+_Z12receiveEventi():
+ 42e:	cf 91       	pop	r28
+ 430:	08 95       	ret
+
+00000432 <analogRead>:
+analogRead():
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:210
+    else 
+    {
+      set_RGB(c);
+    }
+  }
+}
+ 432:	8c 5f       	subi	r24, 0xFC	; 252
+ 434:	90 91 00 06 	lds	r25, 0x0600	; 0x800600 <digital_pin_to_bit_mask+0x7f774a>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_analog.c:711
+      // don't waste flash on smallest parts.
+      if ((pin & 0x7F) > 0x1F) { // highest valid mux value for any 0 or 1-series part.
+        return ADC_ERROR_BAD_PIN_OR_CHANNEL;
+      }
+    #endif
+    if (!ADC0.CTRLA & 0x01) return ADC_ERROR_DISABLED;
+ 438:	99 23       	and	r25, r25
+ 43a:	71 f0       	breq	.+28     	; 0x458 <analogRead+0x26>
+ 43c:	80 93 06 06 	sts	0x0606, r24	; 0x800606 <digital_pin_to_bit_mask+0x7f7750>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_analog.c:715
+    pin &= 0x1F;
+    /* Reference should be already set up */
+    /* Select channel */
+    ADC0.MUXPOS = (pin << ADC_MUXPOS_gp);
+ 440:	81 e0       	ldi	r24, 0x01	; 1
+ 442:	80 93 08 06 	sts	0x0608, r24	; 0x800608 <digital_pin_to_bit_mask+0x7f7752>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_analog.c:722
+    #if defined(STRICT_ERROR_CHECKING)
+      if (ADC0.COMMAND) return ADC_ERROR_BUSY;
+    #endif
+
+    /* Start conversion */
+    ADC0.COMMAND = ADC_STCONV_bm;
+ 446:	80 91 0b 06 	lds	r24, 0x060B	; 0x80060b <digital_pin_to_bit_mask+0x7f7755>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_analog.c:725
+
+    /* Wait for result ready */
+    while (!(ADC0.INTFLAGS & ADC_RESRDY_bm));
+ 44a:	80 ff       	sbrs	r24, 0
+ 44c:	fc cf       	rjmp	.-8      	; 0x446 <analogRead+0x14>
+ 44e:	80 91 10 06 	lds	r24, 0x0610	; 0x800610 <digital_pin_to_bit_mask+0x7f775a>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_analog.c:728
+
+    /* Combine two bytes */
+    return ADC0.RES;
+ 452:	90 91 11 06 	lds	r25, 0x0611	; 0x800611 <digital_pin_to_bit_mask+0x7f775b>
+ 456:	08 95       	ret
+ 458:	89 ef       	ldi	r24, 0xF9	; 249
+ 45a:	92 e8       	ldi	r25, 0x82	; 130
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_analog.c:711
+      // don't waste flash on smallest parts.
+      if ((pin & 0x7F) > 0x1F) { // highest valid mux value for any 0 or 1-series part.
+        return ADC_ERROR_BAD_PIN_OR_CHANNEL;
+      }
+    #endif
+    if (!ADC0.CTRLA & 0x01) return ADC_ERROR_DISABLED;
+ 45c:	08 95       	ret
+
+0000045e <pinMode.constprop.11>:
+pinMode.constprop.11():
+ 45e:	90 e0       	ldi	r25, 0x00	; 0
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_analog.c:729
+    /* Wait for result ready */
+    while (!(ADC0.INTFLAGS & ADC_RESRDY_bm));
+
+    /* Combine two bytes */
+    return ADC0.RES;
+  }
+ 460:	fc 01       	movw	r30, r24
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/Arduino.h:873
+ 462:	ea 54       	subi	r30, 0x4A	; 74
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:44
+}
+
+void pinMode(uint8_t pin, uint8_t mode) {
+  check_valid_digital_pin(pin);         /* generate compile error if a constant that is not a valid pin is used as the pin */
+  check_valid_pin_mode(mode);           /* generate compile error if a constant that is not a valid pin mode is used as the mode */
+  uint8_t bit_mask = digitalPinToBitMask(pin);
+ 464:	f1 47       	sbci	r31, 0x71	; 113
+ 466:	20 81       	ld	r18, Z
+ 468:	2f 3f       	cpi	r18, 0xFF	; 255
+ 46a:	99 f0       	breq	.+38     	; 0x492 <pinMode.constprop.11+0x34>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:45
+  if ((bit_mask == NOT_A_PIN) || (mode > INPUT_PULLUP)) {
+ 46c:	fc 01       	movw	r30, r24
+ 46e:	ec 55       	subi	r30, 0x5C	; 92
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:48
+    return;                             /* ignore invalid pins passed at runtime */
+  }
+  volatile uint8_t * port_base = (volatile uint8_t *) (uint16_t) ((&PORTA) + digitalPinToPort(pin));
+ 470:	f1 47       	sbci	r31, 0x71	; 113
+ 472:	e0 81       	ld	r30, Z
+ 474:	30 e2       	ldi	r19, 0x20	; 32
+ 476:	e3 9f       	mul	r30, r19
+ 478:	f0 01       	movw	r30, r0
+ 47a:	11 24       	eor	r1, r1
+ 47c:	fc 5f       	subi	r31, 0xFC	; 252
+ 47e:	21 83       	std	Z+1, r18	; 0x01
+ 480:	8e 56       	subi	r24, 0x6E	; 110
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:51
+  if (mode & 0x01) {
+    // OUTPUT mode, so write DIRSET with the mask.
+    *(port_base + 1) = bit_mask;
+ 482:	91 47       	sbci	r25, 0x71	; 113
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:77
+  // then load with displacement 2 clocks. IFF the compiler puts this pointer into Y or Z, it is faster and smaller
+  // by 2 bytes and one clock. And let's hope it is, because the code above would suck too if it was in X.
+  // Handwritten assembly that exploited the knowledge that there will never be a carry would save 1 word and 1 clock.
+  // and could probably save at least several times that in initializing the port_base pointer. But if you're using
+  // pinMode you probably don't care.
+  port_base += (uint8_t) digitalPinToBitPosition(pin);
+ 484:	dc 01       	movw	r26, r24
+ 486:	8c 91       	ld	r24, X
+ 488:	e8 0f       	add	r30, r24
+ 48a:	f1 1d       	adc	r31, r1
+ 48c:	80 89       	ldd	r24, Z+16	; 0x10
+ 48e:	87 7f       	andi	r24, 0xF7	; 247
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:78
+  bit_mask = *(port_base + 0x10);
+ 490:	80 8b       	std	Z+16, r24	; 0x10
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:82
+  if (mode & 2) {
+    bit_mask |= 0x08;
+  } else {
+    bit_mask &= 0xF7;
+ 492:	08 95       	ret
+
+00000494 <__vector_15>:
+__vector_15():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:84
+  }
+  *(port_base + 0x10) = bit_mask;
+ 494:	8f 93       	push	r24
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring_digital.c:85
+}
+ 496:	81 e0       	ldi	r24, 0x01	; 1
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:206
+  #else
+    ISR(MILLIS_TIMER_VECTOR, ISR_NAKED) {
+      // Common Interrupt header for TCB, TCA and TCD;
+      // Clears the Timer Interrupt flag and pushes the CPU Registers
+      // 7 words / 7 clocks
+      __asm__ __volatile__(
+ 498:	80 93 8d 0a 	sts	0x0A8D, r24	; 0x800a8d <digital_pin_to_bit_mask+0x7f7bd7>
+ 49c:	8f b7       	in	r24, 0x3f	; 63
+ 49e:	8f 93       	push	r24
+ 4a0:	ef 93       	push	r30
+ 4a2:	ff 93       	push	r31
+ 4a4:	e4 e9       	ldi	r30, 0x94	; 148
+ 4a6:	f8 e3       	ldi	r31, 0x38	; 56
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:317
+        [MIINC]  "M" ((0x0000 - MILLIS_INC) & 0xFF),
+        [MINCD]  "M" ((0xFFFF - MILLIS_INC) & 0xFF)
+      );
+  */
+
+      __asm__ __volatile__(
+ 4a8:	9f 93       	push	r25
+ 4aa:	68 94       	set
+ 4ac:	8f ef       	ldi	r24, 0xFF	; 255
+ 4ae:	0d c0       	rjmp	.+26     	; 0x4ca <sub4>
+
+000004b0 <ovf_end>:
+ 4b0:	e8 94       	clt
+ 4b2:	84 81       	ldd	r24, Z+4	; 0x04
+ 4b4:	95 81       	ldd	r25, Z+5	; 0x05
+ 4b6:	80 5d       	subi	r24, 0xD0	; 208
+ 4b8:	9c 4f       	sbci	r25, 0xFC	; 252
+ 4ba:	84 83       	std	Z+4, r24	; 0x04
+ 4bc:	95 83       	std	Z+5, r25	; 0x05
+ 4be:	88 5e       	subi	r24, 0xE8	; 232
+ 4c0:	93 40       	sbci	r25, 0x03	; 3
+ 4c2:	80 f0       	brcs	.+32     	; 0x4e4 <sub_end>
+ 4c4:	84 83       	std	Z+4, r24	; 0x04
+ 4c6:	95 83       	std	Z+5, r25	; 0x05
+ 4c8:	8f ef       	ldi	r24, 0xFF	; 255
+
+000004ca <sub4>:
+ 4ca:	90 81       	ld	r25, Z
+ 4cc:	98 1b       	sub	r25, r24
+ 4ce:	91 93       	st	Z+, r25
+ 4d0:	90 81       	ld	r25, Z
+ 4d2:	9f 4f       	sbci	r25, 0xFF	; 255
+ 4d4:	91 93       	st	Z+, r25
+ 4d6:	90 81       	ld	r25, Z
+ 4d8:	9f 4f       	sbci	r25, 0xFF	; 255
+ 4da:	91 93       	st	Z+, r25
+ 4dc:	90 81       	ld	r25, Z
+ 4de:	9f 4f       	sbci	r25, 0xFF	; 255
+ 4e0:	91 93       	st	Z+, r25
+ 4e2:	36 f3       	brts	.-52     	; 0x4b0 <ovf_end>
+
+000004e4 <sub_end>:
+ 4e4:	9f 91       	pop	r25
+ 4e6:	ff 91       	pop	r31
+ 4e8:	ef 91       	pop	r30
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:379
+        [MINCD]  "M" ((0xFFFF - MILLIS_INC) & 0xFF)
+      );
+    #endif /* (defined(MILLIS_USE_TIMERB0) || defined(MILLIS_USE_TIMERB1) || defined(MILLIS_USE_TIMERB2) || defined(MILLIS_USE_TIMERB3) || defined(MILLIS_USE_TIMERB4)) */
+    // Common ISR Epilogue for TCA, TCB and TCD, popping register in reverse Order
+    // 6 words, 14 clocks
+    __asm__ __volatile__(
+ 4ea:	8f 91       	pop	r24
+ 4ec:	8f bf       	out	0x3f, r24	; 63
+ 4ee:	8f 91       	pop	r24
+ 4f0:	18 95       	reti
+
+000004f2 <__vector_24>:
+__vector_24():
+ 4f2:	1f 92       	push	r1
+ 4f4:	0f 92       	push	r0
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:977
+
+
+/**
+ *@brief      TWI0 Slave Interrupt vector
+ */
+ISR(TWI0_TWIS_vect) {
+ 4f6:	0f b6       	in	r0, 0x3f	; 63
+ 4f8:	0f 92       	push	r0
+ 4fa:	11 24       	eor	r1, r1
+ 4fc:	1f 93       	push	r17
+ 4fe:	2f 93       	push	r18
+ 500:	3f 93       	push	r19
+ 502:	4f 93       	push	r20
+ 504:	5f 93       	push	r21
+ 506:	6f 93       	push	r22
+ 508:	7f 93       	push	r23
+ 50a:	8f 93       	push	r24
+ 50c:	9f 93       	push	r25
+ 50e:	af 93       	push	r26
+ 510:	bf 93       	push	r27
+ 512:	cf 93       	push	r28
+ 514:	df 93       	push	r29
+ 516:	ef 93       	push	r30
+ 518:	ff 93       	push	r31
+TWI_HandleSlaveIRQ():
+ 51a:	c9 e1       	ldi	r28, 0x19	; 25
+ 51c:	d8 e3       	ldi	r29, 0x38	; 56
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:522
+  // used as a frame pointer and the compiler avoids using it. So, using it comes with a price of pushing/popping
+  // r28/r29, as well as ldi the address of the struct into those, so it only makes sense in a few cases like this.
+  // Since the Y register is not call-clobbered, it can be considered persistent in this function and has not to
+  // be restored after the icall to the user callbacks, unlike Z (which is used for _module and icall).
+
+  _fastPtr_y(_data,_data);  // force _data into Y and instruct to not change Y
+ 51e:	e8 81       	ld	r30, Y
+ 520:	f9 81       	ldd	r31, Y+1	; 0x01
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:564
+  #if defined(TWI_MANDS)
+    _data->_bools._toggleStreamFn = 0x01;
+  #endif
+
+  uint8_t action = 0;
+  uint8_t clientStatus = _data->_module->SSTATUS;
+ 522:	83 85       	ldd	r24, Z+11	; 0x0b
+ 524:	86 ff       	sbrs	r24, 6
+ 526:	56 c0       	rjmp	.+172    	; 0x5d4 <__vector_24+0xe2>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:566
+
+  if (clientStatus & TWI_APIF_bm) {  // Address/Stop Bit set
+ 528:	80 ff       	sbrs	r24, 0
+ 52a:	41 c0       	rjmp	.+130    	; 0x5ae <__vector_24+0xbc>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:567
+    if (clientStatus & TWI_AP_bm) {    // Address bit set
+ 52c:	15 85       	ldd	r17, Z+13	; 0x0d
+ 52e:	81 ff       	sbrs	r24, 1
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:568
+      uint8_t payload = _data->_module->SDATA;  // read address from data register
+ 530:	38 c0       	rjmp	.+112    	; 0x5a2 <__vector_24+0xb0>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:569
+      if (clientStatus & TWI_DIR_bm) {  // Master is reading
+ 532:	8e 81       	ldd	r24, Y+6	; 0x06
+ 534:	88 23       	and	r24, r24
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:570
+        if ((*rxHead) > 0) {                    // There is no way to identify a REPSTART,
+ 536:	59 f0       	breq	.+22     	; 0x54e <__vector_24+0x5c>
+popSleep():
+ 538:	80 91 10 38 	lds	r24, 0x3810	; 0x803810 <sleepStack>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:690
+        sleepStackLoc = 0;              // reset everything
+      }
+      sleepStack = sleepStackLoc;
+    }
+  #else
+    SLPCTRL.CTRLA = sleepStack;
+ 53c:	80 93 50 00 	sts	0x0050, r24	; 0x800050 <digital_pin_to_bit_mask+0x7f719a>
+TWI_HandleSlaveIRQ():
+ 540:	eb 85       	ldd	r30, Y+11	; 0x0b
+ 542:	fc 85       	ldd	r31, Y+12	; 0x0c
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:572
+    if (clientStatus & TWI_AP_bm) {    // Address bit set
+      uint8_t payload = _data->_module->SDATA;  // read address from data register
+      if (clientStatus & TWI_DIR_bm) {  // Master is reading
+        if ((*rxHead) > 0) {                    // There is no way to identify a REPSTART,
+          popSleep();                           // (have to treat REPSTART as another pop for sleep)
+          if (_data->user_onReceive != NULL) {  // so when a Master Read occurs after a Master write
+ 544:	30 97       	sbiw	r30, 0x00	; 0
+ 546:	19 f0       	breq	.+6      	; 0x54e <__vector_24+0x5c>
+ 548:	8e 81       	ldd	r24, Y+6	; 0x06
+ 54a:	90 e0       	ldi	r25, 0x00	; 0
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:573
+            _data->user_onReceive((*rxHead));   // issue a call to the user callback first
+ 54c:	09 95       	icall
+ 54e:	1c 83       	std	Y+4, r17	; 0x04
+ 550:	1d 82       	std	Y+5, r1	; 0x05
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:576
+          }
+        }
+        (*address) = payload;                   // saving address to expose to the user sketch
+ 552:	18 86       	std	Y+8, r1	; 0x08
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:577
+        (*txHead) = 0;                          // reset buffer positions so the Master can start writing at zero.
+ 554:	e9 85       	ldd	r30, Y+9	; 0x09
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:578
+        (*txTail) = 0;
+ 556:	fa 85       	ldd	r31, Y+10	; 0x0a
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:580
+
+        if (_data->user_onRequest != NULL) {
+ 558:	30 97       	sbiw	r30, 0x00	; 0
+ 55a:	09 f0       	breq	.+2      	; 0x55e <__vector_24+0x6c>
+ 55c:	09 95       	icall
+ 55e:	8d 81       	ldd	r24, Y+5	; 0x05
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:581
+          _data->user_onRequest();
+ 560:	88 23       	and	r24, r24
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:583
+        }
+        if ((*txHead) == 0) {                   // If no data to transmit, send NACK
+ 562:	19 f1       	breq	.+70     	; 0x5aa <__vector_24+0xb8>
+__vector_24():
+ 564:	83 e0       	ldi	r24, 0x03	; 3
+pushSleep():
+ 566:	90 91 50 00 	lds	r25, 0x0050	; 0x800050 <digital_pin_to_bit_mask+0x7f719a>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:672
+      sleepStackLoc = SLPCTRL.CTRLA;        // save sleep settings to sleepStack
+      SLPCTRL.CTRLA = sleepStackLoc & 0x01; // Set to IDLE if sleep was enabled
+    }
+    sleepStack = sleepStackLoc;
+  #else
+    sleepStack = SLPCTRL.CTRLA;           // save old sleep State
+ 56a:	90 93 10 38 	sts	0x3810, r25	; 0x803810 <sleepStack>
+ 56e:	91 70       	andi	r25, 0x01	; 1
+ 570:	90 93 50 00 	sts	0x0050, r25	; 0x800050 <digital_pin_to_bit_mask+0x7f719a>
+TWI_HandleSlaveIRQ():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:673
+    SLPCTRL.CTRLA = sleepStack & 0x01;    // only leave the SEN bit, if it was set
+ 574:	e8 81       	ld	r30, Y
+ 576:	f9 81       	ldd	r31, Y+1	; 0x01
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:639
+          action = TWI_ACKACT_bm | TWI_SCMD_COMPTRANS_gc;  // "Execute ACK Action succeeded by waiting for any Start (S/Sr) condition"
+        }
+      }
+    }
+  }
+  _data->_module->SCTRLB = action;  // using local variable (register) reduces the amount of loading _module
+ 578:	82 87       	std	Z+10, r24	; 0x0a
+__vector_24():
+ 57a:	ff 91       	pop	r31
+ 57c:	ef 91       	pop	r30
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:979
+  TwoWire::onSlaveIRQ(&TWI0);
+}
+ 57e:	df 91       	pop	r29
+ 580:	cf 91       	pop	r28
+ 582:	bf 91       	pop	r27
+ 584:	af 91       	pop	r26
+ 586:	9f 91       	pop	r25
+ 588:	8f 91       	pop	r24
+ 58a:	7f 91       	pop	r23
+ 58c:	6f 91       	pop	r22
+ 58e:	5f 91       	pop	r21
+ 590:	4f 91       	pop	r20
+ 592:	3f 91       	pop	r19
+ 594:	2f 91       	pop	r18
+ 596:	1f 91       	pop	r17
+ 598:	0f 90       	pop	r0
+ 59a:	0f be       	out	0x3f, r0	; 63
+ 59c:	0f 90       	pop	r0
+ 59e:	1f 90       	pop	r1
+ 5a0:	18 95       	reti
+TWI_HandleSlaveIRQ():
+ 5a2:	1c 83       	std	Y+4, r17	; 0x04
+ 5a4:	1e 82       	std	Y+6, r1	; 0x06
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:590
+        } else {
+          action = TWI_SCMD_RESPONSE_gc;        // "Execute Acknowledge Action succeeded by reception of next byte"
+        }
+      } else {                          // Master is writing
+        action = TWI_SCMD_RESPONSE_gc;  // "Execute Acknowledge Action succeeded by reception of next byte"
+        (*address) = payload;           // saving address to expose to the user sketch
+ 5a6:	1f 82       	std	Y+7, r1	; 0x07
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:591
+        (*rxHead) = 0;                  // reset buffer positions so the Master can start writing at zero.
+ 5a8:	dd cf       	rjmp	.-70     	; 0x564 <__vector_24+0x72>
+__vector_24():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:592
+        (*rxTail) = 0;
+ 5aa:	86 e0       	ldi	r24, 0x06	; 6
+ 5ac:	dc cf       	rjmp	.-72     	; 0x566 <__vector_24+0x74>
+popSleep():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:584
+
+        if (_data->user_onRequest != NULL) {
+          _data->user_onRequest();
+        }
+        if ((*txHead) == 0) {                   // If no data to transmit, send NACK
+          action = TWI_ACKACT_bm | TWI_SCMD_COMPTRANS_gc;  // NACK + "Wait for any Start (S/Sr) condition"
+ 5ae:	80 91 10 38 	lds	r24, 0x3810	; 0x803810 <sleepStack>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:690
+        sleepStackLoc = 0;              // reset everything
+      }
+      sleepStack = sleepStackLoc;
+    }
+  #else
+    SLPCTRL.CTRLA = sleepStack;
+ 5b2:	80 93 50 00 	sts	0x0050, r24	; 0x800050 <digital_pin_to_bit_mask+0x7f719a>
+TWI_HandleSlaveIRQ():
+ 5b6:	eb 85       	ldd	r30, Y+11	; 0x0b
+ 5b8:	fc 85       	ldd	r31, Y+12	; 0x0c
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:597
+        (*rxTail) = 0;
+      }
+      pushSleep();
+    } else {                            // Stop bit set
+      popSleep();
+      if (_data->user_onReceive != NULL) {
+ 5ba:	30 97       	sbiw	r30, 0x00	; 0
+ 5bc:	29 f0       	breq	.+10     	; 0x5c8 <__vector_24+0xd6>
+ 5be:	8e 81       	ldd	r24, Y+6	; 0x06
+ 5c0:	88 23       	and	r24, r24
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:598
+        if ((*rxHead) > 0) {
+ 5c2:	11 f0       	breq	.+4      	; 0x5c8 <__vector_24+0xd6>
+ 5c4:	90 e0       	ldi	r25, 0x00	; 0
+ 5c6:	09 95       	icall
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:599
+          _data->user_onReceive((*rxHead));
+ 5c8:	1e 82       	std	Y+6, r1	; 0x06
+ 5ca:	1d 82       	std	Y+5, r1	; 0x05
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:603
+        }
+      }
+      action = TWI_SCMD_COMPTRANS_gc;  // "Wait for any Start (S/Sr) condition"
+      (*rxHead) = 0;
+ 5cc:	1f 82       	std	Y+7, r1	; 0x07
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:604
+      (*txHead) = 0;
+ 5ce:	18 86       	std	Y+8, r1	; 0x08
+__vector_24():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:605
+      (*rxTail) = 0;
+ 5d0:	82 e0       	ldi	r24, 0x02	; 2
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:606
+      (*txTail) = 0;
+ 5d2:	d0 cf       	rjmp	.-96     	; 0x574 <__vector_24+0x82>
+TWI_HandleSlaveIRQ():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:623
+        if ((*txTail) < (*txHead)) {            // Data is available
+          _data->_module->SDATA = txBuffer[(*txTail)];  // Writing to the register to send data
+          (*txTail)++;                            // Increment counter for sent bytes
+          action = TWI_SCMD_RESPONSE_gc;          // "Execute a byte read operation followed by Acknowledge Action"
+        } else {                                // No more data available
+          action = TWI_SCMD_COMPTRANS_gc;         // "Wait for any Start (S/Sr) condition"
+ 5d4:	87 ff       	sbrs	r24, 7
+ 5d6:	2f c0       	rjmp	.+94     	; 0x636 <__vector_24+0x144>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:608
+      (*rxHead) = 0;
+      (*txHead) = 0;
+      (*rxTail) = 0;
+      (*txTail) = 0;
+    }
+  } else if (clientStatus & TWI_DIF_bm) { // Data bit set
+ 5d8:	81 ff       	sbrs	r24, 1
+ 5da:	1e c0       	rjmp	.+60     	; 0x618 <__vector_24+0x126>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:609
+    if (clientStatus & TWI_DIR_bm) {        // Master is reading
+ 5dc:	88 71       	andi	r24, 0x18	; 24
+ 5de:	39 f0       	breq	.+14     	; 0x5ee <__vector_24+0xfc>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:610
+      if ((clientStatus & (TWI_COLL_bm | TWI_RXACK_bm)) &&  // If a collision was detected, or RXACK bit is set AND
+ 5e0:	8a 81       	ldd	r24, Y+2	; 0x02
+ 5e2:	83 ff       	sbrs	r24, 3
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:611
+          (true == _data->_bools._ackMatters)) {            // And we have to check for it
+ 5e4:	04 c0       	rjmp	.+8      	; 0x5ee <__vector_24+0xfc>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:610
+      (*rxTail) = 0;
+      (*txTail) = 0;
+    }
+  } else if (clientStatus & TWI_DIF_bm) { // Data bit set
+    if (clientStatus & TWI_DIR_bm) {        // Master is reading
+      if ((clientStatus & (TWI_COLL_bm | TWI_RXACK_bm)) &&  // If a collision was detected, or RXACK bit is set AND
+ 5e6:	1d 82       	std	Y+5, r1	; 0x05
+ 5e8:	87 7f       	andi	r24, 0xF7	; 247
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:612
+          (true == _data->_bools._ackMatters)) {            // And we have to check for it
+        (*txHead) = 0;                          // Abort further data writes
+ 5ea:	8a 83       	std	Y+2, r24	; 0x02
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:613
+        _data->_bools._ackMatters = false;      // stop checking for NACK
+ 5ec:	f1 cf       	rjmp	.-30     	; 0x5d0 <__vector_24+0xde>
+ 5ee:	8b 81       	ldd	r24, Y+3	; 0x03
+ 5f0:	8f 5f       	subi	r24, 0xFF	; 255
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:616
+        action = TWI_SCMD_COMPTRANS_gc;         // "Wait for any Start (S/Sr) condition"
+      } else {                                // RXACK bit not set, no COLL
+        _data->_bytesTransmittedS++;            // increment bytes transmitted counter (for register model)
+ 5f2:	8b 83       	std	Y+3, r24	; 0x03
+ 5f4:	8a 81       	ldd	r24, Y+2	; 0x02
+ 5f6:	88 60       	ori	r24, 0x08	; 8
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:617
+        _data->_bools._ackMatters = true;       // start checking for NACK
+ 5f8:	8a 83       	std	Y+2, r24	; 0x02
+ 5fa:	a8 85       	ldd	r26, Y+8	; 0x08
+ 5fc:	8d 81       	ldd	r24, Y+5	; 0x05
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:618
+        if ((*txTail) < (*txHead)) {            // Data is available
+ 5fe:	a8 17       	cp	r26, r24
+ 600:	38 f7       	brcc	.-50     	; 0x5d0 <__vector_24+0xde>
+ 602:	ac 0f       	add	r26, r28
+ 604:	bd 2f       	mov	r27, r29
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:619
+          _data->_module->SDATA = txBuffer[(*txTail)];  // Writing to the register to send data
+ 606:	b1 1d       	adc	r27, r1
+ 608:	1d 96       	adiw	r26, 0x0d	; 13
+ 60a:	8c 91       	ld	r24, X
+ 60c:	85 87       	std	Z+13, r24	; 0x0d
+ 60e:	88 85       	ldd	r24, Y+8	; 0x08
+ 610:	8f 5f       	subi	r24, 0xFF	; 255
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:620
+          (*txTail)++;                            // Increment counter for sent bytes
+ 612:	88 87       	std	Y+8, r24	; 0x08
+__vector_24():
+ 614:	83 e0       	ldi	r24, 0x03	; 3
+ 616:	ae cf       	rjmp	.-164    	; 0x574 <__vector_24+0x82>
+TWI_HandleSlaveIRQ():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:632
+      uint8_t payload = _data->_module->SDATA;      // reading SDATA will clear the DATA IRQ flag
+      if ((*rxHead) < BUFFER_LENGTH) {              // make sure that we don't have a buffer overflow in case Master ignores NACK
+        rxBuffer[(*rxHead)] = payload;              // save data
+        (*rxHead)++;                                  // Advance Head
+        if ((*rxHead) < BUFFER_LENGTH) {              // if buffer is not yet full
+          action = TWI_SCMD_RESPONSE_gc;                // "Execute Acknowledge Action succeeded by reception of next byte"
+ 618:	85 85       	ldd	r24, Z+13	; 0x0d
+ 61a:	ee 81       	ldd	r30, Y+6	; 0x06
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:627
+        } else {                                // No more data available
+          action = TWI_SCMD_COMPTRANS_gc;         // "Wait for any Start (S/Sr) condition"
+        }
+      }
+    } else {                                  // Master is writing
+      uint8_t payload = _data->_module->SDATA;      // reading SDATA will clear the DATA IRQ flag
+ 61c:	e0 32       	cpi	r30, 0x20	; 32
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:628
+      if ((*rxHead) < BUFFER_LENGTH) {              // make sure that we don't have a buffer overflow in case Master ignores NACK
+ 61e:	58 f4       	brcc	.+22     	; 0x636 <__vector_24+0x144>
+ 620:	ec 0f       	add	r30, r28
+ 622:	fd 2f       	mov	r31, r29
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:629
+        rxBuffer[(*rxHead)] = payload;              // save data
+ 624:	f1 1d       	adc	r31, r1
+ 626:	85 a7       	std	Z+45, r24	; 0x2d
+ 628:	8e 81       	ldd	r24, Y+6	; 0x06
+ 62a:	8f 5f       	subi	r24, 0xFF	; 255
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:630
+        (*rxHead)++;                                  // Advance Head
+ 62c:	8e 83       	std	Y+6, r24	; 0x06
+ 62e:	80 32       	cpi	r24, 0x20	; 32
+ 630:	88 f3       	brcs	.-30     	; 0x614 <__vector_24+0x122>
+__vector_24():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:631
+        if ((*rxHead) < BUFFER_LENGTH) {              // if buffer is not yet full
+ 632:	86 e0       	ldi	r24, 0x06	; 6
+ 634:	9f cf       	rjmp	.-194    	; 0x574 <__vector_24+0x82>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:634
+          action = TWI_SCMD_RESPONSE_gc;                // "Execute Acknowledge Action succeeded by reception of next byte"
+        } else {                                      // else buffer would overflow with next byte
+          action = TWI_ACKACT_bm | TWI_SCMD_COMPTRANS_gc;  // "Execute ACK Action succeeded by waiting for any Start (S/Sr) condition"
+ 636:	80 e0       	ldi	r24, 0x00	; 0
+ 638:	9d cf       	rjmp	.-198    	; 0x574 <__vector_24+0x82>
+
+0000063a <main>:
+main():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:563
+
+  #if defined(TWI_MANDS)
+    _data->_bools._toggleStreamFn = 0x01;
+  #endif
+
+  uint8_t action = 0;
+ 63a:	88 ed       	ldi	r24, 0xD8	; 216
+ 63c:	90 e0       	ldi	r25, 0x00	; 0
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1536
+    #if (defined(CLOCK_TUNE_INTERNAL))
+      tune_internal(); // Will be inlined as only called once. Just too long and ugly to put two implementations in middle of this.
+    #else
+      #if (F_CPU == 20000000)
+        /* No division on clock */
+        _PROTECTED_WRITE(CLKCTRL_MCLKCTRLB, 0x00);
+ 63e:	84 bf       	out	0x34, r24	; 52
+ 640:	90 93 61 00 	sts	0x0061, r25	; 0x800061 <digital_pin_to_bit_mask+0x7f71ab>
+init_ADC0():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1651
+
+
+/********************************* ADC ****************************************/
+void __attribute__((weak)) init_ADC0() {
+  ADC_t* pADC;
+  _fastPtr_d(pADC, &ADC0);
+ 644:	e0 e0       	ldi	r30, 0x00	; 0
+ 646:	f6 e0       	ldi	r31, 0x06	; 6
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1672
+   **************************************************************************/
+    //                              30 MHz / 32 = 937 kHz,  32 MHz / 32 =  1 MHz.
+    #if   F_CPU   > 24000000     // 24 MHz / 16 = 1.5 MHz,  25 MHz / 32 =  780 kHz
+      pADC->CTRLC  = ADC_PRESC_DIV32_gc | ADC_REFSEL_VDDREF_gc | ADC_SAMPCAP_bm;
+    #elif F_CPU  >= 12000000    // 16 MHz / 16 = 1.0 MHz,  20 MHz / 16 = 1.25 MHz
+      pADC->CTRLC  = ADC_PRESC_DIV16_gc | ADC_REFSEL_VDDREF_gc | ADC_SAMPCAP_bm;
+ 648:	83 e5       	ldi	r24, 0x53	; 83
+ 64a:	82 83       	std	Z+2, r24	; 0x02
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1683
+      pADC->CTRLC  =  ADC_PRESC_DIV2_gc | ADC_REFSEL_VDDREF_gc | ADC_SAMPCAP_bm;
+    #endif
+    #if   (F_CPU == 6000000 || F_CPU == 12000000 || F_CPU == 24000000 || F_CPU ==25000000)
+      pADC->SAMPCTRL = (7); // 9 ADC clocks, 12 us
+    #elif (F_CPU == 5000000 || F_CPU == 10000000 || F_CPU == 20000000)
+      pADC->SAMPCTRL = (13);   // 15 ADC clock,s 12 us
+ 64c:	8d e0       	ldi	r24, 0x0D	; 13
+ 64e:	85 83       	std	Z+5, r24	; 0x05
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1687
+    #else
+      pADC->SAMPCTRL = (10); // 12 ADC clocks, 12 us
+    #endif
+    pADC->CTRLD    = ADC_INITDLY_DLY16_gc;
+ 650:	80 e2       	ldi	r24, 0x20	; 32
+ 652:	83 83       	std	Z+3, r24	; 0x03
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1688
+    pADC->CTRLA    = ADC_ENABLE_bm;
+ 654:	81 e0       	ldi	r24, 0x01	; 1
+ 656:	80 83       	st	Z, r24
+init_TCA0():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1778
+
+void __attribute__((weak)) init_TCA0() {
+  /*  TYPE A TIMER   */
+  #if !defined(TCA_BUFFERED_3PIN)
+    #if defined(PORTMUX_CTRLC)
+      PORTMUX.CTRLC = TCA_PORTMUX;
+ 658:	10 92 02 02 	sts	0x0202, r1	; 0x800202 <digital_pin_to_bit_mask+0x7f734c>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1782
+    #else
+      PORTMUX.TCAROUTEA = TCA_PORTMUX;
+    #endif
+    TCA0.SPLIT.CTRLD   = TCA_SPLIT_SPLITM_bm;
+ 65c:	80 93 03 0a 	sts	0x0A03, r24	; 0x800a03 <digital_pin_to_bit_mask+0x7f7b4d>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1783
+    TCA0.SPLIT.LPER    = PWM_TIMER_PERIOD;
+ 660:	9e ef       	ldi	r25, 0xFE	; 254
+ 662:	90 93 26 0a 	sts	0x0A26, r25	; 0x800a26 <digital_pin_to_bit_mask+0x7f7b70>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1784
+    TCA0.SPLIT.HPER    = PWM_TIMER_PERIOD;
+ 666:	90 93 27 0a 	sts	0x0A27, r25	; 0x800a27 <digital_pin_to_bit_mask+0x7f7b71>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1785
+    TCA0.SPLIT.CTRLA   = (TIMERA_PRESCALER_bm | TCA_SPLIT_ENABLE_bm);
+ 66a:	9b e0       	ldi	r25, 0x0B	; 11
+ 66c:	90 93 00 0a 	sts	0x0A00, r25	; 0x800a00 <digital_pin_to_bit_mask+0x7f7b4a>
+init_millis():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1427
+      #endif
+    #elif defined(MILLIS_USE_TIMERA1)
+      TCA1.SPLIT.INTCTRL |= TCA_SPLIT_HUNF_bm;
+    #elif defined(MILLIS_USE_TIMERD0)
+      TCD_t* pTCD;
+      _fastPtr_d(pTCD, &TCD0);
+ 670:	e0 e8       	ldi	r30, 0x80	; 128
+ 672:	fa e0       	ldi	r31, 0x0A	; 10
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1428
+      pTCD->CMPBCLR        = TIME_TRACKING_TIMER_PERIOD; // essentially, this is TOP
+ 674:	2d ef       	ldi	r18, 0xFD	; 253
+ 676:	31 e0       	ldi	r19, 0x01	; 1
+ 678:	26 a7       	std	Z+46, r18	; 0x2e
+ 67a:	37 a7       	std	Z+47, r19	; 0x2f
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1429
+      pTCD->CTRLB          = 0x00; // oneramp mode
+ 67c:	11 82       	std	Z+1, r1	; 0x01
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1430
+      pTCD->CTRLC          = 0x80;
+ 67e:	90 e8       	ldi	r25, 0x80	; 128
+ 680:	92 83       	std	Z+2, r25	; 0x02
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1431
+      pTCD->INTCTRL        = 0x01; // enable interrupt
+ 682:	84 87       	std	Z+12, r24	; 0x0c
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/wiring.c:1432
+      pTCD->CTRLA          = TIMERD0_PRESCALER | 0x01; // set clock source and enable!
+ 684:	81 e1       	ldi	r24, 0x11	; 17
+ 686:	80 83       	st	Z, r24
+main():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/main.cpp:53
+ * just waiting for the DU-series now                                                           */
+int main() {
+  onBeforeInit(); // Emnpty callback called before init but after the .init stuff. First normal code executed
+  init(); // Interrupts are turned on just prior to init() returning.
+  initVariant();
+  if (!onAfterInit()) sei();  // enable interrupts.
+ 688:	78 94       	sei
+onRequest():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:963
+ *@param      void (*function)(void) - a void returning function that does not accept any parameters
+ *
+ *@return     void
+ */
+void TwoWire::onRequest(void (*function)(void)) {
+  vars.user_onRequest = function;
+ 68a:	8f e0       	ldi	r24, 0x0F	; 15
+ 68c:	91 e0       	ldi	r25, 0x01	; 1
+ 68e:	80 93 22 38 	sts	0x3822, r24	; 0x803822 <Wire+0x11>
+ 692:	90 93 23 38 	sts	0x3823, r25	; 0x803823 <Wire+0x12>
+TWI_SlaveInit():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:95
+  #if defined(TWI_MANDS)                      // Check if the user wants to use Master AND Slave
+    if (_data->_bools._clientEnabled  == 1) {  // Master is allowed to be enabled, don't re-enable the client though
+      return;
+    }
+  #else                                         // Master or Slave
+    if ((_data->_bools._hostEnabled | _data->_bools._clientEnabled) == 1) {  //If either are enabled
+ 696:	80 91 1b 38 	lds	r24, 0x381B	; 0x80381b <Wire+0xa>
+ 69a:	81 fd       	sbrc	r24, 1
+ 69c:	17 c0       	rjmp	.+46     	; 0x6cc <main+0x92>
+ 69e:	82 fd       	sbrc	r24, 2
+ 6a0:	15 c0       	rjmp	.+42     	; 0x6cc <main+0x92>
+TWI0_ClearPins():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi_pins.c:140
+    #endif
+  #elif defined(MEGATINYCORE)  /* tinyAVR 0/1-series */
+    #if (MEGATINYCORE_SERIES < 2) // Hey, this erratum isn't listed for the 2-series, so we don't have to do this!
+      // 6 bytes of flash saved for 2-series parts, aww yeah!
+      #if defined(PORTMUX_TWI0_bm)
+        if ((PORTMUX.CTRLB & PORTMUX_TWI0_bm)) {
+ 6a2:	80 91 01 02 	lds	r24, 0x0201	; 0x800201 <digital_pin_to_bit_mask+0x7f734b>
+ 6a6:	84 ff       	sbrs	r24, 4
+ 6a8:	29 c1       	rjmp	.+594    	; 0x8fc <__DATA_REGION_LENGTH__+0xfc>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi_pins.c:143
+          // make sure we don't get errata'ed - make sure their bits in the
+          // PORTx.OUT registers are 0.
+          PORTA.OUTCLR = 0x06;  // if swapped it's on PA1, PA2
+ 6aa:	86 e0       	ldi	r24, 0x06	; 6
+ 6ac:	80 93 06 04 	sts	0x0406, r24	; 0x800406 <digital_pin_to_bit_mask+0x7f7550>
+TWI_SlaveInit():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:110
+    }
+  #else
+    TWI0_ClearPins();
+  #endif
+
+  _data->_bools._clientEnabled = 1;
+ 6b0:	80 91 1b 38 	lds	r24, 0x381B	; 0x80381b <Wire+0xa>
+ 6b4:	84 60       	ori	r24, 0x04	; 4
+ 6b6:	80 93 1b 38 	sts	0x381B, r24	; 0x80381b <Wire+0xa>
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:111
+  _data->_module->SADDR        = (address << 1) | receive_broadcast;
+ 6ba:	e0 91 19 38 	lds	r30, 0x3819	; 0x803819 <Wire+0x8>
+ 6be:	f0 91 1a 38 	lds	r31, 0x381A	; 0x80381a <Wire+0x9>
+ 6c2:	8e e1       	ldi	r24, 0x1E	; 30
+ 6c4:	84 87       	std	Z+12, r24	; 0x0c
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:112
+  _data->_module->SADDRMASK    = second_address;
+ 6c6:	16 86       	std	Z+14, r1	; 0x0e
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi.c:113
+  _data->_module->SCTRLA       = TWI_DIEN_bm | TWI_APIEN_bm | TWI_PIEN_bm  | TWI_ENABLE_bm;
+ 6c8:	81 ee       	ldi	r24, 0xE1	; 225
+ 6ca:	81 87       	std	Z+9, r24	; 0x09
+onReceive():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:949
+ *@param      void (*function)(int) - a void returning function that accepts an int as parameter
+ *
+ *@return     void
+ */
+void TwoWire::onReceive(void (*function)(int)) {
+  vars.user_onReceive = function;
+ 6cc:	84 ee       	ldi	r24, 0xE4	; 228
+ 6ce:	91 e0       	ldi	r25, 0x01	; 1
+ 6d0:	80 93 24 38 	sts	0x3824, r24	; 0x803824 <Wire+0x13>
+ 6d4:	90 93 25 38 	sts	0x3825, r25	; 0x803825 <Wire+0x14>
+setup():
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:54
+  //4 - 0xB
+  //5 - 0xC
+  //6 - 0xD
+  Wire.onReceive(receiveEvent); // register event
+
+  pinMode(LED_RED_1,OUTPUT);
+ 6d8:	8a e0       	ldi	r24, 0x0A	; 10
+ 6da:	c1 de       	rcall	.-638    	; 0x45e <pinMode.constprop.11>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:55
+  pinMode(LED_GREEN_1,OUTPUT);
+ 6dc:	8b e0       	ldi	r24, 0x0B	; 11
+ 6de:	bf de       	rcall	.-642    	; 0x45e <pinMode.constprop.11>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:56
+  pinMode(LED_BLUE_1,OUTPUT);
+ 6e0:	8c e0       	ldi	r24, 0x0C	; 12
+ 6e2:	bd de       	rcall	.-646    	; 0x45e <pinMode.constprop.11>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:57
+  pinMode(LED_RED_2,OUTPUT);
+ 6e4:	85 e0       	ldi	r24, 0x05	; 5
+ 6e6:	bb de       	rcall	.-650    	; 0x45e <pinMode.constprop.11>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:58
+  pinMode(LED_GREEN_2,OUTPUT);
+ 6e8:	86 e0       	ldi	r24, 0x06	; 6
+ 6ea:	b9 de       	rcall	.-654    	; 0x45e <pinMode.constprop.11>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:59
+  pinMode(LED_BLUE_2,OUTPUT);
+ 6ec:	87 e0       	ldi	r24, 0x07	; 7
+ 6ee:	b7 de       	rcall	.-658    	; 0x45e <pinMode.constprop.11>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:61
+//  
+  digitalWrite(LED_RED_1,LOW); 
+ 6f0:	60 e0       	ldi	r22, 0x00	; 0
+ 6f2:	8a e0       	ldi	r24, 0x0A	; 10
+ 6f4:	cb dd       	rcall	.-1130   	; 0x28c <digitalWrite>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:62
+  digitalWrite(LED_GREEN_1,HIGH);
+ 6f6:	61 e0       	ldi	r22, 0x01	; 1
+ 6f8:	8b e0       	ldi	r24, 0x0B	; 11
+ 6fa:	c8 dd       	rcall	.-1136   	; 0x28c <digitalWrite>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:63
+  digitalWrite(LED_BLUE_1,HIGH);
+ 6fc:	61 e0       	ldi	r22, 0x01	; 1
+ 6fe:	8c e0       	ldi	r24, 0x0C	; 12
+ 700:	c5 dd       	rcall	.-1142   	; 0x28c <digitalWrite>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:64
+  digitalWrite(LED_RED_2,LOW);
+ 702:	60 e0       	ldi	r22, 0x00	; 0
+ 704:	85 e0       	ldi	r24, 0x05	; 5
+ 706:	c2 dd       	rcall	.-1148   	; 0x28c <digitalWrite>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:65
+  digitalWrite(LED_GREEN_2,HIGH);
+ 708:	61 e0       	ldi	r22, 0x01	; 1
+ 70a:	86 e0       	ldi	r24, 0x06	; 6
+ 70c:	bf dd       	rcall	.-1154   	; 0x28c <digitalWrite>
+ 70e:	61 e0       	ldi	r22, 0x01	; 1
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:66
+  digitalWrite(LED_BLUE_2,HIGH);
+ 710:	87 e0       	ldi	r24, 0x07	; 7
+ 712:	bc dd       	rcall	.-1160   	; 0x28c <digitalWrite>
+ 714:	82 e0       	ldi	r24, 0x02	; 2
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:67
+  cosine = analogRead(COS_IN)-512 - cosine_off;
+ 716:	8d de       	rcall	.-742    	; 0x432 <analogRead>
+ 718:	92 50       	subi	r25, 0x02	; 2
+ 71a:	80 93 04 38 	sts	0x3804, r24	; 0x803804 <cosine>
+ 71e:	90 93 05 38 	sts	0x3805, r25	; 0x803805 <cosine+0x1>
+ 722:	83 e0       	ldi	r24, 0x03	; 3
+ 724:	86 de       	rcall	.-756    	; 0x432 <analogRead>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:68
+  sine = analogRead(SIN_IN)-512 - sine_off;
+ 726:	ec 01       	movw	r28, r24
+ 728:	d2 50       	subi	r29, 0x02	; 2
+ 72a:	c0 93 02 38 	sts	0x3802, r28	; 0x803802 <sine>
+ 72e:	d0 93 03 38 	sts	0x3803, r29	; 0x803803 <sine+0x1>
+ 732:	60 91 04 38 	lds	r22, 0x3804	; 0x803804 <cosine>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:69
+  current_distance = atan2(sine,cosine)*180/3.14159*1000/360+500;
+ 736:	70 91 05 38 	lds	r23, 0x3805	; 0x803805 <cosine+0x1>
+ 73a:	07 2e       	mov	r0, r23
+ 73c:	00 0c       	add	r0, r0
+ 73e:	88 0b       	sbc	r24, r24
+ 740:	99 0b       	sbc	r25, r25
+ 742:	6f d2       	rcall	.+1246   	; 0xc22 <__floatsisf>
+ 744:	6b 01       	movw	r12, r22
+ 746:	7c 01       	movw	r14, r24
+ 748:	be 01       	movw	r22, r28
+ 74a:	dd 0f       	add	r29, r29
+ 74c:	88 0b       	sbc	r24, r24
+ 74e:	99 0b       	sbc	r25, r25
+ 750:	68 d2       	rcall	.+1232   	; 0xc22 <__floatsisf>
+ 752:	a7 01       	movw	r20, r14
+ 754:	96 01       	movw	r18, r12
+ 756:	77 d1       	rcall	.+750    	; 0xa46 <atan2>
+ 758:	20 e0       	ldi	r18, 0x00	; 0
+ 75a:	30 e0       	ldi	r19, 0x00	; 0
+ 75c:	44 e3       	ldi	r20, 0x34	; 52
+ 75e:	53 e4       	ldi	r21, 0x43	; 67
+ 760:	18 d3       	rcall	.+1584   	; 0xd92 <__mulsf3>
+ 762:	20 ed       	ldi	r18, 0xD0	; 208
+ 764:	3f e0       	ldi	r19, 0x0F	; 15
+ 766:	49 e4       	ldi	r20, 0x49	; 73
+ 768:	50 e4       	ldi	r21, 0x40	; 64
+ 76a:	c0 d1       	rcall	.+896    	; 0xaec <__divsf3>
+ 76c:	20 e0       	ldi	r18, 0x00	; 0
+ 76e:	30 e0       	ldi	r19, 0x00	; 0
+ 770:	4a e7       	ldi	r20, 0x7A	; 122
+ 772:	54 e4       	ldi	r21, 0x44	; 68
+ 774:	0e d3       	rcall	.+1564   	; 0xd92 <__mulsf3>
+ 776:	20 e0       	ldi	r18, 0x00	; 0
+ 778:	30 e0       	ldi	r19, 0x00	; 0
+ 77a:	44 eb       	ldi	r20, 0xB4	; 180
+ 77c:	53 e4       	ldi	r21, 0x43	; 67
+ 77e:	b6 d1       	rcall	.+876    	; 0xaec <__divsf3>
+ 780:	20 e0       	ldi	r18, 0x00	; 0
+ 782:	30 e0       	ldi	r19, 0x00	; 0
+ 784:	4a ef       	ldi	r20, 0xFA	; 250
+ 786:	53 e4       	ldi	r21, 0x43	; 67
+ 788:	eb d0       	rcall	.+470    	; 0x960 <__addsf3>
+ 78a:	18 d2       	rcall	.+1072   	; 0xbbc <__fixsfsi>
+ 78c:	60 93 00 38 	sts	0x3800, r22	; 0x803800 <__DATA_REGION_ORIGIN__>
+ 790:	70 93 01 38 	sts	0x3801, r23	; 0x803801 <__DATA_REGION_ORIGIN__+0x1>
+ 794:	60 93 6a 38 	sts	0x386A, r22	; 0x80386a <previous_distance>
+ 798:	70 93 6b 38 	sts	0x386B, r23	; 0x80386b <previous_distance+0x1>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:70
+  previous_distance = current_distance;
+ 79c:	10 92 66 38 	sts	0x3866, r1	; 0x803866 <absolute_distance>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:71
+  absolute_distance = current_distance - previous_distance;
+ 7a0:	10 92 67 38 	sts	0x3867, r1	; 0x803867 <absolute_distance+0x1>
+loop():
+ 7a4:	c8 ee       	ldi	r28, 0xE8	; 232
+ 7a6:	d3 e0       	ldi	r29, 0x03	; 3
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:105
+  if (abs(difference) > Switch_Bound)
+  {
+      // Moving Up
+      if (difference < 0)
+      {
+        absolute_distance += ((Upper_Bound - previous_distance) + (current_distance - Lower_Bound));
+ 7a8:	00 e8       	ldi	r16, 0x80	; 128
+ 7aa:	18 e3       	ldi	r17, 0x38	; 56
+ 7ac:	4c e6       	ldi	r20, 0x6C	; 108
+ 7ae:	e4 2e       	mov	r14, r20
+ 7b0:	48 e3       	ldi	r20, 0x38	; 56
+ 7b2:	f4 2e       	mov	r15, r20
+ 7b4:	82 e0       	ldi	r24, 0x02	; 2
+ 7b6:	3d de       	rcall	.-902    	; 0x432 <analogRead>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:78
+
+void loop() {
+
+  // Take 10 samples
+  for (int i = 0; i < SAMPLE_SIZE; i++) {
+    cosineSamples[i] = analogRead(COS_IN) - 512 - cosine_off;
+ 7b8:	92 50       	subi	r25, 0x02	; 2
+ 7ba:	f8 01       	movw	r30, r16
+ 7bc:	81 93       	st	Z+, r24
+ 7be:	91 93       	st	Z+, r25
+ 7c0:	8f 01       	movw	r16, r30
+ 7c2:	83 e0       	ldi	r24, 0x03	; 3
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:79
+    sineSamples[i] = analogRead(SIN_IN) - 512 - sine_off;
+ 7c4:	36 de       	rcall	.-916    	; 0x432 <analogRead>
+ 7c6:	92 50       	subi	r25, 0x02	; 2
+ 7c8:	f7 01       	movw	r30, r14
+ 7ca:	81 93       	st	Z+, r24
+ 7cc:	91 93       	st	Z+, r25
+ 7ce:	7f 01       	movw	r14, r30
+_delay_us():
+ 7d0:	83 ef       	ldi	r24, 0xF3	; 243
+ 7d2:	91 e0       	ldi	r25, 0x01	; 1
+c:\users\taimu\appdata\local\arduino15\packages\dxcore\tools\avr-gcc\7.3.0-atmel3.6.1-azduino7b1\avr\include\util/delay.h:276
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 7d4:	01 97       	sbiw	r24, 0x01	; 1
+ 7d6:	f1 f7       	brne	.-4      	; 0x7d4 <main+0x19a>
+ 7d8:	00 c0       	rjmp	.+0      	; 0x7da <main+0x1a0>
+ 7da:	00 00       	nop
+loop():
+ 7dc:	98 e3       	ldi	r25, 0x38	; 56
+ 7de:	04 39       	cpi	r16, 0x94	; 148
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:77
+}
+
+void loop() {
+
+  // Take 10 samples
+  for (int i = 0; i < SAMPLE_SIZE; i++) {
+ 7e0:	19 07       	cpc	r17, r25
+ 7e2:	41 f7       	brne	.-48     	; 0x7b4 <main+0x17a>
+ 7e4:	80 e8       	ldi	r24, 0x80	; 128
+ 7e6:	98 e3       	ldi	r25, 0x38	; 56
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:84
+    sineSamples[i] = analogRead(SIN_IN) - 512 - sine_off;
+    delayMicroseconds(100); // small delay between readings to allow ADC to stabilize
+  }
+
+    // Sort the samples to find the median
+  sortArray(cosineSamples, SAMPLE_SIZE);
+ 7e8:	93 dc       	rcall	.-1754   	; 0x110 <sortArray(int*, int) [clone .constprop.5]>
+ 7ea:	8c e6       	ldi	r24, 0x6C	; 108
+ 7ec:	98 e3       	ldi	r25, 0x38	; 56
+ 7ee:	90 dc       	rcall	.-1760   	; 0x110 <sortArray(int*, int) [clone .constprop.5]>
+calculateMedian():
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:85
+  sortArray(sineSamples, SAMPLE_SIZE);
+ 7f0:	60 91 88 38 	lds	r22, 0x3888	; 0x803888 <cosineSamples+0x8>
+ 7f4:	70 91 89 38 	lds	r23, 0x3889	; 0x803889 <cosineSamples+0x9>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:228
+
+int calculateMedian(int arr[], int size) {
+  if (size % 2 != 0)
+    return arr[size / 2]; // if size is odd, return the middle number
+  else
+    return (arr[(size - 1) / 2] + arr[size / 2]) / 2; // if size is even, return the average of the two middle numbers
+ 7f8:	80 91 8a 38 	lds	r24, 0x388A	; 0x80388a <cosineSamples+0xa>
+ 7fc:	90 91 8b 38 	lds	r25, 0x388B	; 0x80388b <cosineSamples+0xb>
+ 800:	86 0f       	add	r24, r22
+ 802:	97 1f       	adc	r25, r23
+ 804:	97 fd       	sbrc	r25, 7
+ 806:	01 96       	adiw	r24, 0x01	; 1
+ 808:	95 95       	asr	r25
+ 80a:	87 95       	ror	r24
+loop():
+ 80c:	80 93 04 38 	sts	0x3804, r24	; 0x803804 <cosine>
+ 810:	90 93 05 38 	sts	0x3805, r25	; 0x803805 <cosine+0x1>
+calculateMedian():
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:88
+    // Sort the samples to find the median
+  sortArray(cosineSamples, SAMPLE_SIZE);
+  sortArray(sineSamples, SAMPLE_SIZE);
+
+  // Calculate and print the median
+  cosine = calculateMedian(cosineSamples, SAMPLE_SIZE);
+ 814:	60 91 74 38 	lds	r22, 0x3874	; 0x803874 <sineSamples+0x8>
+ 818:	70 91 75 38 	lds	r23, 0x3875	; 0x803875 <sineSamples+0x9>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:228
+
+int calculateMedian(int arr[], int size) {
+  if (size % 2 != 0)
+    return arr[size / 2]; // if size is odd, return the middle number
+  else
+    return (arr[(size - 1) / 2] + arr[size / 2]) / 2; // if size is even, return the average of the two middle numbers
+ 81c:	20 91 76 38 	lds	r18, 0x3876	; 0x803876 <sineSamples+0xa>
+ 820:	30 91 77 38 	lds	r19, 0x3877	; 0x803877 <sineSamples+0xb>
+ 824:	62 0f       	add	r22, r18
+ 826:	73 1f       	adc	r23, r19
+ 828:	77 ff       	sbrs	r23, 7
+ 82a:	02 c0       	rjmp	.+4      	; 0x830 <__DATA_REGION_LENGTH__+0x30>
+ 82c:	6f 5f       	subi	r22, 0xFF	; 255
+ 82e:	7f 4f       	sbci	r23, 0xFF	; 255
+ 830:	8b 01       	movw	r16, r22
+ 832:	15 95       	asr	r17
+ 834:	07 95       	ror	r16
+loop():
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:89
+  sortArray(cosineSamples, SAMPLE_SIZE);
+  sortArray(sineSamples, SAMPLE_SIZE);
+
+  // Calculate and print the median
+  cosine = calculateMedian(cosineSamples, SAMPLE_SIZE);
+  sine = calculateMedian(sineSamples, SAMPLE_SIZE);
+ 836:	00 93 02 38 	sts	0x3802, r16	; 0x803802 <sine>
+ 83a:	10 93 03 38 	sts	0x3803, r17	; 0x803803 <sine+0x1>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:92
+
+  
+  current_distance = atan2(sine,cosine)*180/3.14159*1000/360+500;
+ 83e:	bc 01       	movw	r22, r24
+ 840:	99 0f       	add	r25, r25
+ 842:	88 0b       	sbc	r24, r24
+ 844:	99 0b       	sbc	r25, r25
+ 846:	ed d1       	rcall	.+986    	; 0xc22 <__floatsisf>
+ 848:	6b 01       	movw	r12, r22
+ 84a:	7c 01       	movw	r14, r24
+ 84c:	b8 01       	movw	r22, r16
+ 84e:	11 0f       	add	r17, r17
+ 850:	88 0b       	sbc	r24, r24
+ 852:	99 0b       	sbc	r25, r25
+ 854:	e6 d1       	rcall	.+972    	; 0xc22 <__floatsisf>
+ 856:	a7 01       	movw	r20, r14
+ 858:	96 01       	movw	r18, r12
+ 85a:	f5 d0       	rcall	.+490    	; 0xa46 <atan2>
+ 85c:	20 e0       	ldi	r18, 0x00	; 0
+ 85e:	30 e0       	ldi	r19, 0x00	; 0
+ 860:	44 e3       	ldi	r20, 0x34	; 52
+ 862:	53 e4       	ldi	r21, 0x43	; 67
+ 864:	96 d2       	rcall	.+1324   	; 0xd92 <__mulsf3>
+ 866:	20 ed       	ldi	r18, 0xD0	; 208
+ 868:	3f e0       	ldi	r19, 0x0F	; 15
+ 86a:	49 e4       	ldi	r20, 0x49	; 73
+ 86c:	50 e4       	ldi	r21, 0x40	; 64
+ 86e:	3e d1       	rcall	.+636    	; 0xaec <__divsf3>
+ 870:	20 e0       	ldi	r18, 0x00	; 0
+ 872:	30 e0       	ldi	r19, 0x00	; 0
+ 874:	4a e7       	ldi	r20, 0x7A	; 122
+ 876:	54 e4       	ldi	r21, 0x44	; 68
+ 878:	8c d2       	rcall	.+1304   	; 0xd92 <__mulsf3>
+ 87a:	20 e0       	ldi	r18, 0x00	; 0
+ 87c:	30 e0       	ldi	r19, 0x00	; 0
+ 87e:	44 eb       	ldi	r20, 0xB4	; 180
+ 880:	53 e4       	ldi	r21, 0x43	; 67
+ 882:	34 d1       	rcall	.+616    	; 0xaec <__divsf3>
+ 884:	20 e0       	ldi	r18, 0x00	; 0
+ 886:	30 e0       	ldi	r19, 0x00	; 0
+ 888:	4a ef       	ldi	r20, 0xFA	; 250
+ 88a:	53 e4       	ldi	r21, 0x43	; 67
+ 88c:	69 d0       	rcall	.+210    	; 0x960 <__addsf3>
+ 88e:	96 d1       	rcall	.+812    	; 0xbbc <__fixsfsi>
+ 890:	6b 01       	movw	r12, r22
+ 892:	60 93 00 38 	sts	0x3800, r22	; 0x803800 <__DATA_REGION_ORIGIN__>
+ 896:	70 93 01 38 	sts	0x3801, r23	; 0x803801 <__DATA_REGION_ORIGIN__+0x1>
+ 89a:	40 91 6a 38 	lds	r20, 0x386A	; 0x80386a <previous_distance>
+ 89e:	50 91 6b 38 	lds	r21, 0x386B	; 0x80386b <previous_distance+0x1>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:93
+  difference = current_distance - previous_distance;
+ 8a2:	9b 01       	movw	r18, r22
+ 8a4:	24 1b       	sub	r18, r20
+ 8a6:	35 0b       	sbc	r19, r21
+ 8a8:	80 91 68 38 	lds	r24, 0x3868	; 0x803868 <Lower_Bound>
+ 8ac:	90 91 69 38 	lds	r25, 0x3869	; 0x803869 <Lower_Bound+0x1>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:94
+  if (current_distance < Lower_Bound)
+ 8b0:	c8 16       	cp	r12, r24
+ 8b2:	d9 06       	cpc	r13, r25
+ 8b4:	24 f4       	brge	.+8      	; 0x8be <__DATA_REGION_LENGTH__+0xbe>
+ 8b6:	c0 92 68 38 	sts	0x3868, r12	; 0x803868 <Lower_Bound>
+ 8ba:	d0 92 69 38 	sts	0x3869, r13	; 0x803869 <Lower_Bound+0x1>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:96
+  {
+    Lower_Bound = current_distance;
+ 8be:	80 91 66 38 	lds	r24, 0x3866	; 0x803866 <absolute_distance>
+ 8c2:	90 91 67 38 	lds	r25, 0x3867	; 0x803867 <absolute_distance+0x1>
+ 8c6:	b9 01       	movw	r22, r18
+ 8c8:	37 ff       	sbrs	r19, 7
+ 8ca:	04 c0       	rjmp	.+8      	; 0x8d4 <__DATA_REGION_LENGTH__+0xd4>
+ 8cc:	66 27       	eor	r22, r22
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:100
+  }
+
+  // Detect if distance changes abruptly. means a switch has happened
+  if (abs(difference) > Switch_Bound)
+ 8ce:	77 27       	eor	r23, r23
+ 8d0:	62 1b       	sub	r22, r18
+ 8d2:	73 0b       	sbc	r23, r19
+ 8d4:	65 3f       	cpi	r22, 0xF5	; 245
+ 8d6:	71 40       	sbci	r23, 0x01	; 1
+ 8d8:	74 f0       	brlt	.+28     	; 0x8f6 <__DATA_REGION_LENGTH__+0xf6>
+ 8da:	60 91 68 38 	lds	r22, 0x3868	; 0x803868 <Lower_Bound>
+ 8de:	70 91 69 38 	lds	r23, 0x3869	; 0x803869 <Lower_Bound+0x1>
+ 8e2:	37 ff       	sbrs	r19, 7
+ 8e4:	0f c0       	rjmp	.+30     	; 0x904 <__DATA_REGION_LENGTH__+0x104>
+ 8e6:	9e 01       	movw	r18, r28
+ 8e8:	24 1b       	sub	r18, r20
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:103
+  {
+      // Moving Up
+      if (difference < 0)
+ 8ea:	35 0b       	sbc	r19, r21
+ 8ec:	a6 01       	movw	r20, r12
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:105
+      {
+        absolute_distance += ((Upper_Bound - previous_distance) + (current_distance - Lower_Bound));
+ 8ee:	46 1b       	sub	r20, r22
+ 8f0:	57 0b       	sbc	r21, r23
+ 8f2:	24 0f       	add	r18, r20
+ 8f4:	35 1f       	adc	r19, r21
+ 8f6:	82 0f       	add	r24, r18
+ 8f8:	93 1f       	adc	r25, r19
+ 8fa:	0d c0       	rjmp	.+26     	; 0x916 <__DATA_REGION_LENGTH__+0x116>
+TWI0_ClearPins():
+ 8fc:	83 e0       	ldi	r24, 0x03	; 3
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:115
+        absolute_distance -= ((current_distance - Upper_Bound) + (previous_distance - Lower_Bound));
+      }
+  }
+  else
+  {
+    absolute_distance += difference;
+ 8fe:	80 93 26 04 	sts	0x0426, r24	; 0x800426 <digital_pin_to_bit_mask+0x7f7570>
+ 902:	d6 ce       	rjmp	.-596    	; 0x6b0 <main+0x76>
+loop():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/twi_pins.c:145
+        } else {
+          PORTB.OUTCLR = 0x03;  // else PB0, PB1
+ 904:	46 1b       	sub	r20, r22
+ 906:	57 0b       	sbc	r21, r23
+ 908:	96 01       	movw	r18, r12
+ 90a:	28 5e       	subi	r18, 0xE8	; 232
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:110
+        absolute_distance += ((Upper_Bound - previous_distance) + (current_distance - Lower_Bound));
+      }
+     // Moving Down
+      else
+      {
+        absolute_distance -= ((current_distance - Upper_Bound) + (previous_distance - Lower_Bound));
+ 90c:	33 40       	sbci	r19, 0x03	; 3
+ 90e:	24 0f       	add	r18, r20
+ 910:	35 1f       	adc	r19, r21
+ 912:	82 1b       	sub	r24, r18
+ 914:	93 0b       	sbc	r25, r19
+ 916:	80 93 66 38 	sts	0x3866, r24	; 0x803866 <absolute_distance>
+ 91a:	90 93 67 38 	sts	0x3867, r25	; 0x803867 <absolute_distance+0x1>
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:115
+      }
+  }
+  else
+  {
+    absolute_distance += difference;
+ 91e:	c0 92 6a 38 	sts	0x386A, r12	; 0x80386a <previous_distance>
+ 922:	d0 92 6b 38 	sts	0x386B, r13	; 0x80386b <previous_distance+0x1>
+_delay_us():
+C:\Users\taimu\OneDrive\Desktop\LE Programmer\LE_Blinker/LE_Blinker.ino:118
+  }
+
+  previous_distance = current_distance;
+ 926:	83 ef       	ldi	r24, 0xF3	; 243
+ 928:	91 e0       	ldi	r25, 0x01	; 1
+ 92a:	01 97       	sbiw	r24, 0x01	; 1
+ 92c:	f1 f7       	brne	.-4      	; 0x92a <__DATA_REGION_LENGTH__+0x12a>
+c:\users\taimu\appdata\local\arduino15\packages\dxcore\tools\avr-gcc\7.3.0-atmel3.6.1-azduino7b1\avr\include\util/delay.h:276
+ 92e:	00 c0       	rjmp	.+0      	; 0x930 <__DATA_REGION_LENGTH__+0x130>
+ 930:	00 00       	nop
+ 932:	3a cf       	rjmp	.-396    	; 0x7a8 <main+0x16e>
+
+00000934 <_GLOBAL__sub_I__ZN7TwoWireC2EP10TWI_struct>:
+_ZN5PrintC2Ev():
+ 934:	e1 e1       	ldi	r30, 0x11	; 17
+ 936:	f8 e3       	ldi	r31, 0x38	; 56
+ 938:	12 82       	std	Z+2, r1	; 0x02
+ 93a:	13 82       	std	Z+3, r1	; 0x03
+_ZN6StreamC2Ev():
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/api/Print.h:42
+  protected:
+    void setWriteError(int err = 1) {
+      write_error = err;
+    }
+  public:
+    Print() : write_error(0) {}
+ 93c:	88 ee       	ldi	r24, 0xE8	; 232
+ 93e:	93 e0       	ldi	r25, 0x03	; 3
+ 940:	a0 e0       	ldi	r26, 0x00	; 0
+ 942:	b0 e0       	ldi	r27, 0x00	; 0
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\cores\megatinycore/api/Stream.h:63
+    virtual int read() = 0;
+    virtual int peek() = 0;
+    virtual void flush() = 0;
+
+    Stream() {
+      _timeout = 1000;
+ 944:	84 83       	std	Z+4, r24	; 0x04
+ 946:	95 83       	std	Z+5, r25	; 0x05
+ 948:	a6 83       	std	Z+6, r26	; 0x06
+ 94a:	b7 83       	std	Z+7, r27	; 0x07
+_GLOBAL__sub_I__ZN7TwoWireC2EP10TWI_struct():
+ 94c:	82 e7       	ldi	r24, 0x72	; 114
+ 94e:	9e e8       	ldi	r25, 0x8E	; 142
+ 950:	80 83       	st	Z, r24
+ 952:	91 83       	std	Z+1, r25	; 0x01
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:52
+ *
+ *@param      TWI_t *module - the pointer to the TWI module that the Wire object is supposed to use
+ *
+ *@return     constructor can't return anything
+ */
+TwoWire::TwoWire(TWI_t *twi_module) {
+ 954:	80 e1       	ldi	r24, 0x10	; 16
+ 956:	98 e0       	ldi	r25, 0x08	; 8
+ 958:	80 87       	std	Z+8, r24	; 0x08
+ 95a:	91 87       	std	Z+9, r25	; 0x09
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:53
+  vars._module = twi_module;
+ 95c:	08 95       	ret
+
+0000095e <__subsf3>:
+__subsf3():
+ 95e:	50 58       	subi	r21, 0x80	; 128
+
+00000960 <__addsf3>:
+ 960:	bb 27       	eor	r27, r27
+ 962:	aa 27       	eor	r26, r26
+C:\Users\taimu\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.10\libraries\Wire\src/Wire.cpp:998
+ *  Wire object constructors with the default TWI modules.
+ *  If there is absolutely no way to swap the pins physically,
+ *  here is the best way to do so in software.
+ */
+#if defined(TWI0)
+  TwoWire Wire(&TWI0);
+ 964:	0e d0       	rcall	.+28     	; 0x982 <__addsf3x>
+ 966:	d4 c1       	rjmp	.+936    	; 0xd10 <__fp_round>
+__addsf3():
+ 968:	c5 d1       	rcall	.+906    	; 0xcf4 <__fp_pscA>
+ 96a:	30 f0       	brcs	.+12     	; 0x978 <__addsf3+0x18>
+ 96c:	ca d1       	rcall	.+916    	; 0xd02 <__fp_pscB>
+ 96e:	20 f0       	brcs	.+8      	; 0x978 <__addsf3+0x18>
+ 970:	31 f4       	brne	.+12     	; 0x97e <__addsf3+0x1e>
+ 972:	9f 3f       	cpi	r25, 0xFF	; 255
+ 974:	11 f4       	brne	.+4      	; 0x97a <__addsf3+0x1a>
+ 976:	1e f4       	brtc	.+6      	; 0x97e <__addsf3+0x1e>
+ 978:	95 c1       	rjmp	.+810    	; 0xca4 <__fp_nan>
+ 97a:	0e f4       	brtc	.+2      	; 0x97e <__addsf3+0x1e>
+ 97c:	e0 95       	com	r30
+ 97e:	e7 fb       	bst	r30, 7
+ 980:	8b c1       	rjmp	.+790    	; 0xc98 <__fp_inf>
+
+00000982 <__addsf3x>:
+__addsf3x():
+ 982:	e9 2f       	mov	r30, r25
+ 984:	d6 d1       	rcall	.+940    	; 0xd32 <__fp_split3>
+ 986:	80 f3       	brcs	.-32     	; 0x968 <__addsf3+0x8>
+ 988:	ba 17       	cp	r27, r26
+ 98a:	62 07       	cpc	r22, r18
+ 98c:	73 07       	cpc	r23, r19
+ 98e:	84 07       	cpc	r24, r20
+ 990:	95 07       	cpc	r25, r21
+ 992:	18 f0       	brcs	.+6      	; 0x99a <__addsf3x+0x18>
+ 994:	71 f4       	brne	.+28     	; 0x9b2 <__addsf3x+0x30>
+ 996:	9e f5       	brtc	.+102    	; 0x9fe <__addsf3x+0x7c>
+ 998:	ee c1       	rjmp	.+988    	; 0xd76 <__fp_zero>
+ 99a:	0e f4       	brtc	.+2      	; 0x99e <__addsf3x+0x1c>
+ 99c:	e0 95       	com	r30
+ 99e:	0b 2e       	mov	r0, r27
+ 9a0:	ba 2f       	mov	r27, r26
+ 9a2:	a0 2d       	mov	r26, r0
+ 9a4:	0b 01       	movw	r0, r22
+ 9a6:	b9 01       	movw	r22, r18
+ 9a8:	90 01       	movw	r18, r0
+ 9aa:	0c 01       	movw	r0, r24
+ 9ac:	ca 01       	movw	r24, r20
+ 9ae:	a0 01       	movw	r20, r0
+ 9b0:	11 24       	eor	r1, r1
+ 9b2:	ff 27       	eor	r31, r31
+ 9b4:	59 1b       	sub	r21, r25
+ 9b6:	99 f0       	breq	.+38     	; 0x9de <__addsf3x+0x5c>
+ 9b8:	59 3f       	cpi	r21, 0xF9	; 249
+ 9ba:	50 f4       	brcc	.+20     	; 0x9d0 <__addsf3x+0x4e>
+ 9bc:	50 3e       	cpi	r21, 0xE0	; 224
+ 9be:	68 f1       	brcs	.+90     	; 0xa1a <__addsf3x+0x98>
+ 9c0:	1a 16       	cp	r1, r26
+ 9c2:	f0 40       	sbci	r31, 0x00	; 0
+ 9c4:	a2 2f       	mov	r26, r18
+ 9c6:	23 2f       	mov	r18, r19
+ 9c8:	34 2f       	mov	r19, r20
+ 9ca:	44 27       	eor	r20, r20
+ 9cc:	58 5f       	subi	r21, 0xF8	; 248
+ 9ce:	f3 cf       	rjmp	.-26     	; 0x9b6 <__addsf3x+0x34>
+ 9d0:	46 95       	lsr	r20
+ 9d2:	37 95       	ror	r19
+ 9d4:	27 95       	ror	r18
+ 9d6:	a7 95       	ror	r26
+ 9d8:	f0 40       	sbci	r31, 0x00	; 0
+ 9da:	53 95       	inc	r21
+ 9dc:	c9 f7       	brne	.-14     	; 0x9d0 <__addsf3x+0x4e>
+ 9de:	7e f4       	brtc	.+30     	; 0x9fe <__addsf3x+0x7c>
+ 9e0:	1f 16       	cp	r1, r31
+ 9e2:	ba 0b       	sbc	r27, r26
+ 9e4:	62 0b       	sbc	r22, r18
+ 9e6:	73 0b       	sbc	r23, r19
+ 9e8:	84 0b       	sbc	r24, r20
+ 9ea:	ba f0       	brmi	.+46     	; 0xa1a <__addsf3x+0x98>
+ 9ec:	91 50       	subi	r25, 0x01	; 1
+ 9ee:	a1 f0       	breq	.+40     	; 0xa18 <__addsf3x+0x96>
+ 9f0:	ff 0f       	add	r31, r31
+ 9f2:	bb 1f       	adc	r27, r27
+ 9f4:	66 1f       	adc	r22, r22
+ 9f6:	77 1f       	adc	r23, r23
+ 9f8:	88 1f       	adc	r24, r24
+ 9fa:	c2 f7       	brpl	.-16     	; 0x9ec <__addsf3x+0x6a>
+ 9fc:	0e c0       	rjmp	.+28     	; 0xa1a <__addsf3x+0x98>
+ 9fe:	ba 0f       	add	r27, r26
+ a00:	62 1f       	adc	r22, r18
+ a02:	73 1f       	adc	r23, r19
+ a04:	84 1f       	adc	r24, r20
+ a06:	48 f4       	brcc	.+18     	; 0xa1a <__addsf3x+0x98>
+ a08:	87 95       	ror	r24
+ a0a:	77 95       	ror	r23
+ a0c:	67 95       	ror	r22
+ a0e:	b7 95       	ror	r27
+ a10:	f7 95       	ror	r31
+ a12:	9e 3f       	cpi	r25, 0xFE	; 254
+ a14:	08 f0       	brcs	.+2      	; 0xa18 <__addsf3x+0x96>
+ a16:	b3 cf       	rjmp	.-154    	; 0x97e <__addsf3+0x1e>
+ a18:	93 95       	inc	r25
+ a1a:	88 0f       	add	r24, r24
+ a1c:	08 f0       	brcs	.+2      	; 0xa20 <__addsf3x+0x9e>
+ a1e:	99 27       	eor	r25, r25
+ a20:	ee 0f       	add	r30, r30
+ a22:	97 95       	ror	r25
+ a24:	87 95       	ror	r24
+ a26:	08 95       	ret
+ a28:	65 d1       	rcall	.+714    	; 0xcf4 <__fp_pscA>
+ a2a:	58 f0       	brcs	.+22     	; 0xa42 <__addsf3x+0xc0>
+ a2c:	80 e8       	ldi	r24, 0x80	; 128
+ a2e:	91 e0       	ldi	r25, 0x01	; 1
+ a30:	09 f4       	brne	.+2      	; 0xa34 <__addsf3x+0xb2>
+ a32:	9e ef       	ldi	r25, 0xFE	; 254
+ a34:	66 d1       	rcall	.+716    	; 0xd02 <__fp_pscB>
+ a36:	28 f0       	brcs	.+10     	; 0xa42 <__addsf3x+0xc0>
+ a38:	40 e8       	ldi	r20, 0x80	; 128
+ a3a:	51 e0       	ldi	r21, 0x01	; 1
+ a3c:	59 f4       	brne	.+22     	; 0xa54 <atan2+0xe>
+ a3e:	5e ef       	ldi	r21, 0xFE	; 254
+ a40:	09 c0       	rjmp	.+18     	; 0xa54 <atan2+0xe>
+ a42:	30 c1       	rjmp	.+608    	; 0xca4 <__fp_nan>
+ a44:	98 c1       	rjmp	.+816    	; 0xd76 <__fp_zero>
+
+00000a46 <atan2>:
+ a46:	e9 2f       	mov	r30, r25
+ a48:	e0 78       	andi	r30, 0x80	; 128
+ a4a:	73 d1       	rcall	.+742    	; 0xd32 <__fp_split3>
+ a4c:	68 f3       	brcs	.-38     	; 0xa28 <__addsf3x+0xa6>
+atan2():
+ a4e:	09 2e       	mov	r0, r25
+ a50:	05 2a       	or	r0, r21
+ a52:	c1 f3       	breq	.-16     	; 0xa44 <__addsf3x+0xc2>
+ a54:	26 17       	cp	r18, r22
+ a56:	37 07       	cpc	r19, r23
+ a58:	48 07       	cpc	r20, r24
+ a5a:	59 07       	cpc	r21, r25
+ a5c:	38 f0       	brcs	.+14     	; 0xa6c <atan2+0x26>
+ a5e:	0e 2e       	mov	r0, r30
+ a60:	07 f8       	bld	r0, 7
+ a62:	e0 25       	eor	r30, r0
+ a64:	69 f0       	breq	.+26     	; 0xa80 <atan2+0x3a>
+ a66:	e0 25       	eor	r30, r0
+ a68:	e0 64       	ori	r30, 0x40	; 64
+ a6a:	0a c0       	rjmp	.+20     	; 0xa80 <atan2+0x3a>
+ a6c:	ef 63       	ori	r30, 0x3F	; 63
+ a6e:	07 f8       	bld	r0, 7
+ a70:	00 94       	com	r0
+ a72:	07 fa       	bst	r0, 7
+ a74:	db 01       	movw	r26, r22
+ a76:	b9 01       	movw	r22, r18
+ a78:	9d 01       	movw	r18, r26
+ a7a:	dc 01       	movw	r26, r24
+ a7c:	ca 01       	movw	r24, r20
+ a7e:	ad 01       	movw	r20, r26
+ a80:	ef 93       	push	r30
+ a82:	43 d0       	rcall	.+134    	; 0xb0a <__divsf3_pse>
+ a84:	45 d1       	rcall	.+650    	; 0xd10 <__fp_round>
+ a86:	0a d0       	rcall	.+20     	; 0xa9c <atan>
+ a88:	5f 91       	pop	r21
+ a8a:	55 23       	and	r21, r21
+ a8c:	31 f0       	breq	.+12     	; 0xa9a <atan2+0x54>
+ a8e:	2b ed       	ldi	r18, 0xDB	; 219
+ a90:	3f e0       	ldi	r19, 0x0F	; 15
+ a92:	49 e4       	ldi	r20, 0x49	; 73
+ a94:	50 fd       	sbrc	r21, 0
+ a96:	49 ec       	ldi	r20, 0xC9	; 201
+ a98:	63 cf       	rjmp	.-314    	; 0x960 <__addsf3>
+ a9a:	08 95       	ret
+
+00000a9c <atan>:
+ a9c:	df 93       	push	r29
+ a9e:	dd 27       	eor	r29, r29
+ aa0:	b9 2f       	mov	r27, r25
+ aa2:	bf 77       	andi	r27, 0x7F	; 127
+ aa4:	40 e8       	ldi	r20, 0x80	; 128
+ aa6:	5f e3       	ldi	r21, 0x3F	; 63
+ aa8:	16 16       	cp	r1, r22
+ aaa:	17 06       	cpc	r1, r23
+ aac:	48 07       	cpc	r20, r24
+ aae:	5b 07       	cpc	r21, r27
+ ab0:	10 f4       	brcc	.+4      	; 0xab6 <atan+0x1a>
+ ab2:	d9 2f       	mov	r29, r25
+ ab4:	67 d1       	rcall	.+718    	; 0xd84 <inverse>
+ ab6:	9f 93       	push	r25
+ ab8:	8f 93       	push	r24
+ aba:	7f 93       	push	r23
+ abc:	6f 93       	push	r22
+ abe:	cc d1       	rcall	.+920    	; 0xe58 <square>
+ ac0:	ec e7       	ldi	r30, 0x7C	; 124
+ ac2:	f0 e0       	ldi	r31, 0x00	; 0
+ ac4:	f2 d0       	rcall	.+484    	; 0xcaa <__fp_powser>
+ ac6:	24 d1       	rcall	.+584    	; 0xd10 <__fp_round>
+ ac8:	2f 91       	pop	r18
+ aca:	3f 91       	pop	r19
+atan():
+ acc:	4f 91       	pop	r20
+ ace:	5f 91       	pop	r21
+ ad0:	6c d1       	rcall	.+728    	; 0xdaa <__mulsf3x>
+ ad2:	dd 23       	and	r29, r29
+ ad4:	49 f0       	breq	.+18     	; 0xae8 <atan+0x4c>
+ ad6:	90 58       	subi	r25, 0x80	; 128
+ ad8:	a2 ea       	ldi	r26, 0xA2	; 162
+ ada:	2a ed       	ldi	r18, 0xDA	; 218
+ adc:	3f e0       	ldi	r19, 0x0F	; 15
+ ade:	49 ec       	ldi	r20, 0xC9	; 201
+ ae0:	5f e3       	ldi	r21, 0x3F	; 63
+ ae2:	d0 78       	andi	r29, 0x80	; 128
+ ae4:	5d 27       	eor	r21, r29
+ ae6:	4d df       	rcall	.-358    	; 0x982 <__addsf3x>
+ ae8:	df 91       	pop	r29
+ aea:	12 c1       	rjmp	.+548    	; 0xd10 <__fp_round>
+
+00000aec <__divsf3>:
+__divsf3():
+ aec:	0c d0       	rcall	.+24     	; 0xb06 <__divsf3x>
+ aee:	10 c1       	rjmp	.+544    	; 0xd10 <__fp_round>
+ af0:	08 d1       	rcall	.+528    	; 0xd02 <__fp_pscB>
+ af2:	40 f0       	brcs	.+16     	; 0xb04 <__divsf3+0x18>
+ af4:	ff d0       	rcall	.+510    	; 0xcf4 <__fp_pscA>
+ af6:	30 f0       	brcs	.+12     	; 0xb04 <__divsf3+0x18>
+ af8:	21 f4       	brne	.+8      	; 0xb02 <__divsf3+0x16>
+ afa:	5f 3f       	cpi	r21, 0xFF	; 255
+ afc:	19 f0       	breq	.+6      	; 0xb04 <__divsf3+0x18>
+ afe:	cc c0       	rjmp	.+408    	; 0xc98 <__fp_inf>
+ b00:	51 11       	cpse	r21, r1
+ b02:	3a c1       	rjmp	.+628    	; 0xd78 <__fp_szero>
+ b04:	cf c0       	rjmp	.+414    	; 0xca4 <__fp_nan>
+
+00000b06 <__divsf3x>:
+__divsf3x():
+ b06:	15 d1       	rcall	.+554    	; 0xd32 <__fp_split3>
+ b08:	98 f3       	brcs	.-26     	; 0xaf0 <__divsf3+0x4>
+
+00000b0a <__divsf3_pse>:
+ b0a:	99 23       	and	r25, r25
+ b0c:	c9 f3       	breq	.-14     	; 0xb00 <__divsf3+0x14>
+ b0e:	55 23       	and	r21, r21
+ b10:	b1 f3       	breq	.-20     	; 0xafe <__divsf3+0x12>
+ b12:	95 1b       	sub	r25, r21
+ b14:	55 0b       	sbc	r21, r21
+ b16:	bb 27       	eor	r27, r27
+ b18:	aa 27       	eor	r26, r26
+ b1a:	62 17       	cp	r22, r18
+ b1c:	73 07       	cpc	r23, r19
+ b1e:	84 07       	cpc	r24, r20
+ b20:	38 f0       	brcs	.+14     	; 0xb30 <__divsf3_pse+0x26>
+ b22:	9f 5f       	subi	r25, 0xFF	; 255
+ b24:	5f 4f       	sbci	r21, 0xFF	; 255
+ b26:	22 0f       	add	r18, r18
+ b28:	33 1f       	adc	r19, r19
+ b2a:	44 1f       	adc	r20, r20
+ b2c:	aa 1f       	adc	r26, r26
+ b2e:	a9 f3       	breq	.-22     	; 0xb1a <__divsf3_pse+0x10>
+ b30:	33 d0       	rcall	.+102    	; 0xb98 <__divsf3_pse+0x8e>
+ b32:	0e 2e       	mov	r0, r30
+ b34:	3a f0       	brmi	.+14     	; 0xb44 <__divsf3_pse+0x3a>
+ b36:	e0 e8       	ldi	r30, 0x80	; 128
+ b38:	30 d0       	rcall	.+96     	; 0xb9a <__divsf3_pse+0x90>
+ b3a:	91 50       	subi	r25, 0x01	; 1
+ b3c:	50 40       	sbci	r21, 0x00	; 0
+ b3e:	e6 95       	lsr	r30
+ b40:	00 1c       	adc	r0, r0
+ b42:	ca f7       	brpl	.-14     	; 0xb36 <__divsf3_pse+0x2c>
+ b44:	29 d0       	rcall	.+82     	; 0xb98 <__divsf3_pse+0x8e>
+ b46:	fe 2f       	mov	r31, r30
+ b48:	27 d0       	rcall	.+78     	; 0xb98 <__divsf3_pse+0x8e>
+ b4a:	66 0f       	add	r22, r22
+ b4c:	77 1f       	adc	r23, r23
+ b4e:	88 1f       	adc	r24, r24
+ b50:	bb 1f       	adc	r27, r27
+ b52:	26 17       	cp	r18, r22
+ b54:	37 07       	cpc	r19, r23
+ b56:	48 07       	cpc	r20, r24
+ b58:	ab 07       	cpc	r26, r27
+ b5a:	b0 e8       	ldi	r27, 0x80	; 128
+ b5c:	09 f0       	breq	.+2      	; 0xb60 <__divsf3_pse+0x56>
+ b5e:	bb 0b       	sbc	r27, r27
+ b60:	80 2d       	mov	r24, r0
+ b62:	bf 01       	movw	r22, r30
+ b64:	ff 27       	eor	r31, r31
+ b66:	93 58       	subi	r25, 0x83	; 131
+ b68:	5f 4f       	sbci	r21, 0xFF	; 255
+ b6a:	2a f0       	brmi	.+10     	; 0xb76 <__divsf3_pse+0x6c>
+ b6c:	9e 3f       	cpi	r25, 0xFE	; 254
+ b6e:	51 05       	cpc	r21, r1
+ b70:	68 f0       	brcs	.+26     	; 0xb8c <__divsf3_pse+0x82>
+ b72:	92 c0       	rjmp	.+292    	; 0xc98 <__fp_inf>
+ b74:	01 c1       	rjmp	.+514    	; 0xd78 <__fp_szero>
+ b76:	5f 3f       	cpi	r21, 0xFF	; 255
+ b78:	ec f3       	brlt	.-6      	; 0xb74 <__divsf3_pse+0x6a>
+ b7a:	98 3e       	cpi	r25, 0xE8	; 232
+ b7c:	dc f3       	brlt	.-10     	; 0xb74 <__divsf3_pse+0x6a>
+ b7e:	86 95       	lsr	r24
+ b80:	77 95       	ror	r23
+ b82:	67 95       	ror	r22
+ b84:	b7 95       	ror	r27
+ b86:	f7 95       	ror	r31
+ b88:	9f 5f       	subi	r25, 0xFF	; 255
+ b8a:	c9 f7       	brne	.-14     	; 0xb7e <__divsf3_pse+0x74>
+ b8c:	88 0f       	add	r24, r24
+ b8e:	91 1d       	adc	r25, r1
+ b90:	96 95       	lsr	r25
+ b92:	87 95       	ror	r24
+ b94:	97 f9       	bld	r25, 7
+ b96:	08 95       	ret
+ b98:	e1 e0       	ldi	r30, 0x01	; 1
+ b9a:	66 0f       	add	r22, r22
+ b9c:	77 1f       	adc	r23, r23
+ b9e:	88 1f       	adc	r24, r24
+ ba0:	bb 1f       	adc	r27, r27
+ ba2:	62 17       	cp	r22, r18
+ ba4:	73 07       	cpc	r23, r19
+ ba6:	84 07       	cpc	r24, r20
+ ba8:	ba 07       	cpc	r27, r26
+ baa:	20 f0       	brcs	.+8      	; 0xbb4 <__divsf3_pse+0xaa>
+ bac:	62 1b       	sub	r22, r18
+ bae:	73 0b       	sbc	r23, r19
+ bb0:	84 0b       	sbc	r24, r20
+ bb2:	ba 0b       	sbc	r27, r26
+ bb4:	ee 1f       	adc	r30, r30
+ bb6:	88 f7       	brcc	.-30     	; 0xb9a <__divsf3_pse+0x90>
+ bb8:	e0 95       	com	r30
+ bba:	08 95       	ret
+
+00000bbc <__fixsfsi>:
+ bbc:	04 d0       	rcall	.+8      	; 0xbc6 <__fixunssfsi>
+ bbe:	68 94       	set
+ bc0:	b1 11       	cpse	r27, r1
+ bc2:	da c0       	rjmp	.+436    	; 0xd78 <__fp_szero>
+ bc4:	08 95       	ret
+
+00000bc6 <__fixunssfsi>:
+ bc6:	bd d0       	rcall	.+378    	; 0xd42 <__fp_splitA>
+ bc8:	88 f0       	brcs	.+34     	; 0xbec <__fixunssfsi+0x26>
+ bca:	9f 57       	subi	r25, 0x7F	; 127
+ bcc:	90 f0       	brcs	.+36     	; 0xbf2 <__fixunssfsi+0x2c>
+ bce:	b9 2f       	mov	r27, r25
+ bd0:	99 27       	eor	r25, r25
+ bd2:	b7 51       	subi	r27, 0x17	; 23
+ bd4:	a0 f0       	brcs	.+40     	; 0xbfe <__fixunssfsi+0x38>
+ bd6:	d1 f0       	breq	.+52     	; 0xc0c <__fixunssfsi+0x46>
+ bd8:	66 0f       	add	r22, r22
+ bda:	77 1f       	adc	r23, r23
+ bdc:	88 1f       	adc	r24, r24
+ bde:	99 1f       	adc	r25, r25
+ be0:	1a f0       	brmi	.+6      	; 0xbe8 <__fixunssfsi+0x22>
+__fixunssfsi():
+ be2:	ba 95       	dec	r27
+ be4:	c9 f7       	brne	.-14     	; 0xbd8 <__fixunssfsi+0x12>
+ be6:	12 c0       	rjmp	.+36     	; 0xc0c <__fixunssfsi+0x46>
+ be8:	b1 30       	cpi	r27, 0x01	; 1
+ bea:	81 f0       	breq	.+32     	; 0xc0c <__fixunssfsi+0x46>
+ bec:	c4 d0       	rcall	.+392    	; 0xd76 <__fp_zero>
+ bee:	b1 e0       	ldi	r27, 0x01	; 1
+ bf0:	08 95       	ret
+ bf2:	c1 c0       	rjmp	.+386    	; 0xd76 <__fp_zero>
+ bf4:	67 2f       	mov	r22, r23
+ bf6:	78 2f       	mov	r23, r24
+ bf8:	88 27       	eor	r24, r24
+ bfa:	b8 5f       	subi	r27, 0xF8	; 248
+ bfc:	39 f0       	breq	.+14     	; 0xc0c <__fixunssfsi+0x46>
+ bfe:	b9 3f       	cpi	r27, 0xF9	; 249
+ c00:	cc f3       	brlt	.-14     	; 0xbf4 <__fixunssfsi+0x2e>
+ c02:	86 95       	lsr	r24
+ c04:	77 95       	ror	r23
+ c06:	67 95       	ror	r22
+ c08:	b3 95       	inc	r27
+ c0a:	d9 f7       	brne	.-10     	; 0xc02 <__fixunssfsi+0x3c>
+ c0c:	3e f4       	brtc	.+14     	; 0xc1c <__fixunssfsi+0x56>
+ c0e:	90 95       	com	r25
+ c10:	80 95       	com	r24
+ c12:	70 95       	com	r23
+ c14:	61 95       	neg	r22
+ c16:	7f 4f       	sbci	r23, 0xFF	; 255
+ c18:	8f 4f       	sbci	r24, 0xFF	; 255
+ c1a:	9f 4f       	sbci	r25, 0xFF	; 255
+ c1c:	08 95       	ret
+
+00000c1e <__floatunsisf>:
+__floatunsisf():
+ c1e:	e8 94       	clt
+ c20:	09 c0       	rjmp	.+18     	; 0xc34 <__floatsisf+0x12>
+
+00000c22 <__floatsisf>:
+ c22:	97 fb       	bst	r25, 7
+ c24:	3e f4       	brtc	.+14     	; 0xc34 <__floatsisf+0x12>
+ c26:	90 95       	com	r25
+ c28:	80 95       	com	r24
+ c2a:	70 95       	com	r23
+ c2c:	61 95       	neg	r22
+ c2e:	7f 4f       	sbci	r23, 0xFF	; 255
+ c30:	8f 4f       	sbci	r24, 0xFF	; 255
+ c32:	9f 4f       	sbci	r25, 0xFF	; 255
+ c34:	99 23       	and	r25, r25
+ c36:	a9 f0       	breq	.+42     	; 0xc62 <__floatsisf+0x40>
+ c38:	f9 2f       	mov	r31, r25
+ c3a:	96 e9       	ldi	r25, 0x96	; 150
+ c3c:	bb 27       	eor	r27, r27
+ c3e:	93 95       	inc	r25
+ c40:	f6 95       	lsr	r31
+ c42:	87 95       	ror	r24
+ c44:	77 95       	ror	r23
+ c46:	67 95       	ror	r22
+ c48:	b7 95       	ror	r27
+ c4a:	f1 11       	cpse	r31, r1
+ c4c:	f8 cf       	rjmp	.-16     	; 0xc3e <__floatsisf+0x1c>
+ c4e:	fa f4       	brpl	.+62     	; 0xc8e <__floatsisf+0x6c>
+ c50:	bb 0f       	add	r27, r27
+ c52:	11 f4       	brne	.+4      	; 0xc58 <__floatsisf+0x36>
+ c54:	60 ff       	sbrs	r22, 0
+ c56:	1b c0       	rjmp	.+54     	; 0xc8e <__floatsisf+0x6c>
+ c58:	6f 5f       	subi	r22, 0xFF	; 255
+ c5a:	7f 4f       	sbci	r23, 0xFF	; 255
+ c5c:	8f 4f       	sbci	r24, 0xFF	; 255
+ c5e:	9f 4f       	sbci	r25, 0xFF	; 255
+ c60:	16 c0       	rjmp	.+44     	; 0xc8e <__floatsisf+0x6c>
+ c62:	88 23       	and	r24, r24
+ c64:	11 f0       	breq	.+4      	; 0xc6a <__floatsisf+0x48>
+ c66:	96 e9       	ldi	r25, 0x96	; 150
+ c68:	11 c0       	rjmp	.+34     	; 0xc8c <__floatsisf+0x6a>
+ c6a:	77 23       	and	r23, r23
+ c6c:	21 f0       	breq	.+8      	; 0xc76 <__floatsisf+0x54>
+ c6e:	9e e8       	ldi	r25, 0x8E	; 142
+ c70:	87 2f       	mov	r24, r23
+ c72:	76 2f       	mov	r23, r22
+ c74:	05 c0       	rjmp	.+10     	; 0xc80 <__floatsisf+0x5e>
+ c76:	66 23       	and	r22, r22
+ c78:	71 f0       	breq	.+28     	; 0xc96 <__floatsisf+0x74>
+ c7a:	96 e8       	ldi	r25, 0x86	; 134
+ c7c:	86 2f       	mov	r24, r22
+ c7e:	70 e0       	ldi	r23, 0x00	; 0
+ c80:	60 e0       	ldi	r22, 0x00	; 0
+ c82:	2a f0       	brmi	.+10     	; 0xc8e <__floatsisf+0x6c>
+ c84:	9a 95       	dec	r25
+ c86:	66 0f       	add	r22, r22
+ c88:	77 1f       	adc	r23, r23
+ c8a:	88 1f       	adc	r24, r24
+ c8c:	da f7       	brpl	.-10     	; 0xc84 <__floatsisf+0x62>
+ c8e:	88 0f       	add	r24, r24
+ c90:	96 95       	lsr	r25
+ c92:	87 95       	ror	r24
+ c94:	97 f9       	bld	r25, 7
+ c96:	08 95       	ret
+
+00000c98 <__fp_inf>:
+__fp_inf():
+ c98:	97 f9       	bld	r25, 7
+ c9a:	9f 67       	ori	r25, 0x7F	; 127
+ c9c:	80 e8       	ldi	r24, 0x80	; 128
+ c9e:	70 e0       	ldi	r23, 0x00	; 0
+ ca0:	60 e0       	ldi	r22, 0x00	; 0
+ ca2:	08 95       	ret
+
+00000ca4 <__fp_nan>:
+__fp_nan():
+ ca4:	9f ef       	ldi	r25, 0xFF	; 255
+ ca6:	80 ec       	ldi	r24, 0xC0	; 192
+ ca8:	08 95       	ret
+
+00000caa <__fp_powser>:
+__fp_powser():
+ caa:	df 93       	push	r29
+ cac:	cf 93       	push	r28
+ cae:	1f 93       	push	r17
+ cb0:	0f 93       	push	r16
+ cb2:	ff 92       	push	r15
+ cb4:	ef 92       	push	r14
+ cb6:	df 92       	push	r13
+ cb8:	7b 01       	movw	r14, r22
+ cba:	8c 01       	movw	r16, r24
+ cbc:	68 94       	set
+ cbe:	05 c0       	rjmp	.+10     	; 0xcca <__fp_powser+0x20>
+ cc0:	da 2e       	mov	r13, r26
+ cc2:	ef 01       	movw	r28, r30
+ cc4:	72 d0       	rcall	.+228    	; 0xdaa <__mulsf3x>
+ cc6:	fe 01       	movw	r30, r28
+ cc8:	e8 94       	clt
+ cca:	a5 91       	lpm	r26, Z+
+ ccc:	25 91       	lpm	r18, Z+
+ cce:	35 91       	lpm	r19, Z+
+ cd0:	45 91       	lpm	r20, Z+
+ cd2:	55 91       	lpm	r21, Z+
+ cd4:	ae f3       	brts	.-22     	; 0xcc0 <__fp_powser+0x16>
+ cd6:	ef 01       	movw	r28, r30
+ cd8:	54 de       	rcall	.-856    	; 0x982 <__addsf3x>
+ cda:	fe 01       	movw	r30, r28
+ cdc:	97 01       	movw	r18, r14
+ cde:	a8 01       	movw	r20, r16
+ ce0:	da 94       	dec	r13
+ ce2:	79 f7       	brne	.-34     	; 0xcc2 <__fp_powser+0x18>
+ ce4:	df 90       	pop	r13
+ ce6:	ef 90       	pop	r14
+ ce8:	ff 90       	pop	r15
+ cea:	0f 91       	pop	r16
+ cec:	1f 91       	pop	r17
+ cee:	cf 91       	pop	r28
+ cf0:	df 91       	pop	r29
+ cf2:	08 95       	ret
+
+00000cf4 <__fp_pscA>:
+__fp_pscA():
+ cf4:	00 24       	eor	r0, r0
+ cf6:	0a 94       	dec	r0
+ cf8:	16 16       	cp	r1, r22
+ cfa:	17 06       	cpc	r1, r23
+ cfc:	18 06       	cpc	r1, r24
+ cfe:	09 06       	cpc	r0, r25
+ d00:	08 95       	ret
+
+00000d02 <__fp_pscB>:
+__fp_pscB():
+ d02:	00 24       	eor	r0, r0
+ d04:	0a 94       	dec	r0
+ d06:	12 16       	cp	r1, r18
+ d08:	13 06       	cpc	r1, r19
+ d0a:	14 06       	cpc	r1, r20
+ d0c:	05 06       	cpc	r0, r21
+ d0e:	08 95       	ret
+
+00000d10 <__fp_round>:
+__fp_round():
+ d10:	09 2e       	mov	r0, r25
+ d12:	03 94       	inc	r0
+ d14:	00 0c       	add	r0, r0
+ d16:	11 f4       	brne	.+4      	; 0xd1c <__fp_round+0xc>
+ d18:	88 23       	and	r24, r24
+ d1a:	52 f0       	brmi	.+20     	; 0xd30 <__fp_round+0x20>
+ d1c:	bb 0f       	add	r27, r27
+ d1e:	40 f4       	brcc	.+16     	; 0xd30 <__fp_round+0x20>
+ d20:	bf 2b       	or	r27, r31
+ d22:	11 f4       	brne	.+4      	; 0xd28 <__fp_round+0x18>
+ d24:	60 ff       	sbrs	r22, 0
+ d26:	04 c0       	rjmp	.+8      	; 0xd30 <__fp_round+0x20>
+ d28:	6f 5f       	subi	r22, 0xFF	; 255
+ d2a:	7f 4f       	sbci	r23, 0xFF	; 255
+ d2c:	8f 4f       	sbci	r24, 0xFF	; 255
+ d2e:	9f 4f       	sbci	r25, 0xFF	; 255
+ d30:	08 95       	ret
+
+00000d32 <__fp_split3>:
+__fp_split3():
+ d32:	57 fd       	sbrc	r21, 7
+ d34:	90 58       	subi	r25, 0x80	; 128
+ d36:	44 0f       	add	r20, r20
+ d38:	55 1f       	adc	r21, r21
+ d3a:	59 f0       	breq	.+22     	; 0xd52 <__fp_splitA+0x10>
+ d3c:	5f 3f       	cpi	r21, 0xFF	; 255
+ d3e:	71 f0       	breq	.+28     	; 0xd5c <__fp_splitA+0x1a>
+ d40:	47 95       	ror	r20
+
+00000d42 <__fp_splitA>:
+ d42:	88 0f       	add	r24, r24
+ d44:	97 fb       	bst	r25, 7
+ d46:	99 1f       	adc	r25, r25
+ d48:	61 f0       	breq	.+24     	; 0xd62 <__fp_splitA+0x20>
+ d4a:	9f 3f       	cpi	r25, 0xFF	; 255
+ d4c:	79 f0       	breq	.+30     	; 0xd6c <__fp_splitA+0x2a>
+ d4e:	87 95       	ror	r24
+ d50:	08 95       	ret
+ d52:	12 16       	cp	r1, r18
+ d54:	13 06       	cpc	r1, r19
+ d56:	14 06       	cpc	r1, r20
+ d58:	55 1f       	adc	r21, r21
+ d5a:	f2 cf       	rjmp	.-28     	; 0xd40 <__fp_split3+0xe>
+ d5c:	46 95       	lsr	r20
+ d5e:	f1 df       	rcall	.-30     	; 0xd42 <__fp_splitA>
+ d60:	08 c0       	rjmp	.+16     	; 0xd72 <__fp_splitA+0x30>
+ d62:	16 16       	cp	r1, r22
+ d64:	17 06       	cpc	r1, r23
+ d66:	18 06       	cpc	r1, r24
+ d68:	99 1f       	adc	r25, r25
+ d6a:	f1 cf       	rjmp	.-30     	; 0xd4e <__fp_splitA+0xc>
+ d6c:	86 95       	lsr	r24
+ d6e:	71 05       	cpc	r23, r1
+ d70:	61 05       	cpc	r22, r1
+ d72:	08 94       	sec
+ d74:	08 95       	ret
+
+00000d76 <__fp_zero>:
+__fp_zero():
+ d76:	e8 94       	clt
+
+00000d78 <__fp_szero>:
+ d78:	bb 27       	eor	r27, r27
+ d7a:	66 27       	eor	r22, r22
+ d7c:	77 27       	eor	r23, r23
+ d7e:	cb 01       	movw	r24, r22
+ d80:	97 f9       	bld	r25, 7
+ d82:	08 95       	ret
+
+00000d84 <inverse>:
+inverse():
+ d84:	9b 01       	movw	r18, r22
+ d86:	ac 01       	movw	r20, r24
+ d88:	60 e0       	ldi	r22, 0x00	; 0
+ d8a:	70 e0       	ldi	r23, 0x00	; 0
+ d8c:	80 e8       	ldi	r24, 0x80	; 128
+ d8e:	9f e3       	ldi	r25, 0x3F	; 63
+ d90:	ad ce       	rjmp	.-678    	; 0xaec <__divsf3>
+
+00000d92 <__mulsf3>:
+__mulsf3():
+ d92:	0b d0       	rcall	.+22     	; 0xdaa <__mulsf3x>
+ d94:	bd cf       	rjmp	.-134    	; 0xd10 <__fp_round>
+ d96:	ae df       	rcall	.-164    	; 0xcf4 <__fp_pscA>
+ d98:	28 f0       	brcs	.+10     	; 0xda4 <__mulsf3+0x12>
+ d9a:	b3 df       	rcall	.-154    	; 0xd02 <__fp_pscB>
+ d9c:	18 f0       	brcs	.+6      	; 0xda4 <__mulsf3+0x12>
+ d9e:	95 23       	and	r25, r21
+ da0:	09 f0       	breq	.+2      	; 0xda4 <__mulsf3+0x12>
+ da2:	7a cf       	rjmp	.-268    	; 0xc98 <__fp_inf>
+ da4:	7f cf       	rjmp	.-258    	; 0xca4 <__fp_nan>
+ da6:	11 24       	eor	r1, r1
+ da8:	e7 cf       	rjmp	.-50     	; 0xd78 <__fp_szero>
+
+00000daa <__mulsf3x>:
+__mulsf3x():
+ daa:	c3 df       	rcall	.-122    	; 0xd32 <__fp_split3>
+ dac:	a0 f3       	brcs	.-24     	; 0xd96 <__mulsf3+0x4>
+
+00000dae <__mulsf3_pse>:
+ dae:	95 9f       	mul	r25, r21
+ db0:	d1 f3       	breq	.-12     	; 0xda6 <__mulsf3+0x14>
+ db2:	95 0f       	add	r25, r21
+ db4:	50 e0       	ldi	r21, 0x00	; 0
+ db6:	55 1f       	adc	r21, r21
+ db8:	62 9f       	mul	r22, r18
+ dba:	f0 01       	movw	r30, r0
+ dbc:	72 9f       	mul	r23, r18
+ dbe:	bb 27       	eor	r27, r27
+ dc0:	f0 0d       	add	r31, r0
+ dc2:	b1 1d       	adc	r27, r1
+ dc4:	63 9f       	mul	r22, r19
+ dc6:	aa 27       	eor	r26, r26
+ dc8:	f0 0d       	add	r31, r0
+ dca:	b1 1d       	adc	r27, r1
+ dcc:	aa 1f       	adc	r26, r26
+ dce:	64 9f       	mul	r22, r20
+ dd0:	66 27       	eor	r22, r22
+ dd2:	b0 0d       	add	r27, r0
+ dd4:	a1 1d       	adc	r26, r1
+ dd6:	66 1f       	adc	r22, r22
+ dd8:	82 9f       	mul	r24, r18
+ dda:	22 27       	eor	r18, r18
+ ddc:	b0 0d       	add	r27, r0
+ dde:	a1 1d       	adc	r26, r1
+ de0:	62 1f       	adc	r22, r18
+ de2:	73 9f       	mul	r23, r19
+ de4:	b0 0d       	add	r27, r0
+ de6:	a1 1d       	adc	r26, r1
+ de8:	62 1f       	adc	r22, r18
+ dea:	83 9f       	mul	r24, r19
+ dec:	a0 0d       	add	r26, r0
+ dee:	61 1d       	adc	r22, r1
+ df0:	22 1f       	adc	r18, r18
+ df2:	74 9f       	mul	r23, r20
+ df4:	33 27       	eor	r19, r19
+ df6:	a0 0d       	add	r26, r0
+ df8:	61 1d       	adc	r22, r1
+ dfa:	23 1f       	adc	r18, r19
+ dfc:	84 9f       	mul	r24, r20
+ dfe:	60 0d       	add	r22, r0
+ e00:	21 1d       	adc	r18, r1
+ e02:	82 2f       	mov	r24, r18
+ e04:	76 2f       	mov	r23, r22
+ e06:	6a 2f       	mov	r22, r26
+ e08:	11 24       	eor	r1, r1
+ e0a:	9f 57       	subi	r25, 0x7F	; 127
+ e0c:	50 40       	sbci	r21, 0x00	; 0
+ e0e:	8a f0       	brmi	.+34     	; 0xe32 <__mulsf3_pse+0x84>
+ e10:	e1 f0       	breq	.+56     	; 0xe4a <__mulsf3_pse+0x9c>
+ e12:	88 23       	and	r24, r24
+ e14:	4a f0       	brmi	.+18     	; 0xe28 <__mulsf3_pse+0x7a>
+ e16:	ee 0f       	add	r30, r30
+ e18:	ff 1f       	adc	r31, r31
+ e1a:	bb 1f       	adc	r27, r27
+ e1c:	66 1f       	adc	r22, r22
+ e1e:	77 1f       	adc	r23, r23
+ e20:	88 1f       	adc	r24, r24
+ e22:	91 50       	subi	r25, 0x01	; 1
+ e24:	50 40       	sbci	r21, 0x00	; 0
+ e26:	a9 f7       	brne	.-22     	; 0xe12 <__mulsf3_pse+0x64>
+ e28:	9e 3f       	cpi	r25, 0xFE	; 254
+ e2a:	51 05       	cpc	r21, r1
+ e2c:	70 f0       	brcs	.+28     	; 0xe4a <__mulsf3_pse+0x9c>
+ e2e:	34 cf       	rjmp	.-408    	; 0xc98 <__fp_inf>
+ e30:	a3 cf       	rjmp	.-186    	; 0xd78 <__fp_szero>
+ e32:	5f 3f       	cpi	r21, 0xFF	; 255
+ e34:	ec f3       	brlt	.-6      	; 0xe30 <__mulsf3_pse+0x82>
+ e36:	98 3e       	cpi	r25, 0xE8	; 232
+ e38:	dc f3       	brlt	.-10     	; 0xe30 <__mulsf3_pse+0x82>
+ e3a:	86 95       	lsr	r24
+ e3c:	77 95       	ror	r23
+ e3e:	67 95       	ror	r22
+ e40:	b7 95       	ror	r27
+ e42:	f7 95       	ror	r31
+ e44:	e7 95       	ror	r30
+ e46:	9f 5f       	subi	r25, 0xFF	; 255
+ e48:	c1 f7       	brne	.-16     	; 0xe3a <__mulsf3_pse+0x8c>
+ e4a:	fe 2b       	or	r31, r30
+ e4c:	88 0f       	add	r24, r24
+ e4e:	91 1d       	adc	r25, r1
+ e50:	96 95       	lsr	r25
+ e52:	87 95       	ror	r24
+ e54:	97 f9       	bld	r25, 7
+ e56:	08 95       	ret
+
+00000e58 <square>:
+ e58:	9b 01       	movw	r18, r22
+ e5a:	ac 01       	movw	r20, r24
+ e5c:	9a cf       	rjmp	.-204    	; 0xd92 <__mulsf3>
+
+00000e5e <__tablejump2__>:
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2296
+ e5e:	ee 0f       	add	r30, r30
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2297
+ e60:	ff 1f       	adc	r31, r31
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2328
+ e62:	05 90       	lpm	r0, Z+
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2329
+ e64:	f4 91       	lpm	r31, Z
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2330
+ e66:	e0 2d       	mov	r30, r0
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2331
+ e68:	09 94       	ijmp
+
+00000e6a <_exit>:
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ e6a:	f8 94       	cli
+
+00000e6c <__stop_program>:
+/home/admin/Arduino/toolchain-avr-special-master/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ e6c:	ff cf       	rjmp	.-2      	; 0xe6c <__stop_program>
