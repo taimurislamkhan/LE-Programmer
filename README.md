@@ -44,6 +44,8 @@
 
 ## Hardware Setup
 
+![Wiring Diagram](wiring.png)
+
 ### UPDI Programmer Connection (Arduino 1)
 1. Connect pin 6 of the Arduino UPDI programmer and the UPDI pin of the Linear Encoder
 2. Connect GND of the Arduino to GND of the ATtiny1616
