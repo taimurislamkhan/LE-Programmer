@@ -1,6 +1,6 @@
 int sine_off=48;
 int cosine_off=60;
-int address=11;
+int address=8;
 
 #define SAMPLE_SIZE 10
 int cosineSamples[SAMPLE_SIZE];

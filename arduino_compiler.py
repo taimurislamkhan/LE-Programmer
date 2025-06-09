@@ -288,119 +288,15 @@ class ArduinoCompiler:
             
             self._run_command(twi_pins_cmd)
             
-            # Step 6: Find or create the core.a file
-            print("Preparing core library...")
+            # Step 6: Use the existing core.a file
+            print("Using existing core.a file...")
+            core_a = os.path.join(os.path.dirname(sketch_path), "core.a")
             
-            # Try to find a precompiled core.a file in the Arduino temp directory
-            arduino_temp = os.path.join(tempfile.gettempdir(), "arduino")
-            core_pattern = "*9f8fc6936ee8571c172ff3527f9df7b8*"
-            precompiled_core = None
+            if not os.path.exists(core_a):
+                print(f"Error: core.a not found at {core_a}")
+                return False
             
-            if os.path.exists(arduino_temp):
-                cores_dir = os.path.join(arduino_temp, "cores")
-                if os.path.exists(cores_dir):
-                    import glob
-                    core_dirs = glob.glob(os.path.join(cores_dir, core_pattern))
-                    if core_dirs:
-                        for core_dir in core_dirs:
-                            core_a_path = os.path.join(core_dir, "core.a")
-                            if os.path.exists(core_a_path):
-                                precompiled_core = core_a_path
-                                break
-            
-            core_a = os.path.join(build_dir, "core.a")
-            
-            if precompiled_core:
-                # Use the precompiled core.a file
-                print(f"Using precompiled core from: {precompiled_core}")
-                shutil.copy2(precompiled_core, core_a)
-            else:
-                # We need to compile the core files
-                print("Precompiled core not found. Compiling core files...")
-                
-                # Create a directory for core object files
-                core_obj_dir = os.path.join(build_dir, "core")
-                if not os.path.exists(core_obj_dir):
-                    os.makedirs(core_obj_dir)
-                
-                # Get list of core source files
-                core_sources = []
-                for root, dirs, files in os.walk(core_dir):
-                    for file in files:
-                        if file.endswith(".cpp") or file.endswith(".c"):
-                            core_sources.append(os.path.join(root, file))
-                
-                # Compile each core source file
-                core_objects = []
-                for source in core_sources[:5]:  # Limit to first 5 files for testing
-                    obj_file = os.path.join(core_obj_dir, os.path.basename(source) + ".o")
-                    core_objects.append(obj_file)
-                    
-                    if source.endswith(".cpp"):
-                        cmd = [
-                            os.path.join(self.avr_gcc_path, "avr-g++"),
-                            "-c", "-g", "-Os", "-Wall", "-std=gnu++17", "-fpermissive",
-                            "-Wno-sized-deallocation", "-fno-exceptions", "-ffunction-sections",
-                            "-fdata-sections", "-fno-threadsafe-statics", "-Wno-error=narrowing",
-                            "-MMD", "-flto", "-mrelax",
-                            "-mmcu=attiny1616", "-DF_CPU=20000000L", "-DCLOCK_SOURCE=0",
-                            "-DTWI_MORS", "-DMILLIS_USE_TIMERD0", "-DCORE_ATTACH_ALL",
-                            "-DUSE_TIMERD0_PWM", "-DARDUINO=10607", "-DARDUINO_AVR_ATtiny1616",
-                            "-DARDUINO_ARCH_MEGAAVR", f'-DMEGATINYCORE="2.6.10"',
-                            "-DMEGATINYCORE_MAJOR=2UL", "-DMEGATINYCORE_MINOR=6UL",
-                            "-DMEGATINYCORE_PATCH=10UL", "-DMEGATINYCORE_RELEASED=1",
-                            "-DARDUINO_attinyxy6",
-                            f"-I{os.path.join(core_dir, 'api', 'deprecated')}",
-                            f"-I{core_dir}",
-                            f"-I{variant_dir}",
-                            source,
-                            "-o", obj_file
-                        ]
-                    else:  # .c file
-                        cmd = [
-                            os.path.join(self.avr_gcc_path, "avr-gcc"),
-                            "-c", "-g", "-Os", "-Wall", "-std=gnu11", "-ffunction-sections",
-                            "-fdata-sections", "-MMD", "-flto", "-mrelax",
-                            "-mmcu=attiny1616", "-DF_CPU=20000000L", "-DCLOCK_SOURCE=0",
-                            "-DTWI_MORS", "-DMILLIS_USE_TIMERD0", "-DCORE_ATTACH_ALL",
-                            "-DUSE_TIMERD0_PWM", "-DARDUINO=10607", "-DARDUINO_AVR_ATtiny1616",
-                            "-DARDUINO_ARCH_MEGAAVR", f'-DMEGATINYCORE="2.6.10"',
-                            "-DMEGATINYCORE_MAJOR=2UL", "-DMEGATINYCORE_MINOR=6UL",
-                            "-DMEGATINYCORE_PATCH=10UL", "-DMEGATINYCORE_RELEASED=1",
-                            "-DARDUINO_attinyxy6",
-                            f"-I{os.path.join(core_dir, 'api', 'deprecated')}",
-                            f"-I{core_dir}",
-                            f"-I{variant_dir}",
-                            source,
-                            "-o", obj_file
-                        ]
-                    
-                    try:
-                        self._run_command(cmd)
-                    except Exception as e:
-                        print(f"Warning: Failed to compile {source}: {str(e)}")
-                        core_objects.remove(obj_file)
-                
-                # Create the core.a archive
-                if core_objects:
-                    print(f"Creating core archive with {len(core_objects)} object files...")
-                    ar_cmd = [
-                        os.path.join(self.avr_gcc_path, "avr-ar"),
-                        "rcs", core_a
-                    ] + core_objects
-                    
-                    try:
-                        self._run_command(ar_cmd)
-                    except Exception as e:
-                        print(f"Warning: Failed to create core archive: {str(e)}")
-                        # Create a minimal core.a as fallback
-                        with open(core_a, 'wb') as f:
-                            f.write(b'!<arch>\n')
-                else:
-                    # Create a minimal core.a as fallback
-                    print("No core objects compiled successfully. Creating minimal core archive...")
-                    with open(core_a, 'wb') as f:
-                        f.write(b'!<arch>\n')
+            print(f"Found core.a at: {core_a}")
             
             # Step 7: Link everything together
             print("Linking...")

@@ -1,12 +1,12 @@
 {
     "arduino_ports": [],
     "updi_programmer": {
-        "port": "COM13",
-        "description": "Arduino Uno (COM13)"
+        "port": "COM5",
+        "description": "Arduino Uno (COM5)"
     },
     "target_arduino": {
-        "port": "COM15",
-        "description": "Arduino Uno (COM15)"
+        "port": "COM6",
+        "description": "Arduino Uno (COM6)"
     },
     "le_reader_uploaded": true
 }

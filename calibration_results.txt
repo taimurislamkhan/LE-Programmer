@@ -1,5 +1,5 @@
-Calibration Date: 2025-05-04 16:53:38
-Device Address: 11
+Calibration Date: 2025-06-09 19:24:24
+Device Address: 8
 ----------------------------------------
 Sample	Cosine	Sine
 1	60.00	48.00
