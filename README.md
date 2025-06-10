@@ -25,12 +25,6 @@ To run the program with administrator privileges:
 2. Grant administrator permissions when prompted
 3. The program will execute with the required privileges
 
-
-1. Run the main script:
-   ```
-   python arduino_manager.py
-   ```
-
 2. First-time setup:
    - Select option 1 (Setup) to configure your UPDI programmer and target Arduino
    - The program will scan for connected devices and guide you through the setup
@@ -41,13 +35,13 @@ To run the program with administrator privileges:
    - Enter the device address (0-127)
    - The program will automatically:
      - Collect sine and cosine calibration values
-     - Update the LE_Final sketch with these values
      - Compile and upload the calibrated firmware
+   - Program asks to upload with changed values. Press y and enter
 
 4. Monitoring a device:
    - Select option 3 (Read) to monitor sine and cosine values from a running device
-   - This is useful for troubleshooting or verifying calibration
-   - Values are displayed and saved to a results file
+   - Make sure the sine and cosine values are zero 
+   - Verify the address
 
 ## Hardware Setup
 
