@@ -19,6 +19,13 @@
    ```
 ## Usage
 
+To run the program with administrator privileges:
+
+1. Simply double-click the `run_as_admin.bat` file
+2. Grant administrator permissions when prompted
+3. The program will execute with the required privileges
+
+
 1. Run the main script:
    ```
    python arduino_manager.py
