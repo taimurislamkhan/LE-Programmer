@@ -1,5 +1,5 @@
-int sine_off=48;
-int cosine_off=60;
+int sine_off=47;
+int cosine_off=59;
 int address=8;
 
 #define SAMPLE_SIZE 10

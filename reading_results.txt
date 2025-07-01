@@ -1,4 +1,4 @@
-Reading Date: 2025-06-09 19:24:50
+Reading Date: 2025-07-01 10:25:23
 ----------------------------------------
 Sample	Cosine	Sine	Magnitude
 1	0.00	0.00	0.00

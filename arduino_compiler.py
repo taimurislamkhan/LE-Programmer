@@ -5,6 +5,7 @@ import json
 import shutil
 import tempfile
 import time
+import re
 
 class ArduinoCompiler:
     def __init__(self):
@@ -22,7 +23,8 @@ class ArduinoCompiler:
         """Find the Arduino installation directory."""
         possible_paths = [
             os.path.join(os.environ.get('ProgramFiles', 'C:\\Program Files'), 'Arduino'),
-            os.path.join(os.environ.get('ProgramFiles(x86)', 'C:\\Program Files (x86)'), 'Arduino')
+            os.path.join(os.environ.get('ProgramFiles(x86)', 'C:\\Program Files (x86)'), 'Arduino'),
+            os.path.join(os.environ.get('LOCALAPPDATA', 'C:\\Users\\' + os.environ.get('USERNAME', '') + '\\AppData\\Local'), 'Arduino')
         ]
         
         for path in possible_paths:
@@ -103,15 +105,17 @@ class ArduinoCompiler:
             with open(sketch_copy, 'r') as f:
                 sketch_content = f.read()
             
-            # Extract function declarations
+            # Simply use regex for function prototype generation - more reliable
+            print("Using regex for function prototype generation...")
+            
             function_declarations = []
             function_pattern = r'\b(void|int|float|double|boolean|bool|char|byte|unsigned|long|short|size_t|String)\s+([a-zA-Z0-9_]+)\s*\([^)]*\)\s*\{'
             
-            import re
-            matches = re.finditer(function_pattern, sketch_content)
-            
             # Arduino special functions that should not have prototypes
             arduino_special_functions = ['setup', 'loop']
+            
+            # Using the global re module
+            matches = re.finditer(function_pattern, sketch_content)
             
             for match in matches:
                 return_type = match.group(1)
@@ -128,6 +132,7 @@ class ArduinoCompiler:
                     signature = sketch_content[start_pos:signature_end].strip()
                     # Add semicolon to make it a prototype
                     function_declarations.append(f"{signature};")
+
             
             # Create a new sketch file with function prototypes at the top
             combined_sketch = os.path.join(build_dir, f"{sketch_name}_combined.ino")
@@ -288,15 +293,37 @@ class ArduinoCompiler:
             
             self._run_command(twi_pins_cmd)
             
-            # Step 6: Use the existing core.a file
-            print("Using existing core.a file...")
-            core_a = os.path.join(os.path.dirname(sketch_path), "core.a")
+            # Step 6: Find and use the existing core.a file
+            print("Finding core.a file...")
             
-            if not os.path.exists(core_a):
-                print(f"Error: core.a not found at {core_a}")
+            # Try Arduino IDE's typical core location first
+            core_a = None
+            arduino_cores_dir = os.path.join(os.path.expanduser('~'), 'AppData', 'Local', 'arduino', 'cores')
+            
+            if os.path.exists(arduino_cores_dir):
+                # Look through all subdirectories for core.a
+                for root, dirs, files in os.walk(arduino_cores_dir):
+                    if 'core.a' in files:
+                        core_a = os.path.join(root, 'core.a')
+                        print(f"Found Arduino IDE core.a at: {core_a}")
+                        break
+            
+            # If not found, try other common locations
+            if not core_a:
+                possible_core_paths = [
+                    os.path.join(os.path.dirname(sketch_path), "core.a"),
+                    os.path.join(os.path.expanduser('~'), 'AppData', 'Local', 'arduino', 'cores', '7971056259659535f3dc38ca7d607784', 'core.a')
+                ]
+                
+                for path in possible_core_paths:
+                    if os.path.exists(path):
+                        core_a = path
+                        print(f"Found core.a at: {core_a}")
+                        break
+            
+            if not core_a:
+                print("Error: core.a not found! Please compile a sketch with Arduino IDE first.")
                 return False
-            
-            print(f"Found core.a at: {core_a}")
             
             # Step 7: Link everything together
             print("Linking...")
@@ -314,7 +341,32 @@ class ArduinoCompiler:
             
             self._run_command(link_cmd)
             
-            # Step 7: Generate hex file
+            # Step 7: Generate binary file
+            print("Generating binary file...")
+            bin_file = os.path.join(build_dir, f"{sketch_name}.bin")
+            
+            bin_cmd = [
+                os.path.join(self.avr_gcc_path, "avr-objcopy"),
+                "-O", "binary", "-R", ".eeprom",
+                elf_file, bin_file
+            ]
+            
+            self._run_command(bin_cmd)
+            
+            # Step 8: Generate eeprom file
+            print("Generating eeprom file...")
+            eep_file = os.path.join(build_dir, f"{sketch_name}.eep")
+            
+            eep_cmd = [
+                os.path.join(self.avr_gcc_path, "avr-objcopy"),
+                "-O", "ihex", "-j", ".eeprom", "--set-section-flags=.eeprom=alloc,load",
+                "--no-change-warnings", "--change-section-lma", ".eeprom=0",
+                elf_file, eep_file
+            ]
+            
+            self._run_command(eep_cmd)
+            
+            # Step 9: Generate hex file
             print("Generating hex file...")
             hex_file = os.path.join(build_dir, f"{sketch_name}.hex")
             
@@ -326,11 +378,33 @@ class ArduinoCompiler:
             
             self._run_command(hex_cmd)
             
-            # Copy the hex file to the output directory
-            output_hex = os.path.join(output_dir, f"{sketch_name}.hex")
-            shutil.copy2(hex_file, output_hex)
+            # Step 10: Generate listing file with source and assembly
+            print("Generating listing file...")
+            lst_file = os.path.join(build_dir, f"{sketch_name}.lst")
             
-            print(f"Compilation successful! Hex file saved to: {output_hex}")
+            lst_cmd = [
+                os.path.join(self.avr_gcc_path, "avr-objdump"),
+                "--disassemble", "--source", "--line-numbers", "--demangle",
+                "--section=.text", elf_file
+            ]
+            
+            # avr-objdump output needs to be redirected to a file
+            lst_output = self._run_command(lst_cmd)
+            with open(lst_file, 'w') as f:
+                f.write(lst_output)
+            
+            # Copy all output files to the output directory
+            output_hex = os.path.join(output_dir, f"{sketch_name}.hex")
+            output_bin = os.path.join(output_dir, f"{sketch_name}.bin")
+            output_eep = os.path.join(output_dir, f"{sketch_name}.eep")
+            output_lst = os.path.join(output_dir, f"{sketch_name}.lst")
+            
+            shutil.copy2(hex_file, output_hex)
+            shutil.copy2(bin_file, output_bin)
+            shutil.copy2(eep_file, output_eep)
+            shutil.copy2(lst_file, output_lst)
+            
+            print(f"Compilation successful! Output files saved to: {output_dir}")
             return True
             
         except Exception as e:
@@ -340,6 +414,7 @@ class ArduinoCompiler:
     def _run_command(self, cmd):
         """Run a command and print its output."""
         try:
+            # Normal command execution
             process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
             stdout, stderr = process.communicate()
             

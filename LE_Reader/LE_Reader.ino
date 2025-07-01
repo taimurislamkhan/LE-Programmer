@@ -73,10 +73,13 @@ void readFromDevice(byte address) {
     
     // If we received enough data for sine and cosine
     if (index >= 5) {
+      int abs1 = (data[0] << 8) | data[1]; // First two bytes for distance
       int cosine = (data[2] << 8) | data[3]; // First two bytes for cosine
       int sine = (data[4] << 8) | data[5];   // Next two bytes for sine
       
       // Print in format: address,cosine,sine
+      // Serial.print(abs1);
+      // Serial.print(',');
       Serial.print(address);
       Serial.print(',');
       Serial.print(cosine);
